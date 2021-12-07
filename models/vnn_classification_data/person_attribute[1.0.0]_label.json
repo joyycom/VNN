@@ -1,0 +1,26 @@
+{
+	"sequential_id":[
+		"gender", 
+		"beauty",
+		"age"],
+	"gender":[
+		"male",
+		"female",
+		"unsure"
+	], 
+	"beauty":[
+		"high",
+		"middle",
+		"low"
+	],
+	"age":[
+		"0-2",
+		"3-12",
+		"3-12",
+		"13-30",
+		"13-30",
+		"31-50",
+		"51+",
+		"unsure"
+	]
+}

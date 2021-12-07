@@ -1,0 +1,30 @@
+{
+	"app_type": "stylizing",
+	"serialization_protocol_version": 20014,
+	"preproc": {
+		"resize_method": "bilinear",
+		"netW": 384,
+		"netH": 512,
+		"netInFmt": "bgr",
+		"mean_val": [
+			0.0, 0.0, 0.0
+		],
+		"norm_val": [
+			255.0, 255.0, 255.0
+		]
+	},
+	"postproc": {
+		"sequential_ids": [
+			"0",
+			"1"
+		],
+		"0": {
+			"func": "float01touchar0255",
+			"intVars":[]
+		},
+		"1": {
+			"func": "getRGB_HWC_from_BGR_CHW",
+			"intVars":[]
+		}
+	}
+}

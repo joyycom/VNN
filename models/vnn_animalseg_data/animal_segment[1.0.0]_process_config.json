@@ -1,0 +1,25 @@
+{
+	"app_type": "segment",
+	"serialization_protocol_version": 20014,
+	"preproc": {
+		"resize_method": "bilinear",
+		"netW": 384,
+		"netH": 512,
+		"netInFmt": "rgb",
+		"mean_val": [
+			0.0, 0.0, 0.0
+		],
+		"norm_val": [
+			255.0, 255.0, 255.0
+		]
+	},
+	"postproc": {
+		"sequential_ids": [
+			"0"
+		],
+		"0": {
+			"func": "float01touchar0255",
+			"intVars":[]
+		}
+	}
+}

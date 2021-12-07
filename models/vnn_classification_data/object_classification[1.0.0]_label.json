@@ -1,0 +1,30 @@
+{
+	"sequential_id":[
+		"objectClass"
+	],
+	"objectClass":[
+		"other",
+		"cat",
+		"dog",
+		"panda",
+		"aquarium_fish",
+		"other_animal",
+		"flower",
+		"leaf",
+		"other_plant",
+		"computer",
+		"mobile_phone",
+		"other_digital_product",
+		"great_food_show",
+		"food_making",
+		"text_shooting",
+		"football",
+		"badminton",
+		"table_tennis",
+		"basketball",
+		"billiards",
+		"body_building",
+		"other_sport",
+		"instrumental_performance"
+	]
+}

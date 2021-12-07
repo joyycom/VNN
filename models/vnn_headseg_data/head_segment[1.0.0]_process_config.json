@@ -1,0 +1,33 @@
+{
+	"app_type": "segment",
+	"serialization_protocol_version": 20014,
+	"preproc": {
+		"resize_method": "bilinear",
+		"netW": 256,
+		"netH": 256,
+		"netInFmt": "rgb",
+		"mean_val": [
+			123.675,116.28,103.53
+		],
+		"norm_val": [
+			58.395, 57.12, 57.375
+		],
+		"adjust_bbox": {
+			"move_top": 0.0,
+			"move_bottom": 0.0,
+			"move_left": 0.0,
+			"move_right": 0.0,
+			"scale_x": 2.5,
+			"scale_y": 2.5
+		}
+	},
+	"postproc": {
+		"sequential_ids": [
+			"0"
+		],
+		"0": {
+			"func": "float01touchar0255",
+			"intVars":[]
+		}
+	}
+}

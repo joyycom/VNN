@@ -1,0 +1,3 @@
+include ':vnnlib'
+include ':app'
+rootProject.name = "vnndemo"

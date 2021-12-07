@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starry_sky">
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:text="相机"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:letterSpacing="2"
+        android:background="@drawable/effect_button"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_camera"
+        android:layout_marginTop="50dp"
+        android:text="图片"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:letterSpacing="2"
+        android:background="@drawable/effect_button"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
