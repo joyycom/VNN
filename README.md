@@ -21,7 +21,7 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 ## 人脸关键点
  |![face_Img](./doc/resource/face_img.jpg)| ![face_keypoints](./doc/resource/face_keypoints.jpg)|![face_Img](./doc/resource/face_beautify.png)|![face278](./doc/resource/face278.gif) |
  | :----------------------------: | :--------------------------------: | :---------------------------: | :-----------------: |
- | 原图 | [人脸关键点](./doc/face_landmark_dtection.md)  | 美颜 | 动态效果 |
+ | 原图 | [人脸关键点](./doc/face_landmark_detection.md)  | 美颜 | 动态效果 |
 
 ### 指标对比
 ![face104compare](./doc/resource/face104compare.png)  ![face278compare](./doc/resource/face278compare.png)
