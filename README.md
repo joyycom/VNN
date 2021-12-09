@@ -1,7 +1,7 @@
 ![Logo](./doc/resource/vnn_logo.png)
 
 # 简介
-VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、轻量级神经网络部署框架。目前已为[Hago](https://www.ihago.net/)、[VOO](https://vooedit.com/)、[VflyCloud](https://cloud.vflyapp.com/desktop)、[Vfly](https://api-web.vflyapp.com/)、[马克水印相机](https://www.markiapp.com/)等App提供20余种AI能力的支持，覆盖直播、短视频、视频编辑等泛娱乐场景和工程场景
+VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、轻量级神经网络部署框架。目前已为[Hago](https://www.ihago.net/)、[VOO](https://vooedit.com/)、[VFlyCloud](https://cloud.vflyapp.com/desktop)、[VFly](https://api-web.vflyapp.com/)、[马克水印相机](https://www.markiapp.com/)等App提供20余种AI能力的支持，覆盖直播、短视频、视频编辑等泛娱乐场景和工程场景
 
 **特性**
 - 免费：无授权控制，无广告植入
