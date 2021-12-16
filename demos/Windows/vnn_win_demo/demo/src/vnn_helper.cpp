@@ -1,3 +1,7 @@
+//-------------------------------------------------------------------------------------------------------
+// Copyright (c) 2021 Guangzhou Joyy Information Technology Co., Ltd. All rights reserved.
+// Licensed under the MIT license. See license.txt file in the project root for full license information.
+//-------------------------------------------------------------------------------------------------------
 #include "vnn_helper.h"
 #include <string>
 #include "vnn_face.h"
@@ -682,7 +686,7 @@ int VNNHelper::applyVNN(VNN_EFFECT_MODE effectMode, cv::Mat used_img, int mode) 
 			int _use_278pts = 1;
 			VNN_Set_Face_Attr(mVnnID, "_use_278pts", &_use_278pts);
 			ret = VNN_Apply_Face_CPU(mVnnID, &in_image, &mFaceDetectionFrameData);
-			//cout << "face count £º" << mFaceDetectionFrameData.facesNum << endl;
+			//cout << "face count ï¿½ï¿½" << mFaceDetectionFrameData.facesNum << endl;
 			drawFaceResult(used_img, mFaceDetectionFrameData);
 		}
 		return ret;

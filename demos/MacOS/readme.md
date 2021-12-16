@@ -44,7 +44,7 @@ VNN MacOS 提供摄像头和相册两种演示模式，以下分别为手势识�
 ## 1. 添加系统库依赖
 VNN Demo 依赖9个系统库，按如下图添加这些依赖库   
 
-![iOS_Guide_1_3](../../doc/resource/MacOS_Guide_1_3.png)   
+![MacOS_Guide_1_3](../../doc/resource/MacOS_Guide_1_3.png)   
 
 ## 2. 添加VNN库
 参考文档页面，根据需要的功能按需添加VNN库的framework。在Demo添加了全部的VNN framework   
