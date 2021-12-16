@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BF9B26D263A1E533C00525B /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm in Sources */ = {isa = PBXBuildFile; fileRef = A780A0ABCA2F02A8F15299F9 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm */; };
+		0D8E4A4AA71DBDCEE243DA4F /* WindowCtrl_Camera_GeneralClassification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65F62BF8DF39E03F134E64C6 /* WindowCtrl_Camera_GeneralClassification.mm */; };
+		1168771A2E6E114A7F6CB931 /* NSDrawElements.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7E8008418EBA198B671A093 /* NSDrawElements.mm */; };
+		135F555B8FF4AFB7EFB79F97 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A81000ABD6D2F3A9C9FDF8 /* MetalKit.framework */; };
+		1360A694D6F164EFF923A782 /* WindowCtrl_Camera_DisneyFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = F40267AADE8698B185917BB3 /* WindowCtrl_Camera_DisneyFaceStylizing.h */; };
+		194E5423C13C98AB17AF9EE4 /* WindowCtrl_PictureMetalRender.h in Sources */ = {isa = PBXBuildFile; fileRef = AC36AC2D5F7C111E09A7D977 /* WindowCtrl_PictureMetalRender.h */; };
+		257445EC2FA026DC34F8551E /* WindowCtrl_Picture_Gesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF62A0A61F9E9A37355DFE9C /* WindowCtrl_Picture_Gesture.mm */; };
+		273DF3FA012A9570E80B9ECF /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43A64104B799B86AA921DDF4 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm */; };
+		33A82D3B42A5195A1535621F /* WindowCtrl_Camera_FaceSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 73B08D514868E1FDDA283932 /* WindowCtrl_Camera_FaceSegment.h */; };
+		340D781365AF2293FC190915 /* WindowCtrl_Camera_Gesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A5330957DFC94E8D6DA7F /* WindowCtrl_Camera_Gesture.mm */; };
+		35264A3DC91CB0B616C8CACB /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828029461963DAC39A6C77A4 /* MetalPerformanceShaders.framework */; };
+		3820C70E729DCE330EEB8080 /* WindowCtrl_Picture_3DGameFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 854C23B04ADA3FB059418F62 /* WindowCtrl_Picture_3DGameFaceStylizing.h */; };
+		38BC342924F929B09C10B7C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 050693E31F9FC6F30C800C09 /* AppDelegate.m */; };
+		3B1B4BF23710BCF66C8BA35C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3BE642E51427A3F7F2BAE /* main.m */; };
+		418C3F0857277239843846B6 /* WindowCtrl_PictureMetalRender.mm in Sources */ = {isa = PBXBuildFile; fileRef = D935E30CD2E0F44CCEC9D667 /* WindowCtrl_PictureMetalRender.mm */; };
+		425249C43C962388A862FA0B /* WindowCtrl_Camera_Gesture.h in Sources */ = {isa = PBXBuildFile; fileRef = D6DEA2D670CE0D9485F10AEA /* WindowCtrl_Camera_Gesture.h */; };
+		458BD488ED9B44CFE812A733 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374ACED0B9575B8BBFD93486 /* Cocoa.framework */; };
+		45AA4E968169E45662C16D74 /* WindowCtrl_Picture_FaceLandmarkDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE9920A85388BFBAA3B21A20 /* WindowCtrl_Picture_FaceLandmarkDetection.mm */; };
+		47FF76A383243F5AA2DB586A /* files in Resources */ = {isa = PBXBuildFile; fileRef = EB942CB34D90B6BB189C40E4 /* files */; };
+		4B6725DA47EDEA67406FAAAA /* NSView_ElementsDrawer.h in Sources */ = {isa = PBXBuildFile; fileRef = 82015953A7A7316028392587 /* NSView_ElementsDrawer.h */; };
+		4C3EBFC991149C59974566E4 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A513CE6AF0D05F89DC03FE5C /* AVKit.framework */; };
+		4CF68EE30F4D9F6B768F8BAF /* WindowCtrl_Picture_GeneralSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFDCD4F8FC0E97DAF9D83B7C /* WindowCtrl_Picture_GeneralSegment.mm */; };
+		566C0ECE3E0A0421CE55AD6B /* WindowCtrl_Picture_GeneralSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2B27BB6AEA110CEA70059 /* WindowCtrl_Picture_GeneralSegment.h */; };
+		5698E2BC39100C3C7B9FBF47 /* WindowCtrl_Picture_FaceReenactment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48B27BC5A26C034921E8C1D4 /* WindowCtrl_Picture_FaceReenactment.mm */; };
+		5E8F9EC274F29EC67C9C9397 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h in Sources */ = {isa = PBXBuildFile; fileRef = 000D3410D6D9341C17F550F6 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h */; };
+		5FA08BE971D6BF7493D4900D /* WindowCtrl_Camera_3DGameFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 62BD5F6046BB1AA6CDCCDD54 /* WindowCtrl_Camera_3DGameFaceStylizing.h */; };
+		664AA361459A7B94ECCE79A3 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 041D20C93C8A41D8041F07BD /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h */; };
+		697325C75DCB982AF3644DA7 /* WindowCtrl_Picture_FaceLandmarkDetection.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DD5225D9F0A1B59EB356D /* WindowCtrl_Picture_FaceLandmarkDetection.h */; };
+		6B5CE1E8C8C44216B03FB805 /* WindowCtrl_Picture_HeadSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E65B69EB915AAFFA03C4703 /* WindowCtrl_Picture_HeadSegment.h */; };
+		713647B5DE7C59854E656871 /* WindowCtrl_Picture_GeneralClassification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B247AEF4D7561C55E566A48 /* WindowCtrl_Picture_GeneralClassification.mm */; };
+		753A5893D7829B78E55022B0 /* OSXDemoHelper.h in Sources */ = {isa = PBXBuildFile; fileRef = 13F16446F192B9D6200F8D83 /* OSXDemoHelper.h */; };
+		81A66FFC7A0D40F24DB0D122 /* WindowCtrl_Picture_3DGameFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E81549906466763930B38A6 /* WindowCtrl_Picture_3DGameFaceStylizing.mm */; };
+		8392BAF2B460E57A2FA0E71F /* WindowCtrl_Camera_HeadSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58531E9E554ABE8FFF84EB19 /* WindowCtrl_Camera_HeadSegment.mm */; };
+		8DFCEABD59D2F118E89743BE /* WindowCtrl_Picture_DisneyFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = B00A947308EA3F210B34C045 /* WindowCtrl_Picture_DisneyFaceStylizing.mm */; };
+		94DBAFD78FA9D21BF4AAB791 /* WindowCtrl_Camera_GeneralClassification.h in Sources */ = {isa = PBXBuildFile; fileRef = 04B9723008ECF2EC4328AD91 /* WindowCtrl_Camera_GeneralClassification.h */; };
+		989071AA3D599A7538D60116 /* WindowCtrl_Camera_HeadSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 229894AFFDE6BC41A62D84F6 /* WindowCtrl_Camera_HeadSegment.h */; };
+		98EF830639C9BE23B60ED589 /* WindowCtrl_Camera_ObjectTracking.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9F780B00A84366863B83B6B /* WindowCtrl_Camera_ObjectTracking.mm */; };
+		9A8B6C712CBE8589E7401577 /* MTKView_CameraRenderer.metal in Sources */ = {isa = PBXBuildFile; fileRef = B50F65B71DFCC430C92E9B2E /* MTKView_CameraRenderer.metal */; };
+		A34A17B6AC9F3771467C2E27 /* MTKView_CameraRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5897EBFD57BB38BB402979C /* MTKView_CameraRenderer.mm */; };
+		A3CF3F9117B5C800BD800DBE /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 209D7C8BEFB19684185DF470 /* AppDelegate.h */; };
+		A576E09BE3AC59E64A836084 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF2E13B7473DFDF5F88A522 /* QuartzCore.framework */; };
+		A5EED3B4888934304551392C /* WindowCtrl_Picture_HeadSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A2BBD399D2FE6324E6A4ABC /* WindowCtrl_Picture_HeadSegment.mm */; };
+		A782F90DF502540ADD0E2A40 /* NSDrawElements.h in Sources */ = {isa = PBXBuildFile; fileRef = AE00F2916F8852A1798AF4C5 /* NSDrawElements.h */; };
+		ABF6ACC795AFAD82E42F956A /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 93C2248A29707D5CAF53D6EA /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h */; };
+		B3A6185A904232ED61F65812 /* WindowCtrl_Camera_FaceLandmarkDetection.h in Sources */ = {isa = PBXBuildFile; fileRef = AF8B0C2D79C6AA5D9F687F25 /* WindowCtrl_Camera_FaceLandmarkDetection.h */; };
+		B44EFDF7635EC29C288C96CC /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h in Sources */ = {isa = PBXBuildFile; fileRef = 77910CDA50602C6200F7DCBA /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h */; };
+		B568E0F8ABF1135B74C18B03 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE36DF141A2F561A6544299D /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm */; };
+		B8CCDE5F2769C1D20083F0B7 /* vnn_gesture_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE542769C1D20083F0B7 /* vnn_gesture_osx.framework */; };
+		B8CCDE602769C1D20083F0B7 /* vnn_faceparser_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE552769C1D20083F0B7 /* vnn_faceparser_osx.framework */; };
+		B8CCDE612769C1D20083F0B7 /* vnn_core_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE562769C1D20083F0B7 /* vnn_core_osx.framework */; };
+		B8CCDE622769C1D20083F0B7 /* vnn_stylizing_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE572769C1D20083F0B7 /* vnn_stylizing_osx.framework */; };
+		B8CCDE632769C1D20083F0B7 /* vnn_kit_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE582769C1D20083F0B7 /* vnn_kit_osx.framework */; };
+		B8CCDE642769C1D20083F0B7 /* vnn_objcount_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE592769C1D20083F0B7 /* vnn_objcount_osx.framework */; };
+		B8CCDE652769C1D20083F0B7 /* vnn_face_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5A2769C1D20083F0B7 /* vnn_face_osx.framework */; };
+		B8CCDE662769C1D20083F0B7 /* vnn_classifying_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5B2769C1D20083F0B7 /* vnn_classifying_osx.framework */; };
+		B8CCDE672769C1D20083F0B7 /* vnn_face_reenactment_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5C2769C1D20083F0B7 /* vnn_face_reenactment_osx.framework */; };
+		B8CCDE682769C1D20083F0B7 /* vnn_objtracking_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5D2769C1D20083F0B7 /* vnn_objtracking_osx.framework */; };
+		B8CCDE692769C1D20083F0B7 /* vnn_general_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5E2769C1D20083F0B7 /* vnn_general_osx.framework */; };
+		B8CCDE762769C2BE0083F0B7 /* vnn_classifying_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5B2769C1D20083F0B7 /* vnn_classifying_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE772769C2BE0083F0B7 /* vnn_core_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE562769C1D20083F0B7 /* vnn_core_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE782769C2BE0083F0B7 /* vnn_face_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5A2769C1D20083F0B7 /* vnn_face_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE792769C2BE0083F0B7 /* vnn_face_reenactment_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5C2769C1D20083F0B7 /* vnn_face_reenactment_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE7A2769C2BE0083F0B7 /* vnn_faceparser_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE552769C1D20083F0B7 /* vnn_faceparser_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE7B2769C2BE0083F0B7 /* vnn_general_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5E2769C1D20083F0B7 /* vnn_general_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE7C2769C2BE0083F0B7 /* vnn_gesture_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE542769C1D20083F0B7 /* vnn_gesture_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE7D2769C2BE0083F0B7 /* vnn_kit_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE582769C1D20083F0B7 /* vnn_kit_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE7E2769C2BE0083F0B7 /* vnn_objcount_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE592769C1D20083F0B7 /* vnn_objcount_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE7F2769C2BE0083F0B7 /* vnn_objtracking_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5D2769C1D20083F0B7 /* vnn_objtracking_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8CCDE802769C2BE0083F0B7 /* vnn_stylizing_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE572769C1D20083F0B7 /* vnn_stylizing_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC4E3F3C980B50A988117AE4 /* OSXDemoHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3695CE93437F0C8F2CDCB94 /* OSXDemoHelper.mm */; };
+		BC939604FF7EC08A7B488945 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E60FC604E21A604FE3FDDD6 /* Metal.framework */; };
+		C2601B48E25A530D3472894A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1982710FFC01E3635D175C40 /* Accelerate.framework */; };
+		C46EA3E2D430091F8D8EF429 /* WindowCtrl_Picture_FaceSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = C3B072F0E77B50263CCAC48C /* WindowCtrl_Picture_FaceSegment.h */; };
+		C4DC633789BE024BFF62ACD9 /* WindowCtrl_Picture_GeneralClassification.h in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F2FFC8566EBC8C3DE7BAF /* WindowCtrl_Picture_GeneralClassification.h */; };
+		CA65AFD107E978D1FE8FBC07 /* WindowCtrl_Camera_FaceLandmarkDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239AA9E4D2ACB002D37C5B10 /* WindowCtrl_Camera_FaceLandmarkDetection.mm */; };
+		CBCD76E3E83B8DC78214F229 /* NSView_ElementsDrawer.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF83EAB06B2C7FF218788CBB /* NSView_ElementsDrawer.mm */; };
+		CE5EE5D6E958FC3B9BF071D7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56E3FF139DB9817B46E8A3DD /* ViewController.mm */; };
+		DB0B71293E5DBE3C10FBC3F6 /* WindowCtrl_Picture_FaceReenactment.h in Sources */ = {isa = PBXBuildFile; fileRef = 140C1333E670F5486DE0A6EC /* WindowCtrl_Picture_FaceReenactment.h */; };
+		DCAC71D1978D71F32E4BE7CD /* WindowCtrl_Picture_Gesture.h in Sources */ = {isa = PBXBuildFile; fileRef = 225AEF65ADA39CA225456DEE /* WindowCtrl_Picture_Gesture.h */; };
+		DFE59A7CA6A953675EE78867 /* WindowCtrl_Camera_GeneralSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 665C033CBFE26276D650AC1E /* WindowCtrl_Camera_GeneralSegment.mm */; };
+		E00205676F411688BA6B9679 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 835B3BC37D700EBEAAED250B /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm */; };
+		E451C7CBE942868BC34A40F0 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 88CC60465C1024F00893F5C7 /* Main.storyboard */; };
+		E4A8091AA3483F44B1934D4D /* WindowCtrl_Camera_DisneyFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = F91BCEA9AD0A16436561CFDE /* WindowCtrl_Camera_DisneyFaceStylizing.mm */; };
+		E6407032B7E5C2650F6044C8 /* WindowCtrl_Camera_ObjectTracking.h in Sources */ = {isa = PBXBuildFile; fileRef = 4407C172D28BF8F8E8E448D7 /* WindowCtrl_Camera_ObjectTracking.h */; };
+		E7F1DBC753512885DFED1D01 /* WindowCtrl_Camera_FaceSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = F28B8C8BB41898408654354F /* WindowCtrl_Camera_FaceSegment.mm */; };
+		E8A644528E3319F0A8D8D5A3 /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDD1FA9C82B85E862AE377 /* ViewController.h */; };
+		EC256643B141E6A7FA08D6CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A121817DABA8034D0015F0 /* AVFoundation.framework */; };
+		ECA122F372895E97DB2B51DE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5108DD67BE08EEED580C11B6 /* CoreMedia.framework */; };
+		EE942C0CE75CB7112F8C9844 /* WindowCtrl_CameraMetalRender.h in Sources */ = {isa = PBXBuildFile; fileRef = 06BE821C4A748B9239797705 /* WindowCtrl_CameraMetalRender.h */; };
+		F4B286FA8B673B3923993967 /* WindowCtrl_Picture_DisneyFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 831C1A6429FF9B7E2D54E7D2 /* WindowCtrl_Picture_DisneyFaceStylizing.h */; };
+		F630EB874D45403745489311 /* WindowCtrl_Camera_GeneralSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 97F118C373C02AC36555E48B /* WindowCtrl_Camera_GeneralSegment.h */; };
+		F72C93D4533167359B7356E4 /* WindowCtrl_CameraMetalRender.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87A9AD13FFEF930E48533548 /* WindowCtrl_CameraMetalRender.mm */; };
+		F7D71FCBD30A14D2410B64A0 /* MTKView_CameraRenderer.h in Sources */ = {isa = PBXBuildFile; fileRef = 30FF050C5C17E279B8C17D0F /* MTKView_CameraRenderer.h */; };
+		FA47C5CEC8E8866EB8B20160 /* WindowCtrl_Picture_FaceSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0391DFA4C27B725B6CF9E66C /* WindowCtrl_Picture_FaceSegment.mm */; };
+		FBFFDE10AD5DDDE4BD4E8F04 /* WindowCtrl_Camera_3DGameFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 02F5FF18C28C697DCA9DC291 /* WindowCtrl_Camera_3DGameFaceStylizing.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8CCDE752769C2860083F0B7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B8CCDE762769C2BE0083F0B7 /* vnn_classifying_osx.framework in CopyFiles */,
+				B8CCDE772769C2BE0083F0B7 /* vnn_core_osx.framework in CopyFiles */,
+				B8CCDE782769C2BE0083F0B7 /* vnn_face_osx.framework in CopyFiles */,
+				B8CCDE792769C2BE0083F0B7 /* vnn_face_reenactment_osx.framework in CopyFiles */,
+				B8CCDE7A2769C2BE0083F0B7 /* vnn_faceparser_osx.framework in CopyFiles */,
+				B8CCDE7B2769C2BE0083F0B7 /* vnn_general_osx.framework in CopyFiles */,
+				B8CCDE7C2769C2BE0083F0B7 /* vnn_gesture_osx.framework in CopyFiles */,
+				B8CCDE7D2769C2BE0083F0B7 /* vnn_kit_osx.framework in CopyFiles */,
+				B8CCDE7E2769C2BE0083F0B7 /* vnn_objcount_osx.framework in CopyFiles */,
+				B8CCDE7F2769C2BE0083F0B7 /* vnn_objtracking_osx.framework in CopyFiles */,
+				B8CCDE802769C2BE0083F0B7 /* vnn_stylizing_osx.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000D3410D6D9341C17F550F6 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceCount_QRCodeDetect.h; sourceTree = "<group>"; };
+		02F5FF18C28C697DCA9DC291 /* WindowCtrl_Camera_3DGameFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_3DGameFaceStylizing.mm; sourceTree = "<group>"; };
+		0391DFA4C27B725B6CF9E66C /* WindowCtrl_Picture_FaceSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceSegment.mm; sourceTree = "<group>"; };
+		041D20C93C8A41D8041F07BD /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h; sourceTree = "<group>"; };
+		04B9723008ECF2EC4328AD91 /* WindowCtrl_Camera_GeneralClassification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_GeneralClassification.h; sourceTree = "<group>"; };
+		050693E31F9FC6F30C800C09 /* AppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		06BE821C4A748B9239797705 /* WindowCtrl_CameraMetalRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_CameraMetalRender.h; sourceTree = "<group>"; };
+		11A121817DABA8034D0015F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		13F16446F192B9D6200F8D83 /* OSXDemoHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OSXDemoHelper.h; sourceTree = "<group>"; };
+		140C1333E670F5486DE0A6EC /* WindowCtrl_Picture_FaceReenactment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceReenactment.h; sourceTree = "<group>"; };
+		1982710FFC01E3635D175C40 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1C1F2FFC8566EBC8C3DE7BAF /* WindowCtrl_Picture_GeneralClassification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_GeneralClassification.h; sourceTree = "<group>"; };
+		1FD2B27BB6AEA110CEA70059 /* WindowCtrl_Picture_GeneralSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_GeneralSegment.h; sourceTree = "<group>"; };
+		209D7C8BEFB19684185DF470 /* AppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		225AEF65ADA39CA225456DEE /* WindowCtrl_Picture_Gesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_Gesture.h; sourceTree = "<group>"; };
+		229894AFFDE6BC41A62D84F6 /* WindowCtrl_Camera_HeadSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_HeadSegment.h; sourceTree = "<group>"; };
+		239AA9E4D2ACB002D37C5B10 /* WindowCtrl_Camera_FaceLandmarkDetection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_FaceLandmarkDetection.mm; sourceTree = "<group>"; };
+		2A2BBD399D2FE6324E6A4ABC /* WindowCtrl_Picture_HeadSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_HeadSegment.mm; sourceTree = "<group>"; };
+		2E60FC604E21A604FE3FDDD6 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		2EBDD1FA9C82B85E862AE377 /* ViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		30FF050C5C17E279B8C17D0F /* MTKView_CameraRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTKView_CameraRenderer.h; sourceTree = "<group>"; };
+		374ACED0B9575B8BBFD93486 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		43A64104B799B86AA921DDF4 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm; sourceTree = "<group>"; };
+		4407C172D28BF8F8E8E448D7 /* WindowCtrl_Camera_ObjectTracking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_ObjectTracking.h; sourceTree = "<group>"; };
+		48B27BC5A26C034921E8C1D4 /* WindowCtrl_Picture_FaceReenactment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceReenactment.mm; sourceTree = "<group>"; };
+		5108DD67BE08EEED580C11B6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		56E3FF139DB9817B46E8A3DD /* ViewController.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		58531E9E554ABE8FFF84EB19 /* WindowCtrl_Camera_HeadSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_HeadSegment.mm; sourceTree = "<group>"; };
+		5E65B69EB915AAFFA03C4703 /* WindowCtrl_Picture_HeadSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_HeadSegment.h; sourceTree = "<group>"; };
+		62BD5F6046BB1AA6CDCCDD54 /* WindowCtrl_Camera_3DGameFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_3DGameFaceStylizing.h; sourceTree = "<group>"; };
+		65F62BF8DF39E03F134E64C6 /* WindowCtrl_Camera_GeneralClassification.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_GeneralClassification.mm; sourceTree = "<group>"; };
+		665C033CBFE26276D650AC1E /* WindowCtrl_Camera_GeneralSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_GeneralSegment.mm; sourceTree = "<group>"; };
+		6E81549906466763930B38A6 /* WindowCtrl_Picture_3DGameFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_3DGameFaceStylizing.mm; sourceTree = "<group>"; };
+		73B08D514868E1FDDA283932 /* WindowCtrl_Camera_FaceSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_FaceSegment.h; sourceTree = "<group>"; };
+		77910CDA50602C6200F7DCBA /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_FaceCount_QRCodeDetect.h; sourceTree = "<group>"; };
+		7AF2E13B7473DFDF5F88A522 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7D3A5330957DFC94E8D6DA7F /* WindowCtrl_Camera_Gesture.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_Gesture.mm; sourceTree = "<group>"; };
+		82015953A7A7316028392587 /* NSView_ElementsDrawer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSView_ElementsDrawer.h; sourceTree = "<group>"; };
+		828029461963DAC39A6C77A4 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		831C1A6429FF9B7E2D54E7D2 /* WindowCtrl_Picture_DisneyFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_DisneyFaceStylizing.h; sourceTree = "<group>"; };
+		835B3BC37D700EBEAAED250B /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm; sourceTree = "<group>"; };
+		854C23B04ADA3FB059418F62 /* WindowCtrl_Picture_3DGameFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_3DGameFaceStylizing.h; sourceTree = "<group>"; };
+		87A9AD13FFEF930E48533548 /* WindowCtrl_CameraMetalRender.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_CameraMetalRender.mm; sourceTree = "<group>"; };
+		88CC60465C1024F00893F5C7 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8A2DD5225D9F0A1B59EB356D /* WindowCtrl_Picture_FaceLandmarkDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceLandmarkDetection.h; sourceTree = "<group>"; };
+		93C2248A29707D5CAF53D6EA /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h; sourceTree = "<group>"; };
+		97F118C373C02AC36555E48B /* WindowCtrl_Camera_GeneralSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_GeneralSegment.h; sourceTree = "<group>"; };
+		9B247AEF4D7561C55E566A48 /* WindowCtrl_Picture_GeneralClassification.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_GeneralClassification.mm; sourceTree = "<group>"; };
+		A3695CE93437F0C8F2CDCB94 /* OSXDemoHelper.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = OSXDemoHelper.mm; sourceTree = "<group>"; };
+		A513CE6AF0D05F89DC03FE5C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		A5A81000ABD6D2F3A9C9FDF8 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		A780A0ABCA2F02A8F15299F9 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_FaceCount_QRCodeDetect.mm; sourceTree = "<group>"; };
+		ABB3BE642E51427A3F7F2BAE /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC36AC2D5F7C111E09A7D977 /* WindowCtrl_PictureMetalRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_PictureMetalRender.h; sourceTree = "<group>"; };
+		AE00F2916F8852A1798AF4C5 /* NSDrawElements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSDrawElements.h; sourceTree = "<group>"; };
+		AF8B0C2D79C6AA5D9F687F25 /* WindowCtrl_Camera_FaceLandmarkDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_FaceLandmarkDetection.h; sourceTree = "<group>"; };
+		B00A947308EA3F210B34C045 /* WindowCtrl_Picture_DisneyFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_DisneyFaceStylizing.mm; sourceTree = "<group>"; };
+		B50F65B71DFCC430C92E9B2E /* MTKView_CameraRenderer.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = MTKView_CameraRenderer.metal; sourceTree = "<group>"; };
+		B5897EBFD57BB38BB402979C /* MTKView_CameraRenderer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = MTKView_CameraRenderer.mm; sourceTree = "<group>"; };
+		B8CCDE542769C1D20083F0B7 /* vnn_gesture_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_gesture_osx.framework; path = libs/macOS/x86_64_arm64/vnn_gesture_osx.framework; sourceTree = "<group>"; };
+		B8CCDE552769C1D20083F0B7 /* vnn_faceparser_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_faceparser_osx.framework; path = libs/macOS/x86_64_arm64/vnn_faceparser_osx.framework; sourceTree = "<group>"; };
+		B8CCDE562769C1D20083F0B7 /* vnn_core_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_core_osx.framework; path = libs/macOS/x86_64_arm64/vnn_core_osx.framework; sourceTree = "<group>"; };
+		B8CCDE572769C1D20083F0B7 /* vnn_stylizing_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_stylizing_osx.framework; path = libs/macOS/x86_64_arm64/vnn_stylizing_osx.framework; sourceTree = "<group>"; };
+		B8CCDE582769C1D20083F0B7 /* vnn_kit_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_kit_osx.framework; path = libs/macOS/x86_64_arm64/vnn_kit_osx.framework; sourceTree = "<group>"; };
+		B8CCDE592769C1D20083F0B7 /* vnn_objcount_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_objcount_osx.framework; path = libs/macOS/x86_64_arm64/vnn_objcount_osx.framework; sourceTree = "<group>"; };
+		B8CCDE5A2769C1D20083F0B7 /* vnn_face_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_face_osx.framework; path = libs/macOS/x86_64_arm64/vnn_face_osx.framework; sourceTree = "<group>"; };
+		B8CCDE5B2769C1D20083F0B7 /* vnn_classifying_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_classifying_osx.framework; path = libs/macOS/x86_64_arm64/vnn_classifying_osx.framework; sourceTree = "<group>"; };
+		B8CCDE5C2769C1D20083F0B7 /* vnn_face_reenactment_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_face_reenactment_osx.framework; path = libs/macOS/x86_64_arm64/vnn_face_reenactment_osx.framework; sourceTree = "<group>"; };
+		B8CCDE5D2769C1D20083F0B7 /* vnn_objtracking_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_objtracking_osx.framework; path = libs/macOS/x86_64_arm64/vnn_objtracking_osx.framework; sourceTree = "<group>"; };
+		B8CCDE5E2769C1D20083F0B7 /* vnn_general_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_general_osx.framework; path = libs/macOS/x86_64_arm64/vnn_general_osx.framework; sourceTree = "<group>"; };
+		BE36DF141A2F561A6544299D /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceCount_QRCodeDetect.mm; sourceTree = "<group>"; };
+		C3B072F0E77B50263CCAC48C /* WindowCtrl_Picture_FaceSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceSegment.h; sourceTree = "<group>"; };
+		CF62A0A61F9E9A37355DFE9C /* WindowCtrl_Picture_Gesture.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_Gesture.mm; sourceTree = "<group>"; };
+		D3FB62F80BA7D335EBFBDAC4 /* vnndemo_osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vnndemo_osx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DEA2D670CE0D9485F10AEA /* WindowCtrl_Camera_Gesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_Gesture.h; sourceTree = "<group>"; };
+		D7E8008418EBA198B671A093 /* NSDrawElements.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = NSDrawElements.mm; sourceTree = "<group>"; };
+		D935E30CD2E0F44CCEC9D667 /* WindowCtrl_PictureMetalRender.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_PictureMetalRender.mm; sourceTree = "<group>"; };
+		DFDCD4F8FC0E97DAF9D83B7C /* WindowCtrl_Picture_GeneralSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_GeneralSegment.mm; sourceTree = "<group>"; };
+		E9F780B00A84366863B83B6B /* WindowCtrl_Camera_ObjectTracking.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_ObjectTracking.mm; sourceTree = "<group>"; };
+		EB942CB34D90B6BB189C40E4 /* files */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = files; sourceTree = "<group>"; };
+		EE9920A85388BFBAA3B21A20 /* WindowCtrl_Picture_FaceLandmarkDetection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceLandmarkDetection.mm; sourceTree = "<group>"; };
+		EF83EAB06B2C7FF218788CBB /* NSView_ElementsDrawer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = NSView_ElementsDrawer.mm; sourceTree = "<group>"; };
+		F28B8C8BB41898408654354F /* WindowCtrl_Camera_FaceSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_FaceSegment.mm; sourceTree = "<group>"; };
+		F40267AADE8698B185917BB3 /* WindowCtrl_Camera_DisneyFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_DisneyFaceStylizing.h; sourceTree = "<group>"; };
+		F91BCEA9AD0A16436561CFDE /* WindowCtrl_Camera_DisneyFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_DisneyFaceStylizing.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AABB155C71C97F3E676BFB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8CCDE5F2769C1D20083F0B7 /* vnn_gesture_osx.framework in Frameworks */,
+				B8CCDE602769C1D20083F0B7 /* vnn_faceparser_osx.framework in Frameworks */,
+				B8CCDE612769C1D20083F0B7 /* vnn_core_osx.framework in Frameworks */,
+				B8CCDE622769C1D20083F0B7 /* vnn_stylizing_osx.framework in Frameworks */,
+				B8CCDE632769C1D20083F0B7 /* vnn_kit_osx.framework in Frameworks */,
+				B8CCDE642769C1D20083F0B7 /* vnn_objcount_osx.framework in Frameworks */,
+				B8CCDE652769C1D20083F0B7 /* vnn_face_osx.framework in Frameworks */,
+				B8CCDE662769C1D20083F0B7 /* vnn_classifying_osx.framework in Frameworks */,
+				B8CCDE672769C1D20083F0B7 /* vnn_face_reenactment_osx.framework in Frameworks */,
+				B8CCDE682769C1D20083F0B7 /* vnn_objtracking_osx.framework in Frameworks */,
+				B8CCDE692769C1D20083F0B7 /* vnn_general_osx.framework in Frameworks */,
+				458BD488ED9B44CFE812A733 /* Cocoa.framework in Frameworks */,
+				ECA122F372895E97DB2B51DE /* CoreMedia.framework in Frameworks */,
+				EC256643B141E6A7FA08D6CA /* AVFoundation.framework in Frameworks */,
+				4C3EBFC991149C59974566E4 /* AVKit.framework in Frameworks */,
+				A576E09BE3AC59E64A836084 /* QuartzCore.framework in Frameworks */,
+				BC939604FF7EC08A7B488945 /* Metal.framework in Frameworks */,
+				135F555B8FF4AFB7EFB79F97 /* MetalKit.framework in Frameworks */,
+				35264A3DC91CB0B616C8CACB /* MetalPerformanceShaders.framework in Frameworks */,
+				C2601B48E25A530D3472894A /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11D25A2433D815B8012C9CAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3FB62F80BA7D335EBFBDAC4 /* vnndemo_osx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FD16EA77BA1D09CCE672059 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				30FF050C5C17E279B8C17D0F /* MTKView_CameraRenderer.h */,
+				B50F65B71DFCC430C92E9B2E /* MTKView_CameraRenderer.metal */,
+				B5897EBFD57BB38BB402979C /* MTKView_CameraRenderer.mm */,
+				AE00F2916F8852A1798AF4C5 /* NSDrawElements.h */,
+				D7E8008418EBA198B671A093 /* NSDrawElements.mm */,
+				82015953A7A7316028392587 /* NSView_ElementsDrawer.h */,
+				EF83EAB06B2C7FF218788CBB /* NSView_ElementsDrawer.mm */,
+				13F16446F192B9D6200F8D83 /* OSXDemoHelper.h */,
+				A3695CE93437F0C8F2CDCB94 /* OSXDemoHelper.mm */,
+				06BE821C4A748B9239797705 /* WindowCtrl_CameraMetalRender.h */,
+				87A9AD13FFEF930E48533548 /* WindowCtrl_CameraMetalRender.mm */,
+				AC36AC2D5F7C111E09A7D977 /* WindowCtrl_PictureMetalRender.h */,
+				D935E30CD2E0F44CCEC9D667 /* WindowCtrl_PictureMetalRender.mm */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2EA75C371678232E84B1DF53 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				88CC60465C1024F00893F5C7 /* Main.storyboard */,
+				ABB3BE642E51427A3F7F2BAE /* main.m */,
+				209D7C8BEFB19684185DF470 /* AppDelegate.h */,
+				050693E31F9FC6F30C800C09 /* AppDelegate.m */,
+				2EBDD1FA9C82B85E862AE377 /* ViewController.h */,
+				56E3FF139DB9817B46E8A3DD /* ViewController.mm */,
+				1FD16EA77BA1D09CCE672059 /* Utils */,
+				D3A10735195096C5682F09FC /* PictureWindowCtrls */,
+				A5AAE290725463FF883782D6 /* CameraWindowCtrls */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		3EB84B79341C742FC410F8F2 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				374ACED0B9575B8BBFD93486 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		97311B449CD237C821B598F1 = {
+			isa = PBXGroup;
+			children = (
+				11D25A2433D815B8012C9CAB /* Products */,
+				BC2B795995D5227DD13F45BA /* Frameworks */,
+				EB942CB34D90B6BB189C40E4 /* files */,
+				2EA75C371678232E84B1DF53 /* osx */,
+			);
+			sourceTree = "<group>";
+		};
+		A5AAE290725463FF883782D6 /* CameraWindowCtrls */ = {
+			isa = PBXGroup;
+			children = (
+				62BD5F6046BB1AA6CDCCDD54 /* WindowCtrl_Camera_3DGameFaceStylizing.h */,
+				02F5FF18C28C697DCA9DC291 /* WindowCtrl_Camera_3DGameFaceStylizing.mm */,
+				93C2248A29707D5CAF53D6EA /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h */,
+				835B3BC37D700EBEAAED250B /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm */,
+				F40267AADE8698B185917BB3 /* WindowCtrl_Camera_DisneyFaceStylizing.h */,
+				F91BCEA9AD0A16436561CFDE /* WindowCtrl_Camera_DisneyFaceStylizing.mm */,
+				77910CDA50602C6200F7DCBA /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h */,
+				A780A0ABCA2F02A8F15299F9 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm */,
+				AF8B0C2D79C6AA5D9F687F25 /* WindowCtrl_Camera_FaceLandmarkDetection.h */,
+				239AA9E4D2ACB002D37C5B10 /* WindowCtrl_Camera_FaceLandmarkDetection.mm */,
+				73B08D514868E1FDDA283932 /* WindowCtrl_Camera_FaceSegment.h */,
+				F28B8C8BB41898408654354F /* WindowCtrl_Camera_FaceSegment.mm */,
+				04B9723008ECF2EC4328AD91 /* WindowCtrl_Camera_GeneralClassification.h */,
+				65F62BF8DF39E03F134E64C6 /* WindowCtrl_Camera_GeneralClassification.mm */,
+				97F118C373C02AC36555E48B /* WindowCtrl_Camera_GeneralSegment.h */,
+				665C033CBFE26276D650AC1E /* WindowCtrl_Camera_GeneralSegment.mm */,
+				D6DEA2D670CE0D9485F10AEA /* WindowCtrl_Camera_Gesture.h */,
+				7D3A5330957DFC94E8D6DA7F /* WindowCtrl_Camera_Gesture.mm */,
+				229894AFFDE6BC41A62D84F6 /* WindowCtrl_Camera_HeadSegment.h */,
+				58531E9E554ABE8FFF84EB19 /* WindowCtrl_Camera_HeadSegment.mm */,
+				4407C172D28BF8F8E8E448D7 /* WindowCtrl_Camera_ObjectTracking.h */,
+				E9F780B00A84366863B83B6B /* WindowCtrl_Camera_ObjectTracking.mm */,
+			);
+			path = CameraWindowCtrls;
+			sourceTree = "<group>";
+		};
+		BC2B795995D5227DD13F45BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8CCDE5B2769C1D20083F0B7 /* vnn_classifying_osx.framework */,
+				B8CCDE562769C1D20083F0B7 /* vnn_core_osx.framework */,
+				B8CCDE5A2769C1D20083F0B7 /* vnn_face_osx.framework */,
+				B8CCDE5C2769C1D20083F0B7 /* vnn_face_reenactment_osx.framework */,
+				B8CCDE552769C1D20083F0B7 /* vnn_faceparser_osx.framework */,
+				B8CCDE5E2769C1D20083F0B7 /* vnn_general_osx.framework */,
+				B8CCDE542769C1D20083F0B7 /* vnn_gesture_osx.framework */,
+				B8CCDE582769C1D20083F0B7 /* vnn_kit_osx.framework */,
+				B8CCDE592769C1D20083F0B7 /* vnn_objcount_osx.framework */,
+				B8CCDE5D2769C1D20083F0B7 /* vnn_objtracking_osx.framework */,
+				B8CCDE572769C1D20083F0B7 /* vnn_stylizing_osx.framework */,
+				3EB84B79341C742FC410F8F2 /* OS X */,
+				5108DD67BE08EEED580C11B6 /* CoreMedia.framework */,
+				11A121817DABA8034D0015F0 /* AVFoundation.framework */,
+				A513CE6AF0D05F89DC03FE5C /* AVKit.framework */,
+				7AF2E13B7473DFDF5F88A522 /* QuartzCore.framework */,
+				2E60FC604E21A604FE3FDDD6 /* Metal.framework */,
+				A5A81000ABD6D2F3A9C9FDF8 /* MetalKit.framework */,
+				828029461963DAC39A6C77A4 /* MetalPerformanceShaders.framework */,
+				1982710FFC01E3635D175C40 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3A10735195096C5682F09FC /* PictureWindowCtrls */ = {
+			isa = PBXGroup;
+			children = (
+				041D20C93C8A41D8041F07BD /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h */,
+				43A64104B799B86AA921DDF4 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm */,
+				1FD2B27BB6AEA110CEA70059 /* WindowCtrl_Picture_GeneralSegment.h */,
+				DFDCD4F8FC0E97DAF9D83B7C /* WindowCtrl_Picture_GeneralSegment.mm */,
+				5E65B69EB915AAFFA03C4703 /* WindowCtrl_Picture_HeadSegment.h */,
+				2A2BBD399D2FE6324E6A4ABC /* WindowCtrl_Picture_HeadSegment.mm */,
+				C3B072F0E77B50263CCAC48C /* WindowCtrl_Picture_FaceSegment.h */,
+				0391DFA4C27B725B6CF9E66C /* WindowCtrl_Picture_FaceSegment.mm */,
+				854C23B04ADA3FB059418F62 /* WindowCtrl_Picture_3DGameFaceStylizing.h */,
+				6E81549906466763930B38A6 /* WindowCtrl_Picture_3DGameFaceStylizing.mm */,
+				831C1A6429FF9B7E2D54E7D2 /* WindowCtrl_Picture_DisneyFaceStylizing.h */,
+				B00A947308EA3F210B34C045 /* WindowCtrl_Picture_DisneyFaceStylizing.mm */,
+				8A2DD5225D9F0A1B59EB356D /* WindowCtrl_Picture_FaceLandmarkDetection.h */,
+				EE9920A85388BFBAA3B21A20 /* WindowCtrl_Picture_FaceLandmarkDetection.mm */,
+				000D3410D6D9341C17F550F6 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h */,
+				BE36DF141A2F561A6544299D /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm */,
+				140C1333E670F5486DE0A6EC /* WindowCtrl_Picture_FaceReenactment.h */,
+				48B27BC5A26C034921E8C1D4 /* WindowCtrl_Picture_FaceReenactment.mm */,
+				1C1F2FFC8566EBC8C3DE7BAF /* WindowCtrl_Picture_GeneralClassification.h */,
+				9B247AEF4D7561C55E566A48 /* WindowCtrl_Picture_GeneralClassification.mm */,
+				225AEF65ADA39CA225456DEE /* WindowCtrl_Picture_Gesture.h */,
+				CF62A0A61F9E9A37355DFE9C /* WindowCtrl_Picture_Gesture.mm */,
+			);
+			path = PictureWindowCtrls;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4F7DD54EEC476A5BBD7D848 /* vnndemo_osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B83A05E9578225B4920DF9 /* Build configuration list for PBXNativeTarget "vnndemo_osx" */;
+			buildPhases = (
+				2334CC6F39920040696A9C36 /* Sources */,
+				7AABB155C71C97F3E676BFB5 /* Frameworks */,
+				958B2DCD558001F42D3F536F /* Resources */,
+				B8CCDE752769C2860083F0B7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vnndemo_osx;
+			productName = vnndemo_osx;
+			productReference = D3FB62F80BA7D335EBFBDAC4 /* vnndemo_osx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44D352BA7818DE710D9E6853 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					E4F7DD54EEC476A5BBD7D848 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C7B27E4D58448F394A0862C1 /* Build configuration list for PBXProject "vnndemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97311B449CD237C821B598F1;
+			productRefGroup = 11D25A2433D815B8012C9CAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4F7DD54EEC476A5BBD7D848 /* vnndemo_osx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		958B2DCD558001F42D3F536F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FF76A383243F5AA2DB586A /* files in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2334CC6F39920040696A9C36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E451C7CBE942868BC34A40F0 /* Main.storyboard in Sources */,
+				3B1B4BF23710BCF66C8BA35C /* main.m in Sources */,
+				A3CF3F9117B5C800BD800DBE /* AppDelegate.h in Sources */,
+				38BC342924F929B09C10B7C4 /* AppDelegate.m in Sources */,
+				E8A644528E3319F0A8D8D5A3 /* ViewController.h in Sources */,
+				CE5EE5D6E958FC3B9BF071D7 /* ViewController.mm in Sources */,
+				F7D71FCBD30A14D2410B64A0 /* MTKView_CameraRenderer.h in Sources */,
+				9A8B6C712CBE8589E7401577 /* MTKView_CameraRenderer.metal in Sources */,
+				A34A17B6AC9F3771467C2E27 /* MTKView_CameraRenderer.mm in Sources */,
+				A782F90DF502540ADD0E2A40 /* NSDrawElements.h in Sources */,
+				1168771A2E6E114A7F6CB931 /* NSDrawElements.mm in Sources */,
+				4B6725DA47EDEA67406FAAAA /* NSView_ElementsDrawer.h in Sources */,
+				CBCD76E3E83B8DC78214F229 /* NSView_ElementsDrawer.mm in Sources */,
+				753A5893D7829B78E55022B0 /* OSXDemoHelper.h in Sources */,
+				BC4E3F3C980B50A988117AE4 /* OSXDemoHelper.mm in Sources */,
+				EE942C0CE75CB7112F8C9844 /* WindowCtrl_CameraMetalRender.h in Sources */,
+				F72C93D4533167359B7356E4 /* WindowCtrl_CameraMetalRender.mm in Sources */,
+				194E5423C13C98AB17AF9EE4 /* WindowCtrl_PictureMetalRender.h in Sources */,
+				418C3F0857277239843846B6 /* WindowCtrl_PictureMetalRender.mm in Sources */,
+				664AA361459A7B94ECCE79A3 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h in Sources */,
+				273DF3FA012A9570E80B9ECF /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm in Sources */,
+				566C0ECE3E0A0421CE55AD6B /* WindowCtrl_Picture_GeneralSegment.h in Sources */,
+				4CF68EE30F4D9F6B768F8BAF /* WindowCtrl_Picture_GeneralSegment.mm in Sources */,
+				6B5CE1E8C8C44216B03FB805 /* WindowCtrl_Picture_HeadSegment.h in Sources */,
+				A5EED3B4888934304551392C /* WindowCtrl_Picture_HeadSegment.mm in Sources */,
+				C46EA3E2D430091F8D8EF429 /* WindowCtrl_Picture_FaceSegment.h in Sources */,
+				FA47C5CEC8E8866EB8B20160 /* WindowCtrl_Picture_FaceSegment.mm in Sources */,
+				3820C70E729DCE330EEB8080 /* WindowCtrl_Picture_3DGameFaceStylizing.h in Sources */,
+				81A66FFC7A0D40F24DB0D122 /* WindowCtrl_Picture_3DGameFaceStylizing.mm in Sources */,
+				F4B286FA8B673B3923993967 /* WindowCtrl_Picture_DisneyFaceStylizing.h in Sources */,
+				8DFCEABD59D2F118E89743BE /* WindowCtrl_Picture_DisneyFaceStylizing.mm in Sources */,
+				697325C75DCB982AF3644DA7 /* WindowCtrl_Picture_FaceLandmarkDetection.h in Sources */,
+				45AA4E968169E45662C16D74 /* WindowCtrl_Picture_FaceLandmarkDetection.mm in Sources */,
+				5E8F9EC274F29EC67C9C9397 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h in Sources */,
+				B568E0F8ABF1135B74C18B03 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm in Sources */,
+				DB0B71293E5DBE3C10FBC3F6 /* WindowCtrl_Picture_FaceReenactment.h in Sources */,
+				5698E2BC39100C3C7B9FBF47 /* WindowCtrl_Picture_FaceReenactment.mm in Sources */,
+				C4DC633789BE024BFF62ACD9 /* WindowCtrl_Picture_GeneralClassification.h in Sources */,
+				713647B5DE7C59854E656871 /* WindowCtrl_Picture_GeneralClassification.mm in Sources */,
+				DCAC71D1978D71F32E4BE7CD /* WindowCtrl_Picture_Gesture.h in Sources */,
+				257445EC2FA026DC34F8551E /* WindowCtrl_Picture_Gesture.mm in Sources */,
+				5FA08BE971D6BF7493D4900D /* WindowCtrl_Camera_3DGameFaceStylizing.h in Sources */,
+				FBFFDE10AD5DDDE4BD4E8F04 /* WindowCtrl_Camera_3DGameFaceStylizing.mm in Sources */,
+				ABF6ACC795AFAD82E42F956A /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h in Sources */,
+				E00205676F411688BA6B9679 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm in Sources */,
+				1360A694D6F164EFF923A782 /* WindowCtrl_Camera_DisneyFaceStylizing.h in Sources */,
+				E4A8091AA3483F44B1934D4D /* WindowCtrl_Camera_DisneyFaceStylizing.mm in Sources */,
+				B44EFDF7635EC29C288C96CC /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h in Sources */,
+				0BF9B26D263A1E533C00525B /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm in Sources */,
+				B3A6185A904232ED61F65812 /* WindowCtrl_Camera_FaceLandmarkDetection.h in Sources */,
+				CA65AFD107E978D1FE8FBC07 /* WindowCtrl_Camera_FaceLandmarkDetection.mm in Sources */,
+				33A82D3B42A5195A1535621F /* WindowCtrl_Camera_FaceSegment.h in Sources */,
+				E7F1DBC753512885DFED1D01 /* WindowCtrl_Camera_FaceSegment.mm in Sources */,
+				94DBAFD78FA9D21BF4AAB791 /* WindowCtrl_Camera_GeneralClassification.h in Sources */,
+				0D8E4A4AA71DBDCEE243DA4F /* WindowCtrl_Camera_GeneralClassification.mm in Sources */,
+				F630EB874D45403745489311 /* WindowCtrl_Camera_GeneralSegment.h in Sources */,
+				DFE59A7CA6A953675EE78867 /* WindowCtrl_Camera_GeneralSegment.mm in Sources */,
+				425249C43C962388A862FA0B /* WindowCtrl_Camera_Gesture.h in Sources */,
+				340D781365AF2293FC190915 /* WindowCtrl_Camera_Gesture.mm in Sources */,
+				989071AA3D599A7538D60116 /* WindowCtrl_Camera_HeadSegment.h in Sources */,
+				8392BAF2B460E57A2FA0E71F /* WindowCtrl_Camera_HeadSegment.mm in Sources */,
+				E6407032B7E5C2650F6044C8 /* WindowCtrl_Camera_ObjectTracking.h in Sources */,
+				98EF830639C9BE23B60ED589 /* WindowCtrl_Camera_ObjectTracking.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		34434EFC065F6CF7AF20BB64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		67B7086973F7B113202C5EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_LIBRARY_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/macOS/x86_64_arm64",
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"USE_FACE=1",
+					"USE_GESTURE=1",
+					"USE_OBJCOUNT=1",
+					"USE_OBJTRACKING=1",
+					"USE_FACE_PARSER=1",
+					"USE_CLASSIFYING=1",
+					"USE_STYLIZING=1",
+					"USE_GENERAL=1",
+					"USE_FACE_REENACTMENT=1",
+					"VN_DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = ./libs/headers;
+				INFOPLIST_FILE = ./osx/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				MTL_LANGUAGE_REVISION = Metal12;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyy.vnn.demo;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		74045E83DB89E1A8F5A0C35D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DC72BEAF37BDBDBA601EF12E /* Distribute */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_LIBRARY_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/macOS/x86_64_arm64",
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"USE_FACE=1",
+					"USE_GESTURE=1",
+					"USE_OBJCOUNT=1",
+					"USE_OBJTRACKING=1",
+					"USE_FACE_PARSER=1",
+					"USE_CLASSIFYING=1",
+					"USE_STYLIZING=1",
+					"USE_GENERAL=1",
+					"USE_FACE_REENACTMENT=1",
+					"VN_NDEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = ./libs/headers;
+				INFOPLIST_FILE = ./osx/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				MTL_LANGUAGE_REVISION = Metal12;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyy.vnn.demo;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD)";
+			};
+			name = Distribute;
+		};
+		FF75E9BCD149E208775B68A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_LIBRARY_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/macOS/x86_64_arm64",
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"USE_FACE=1",
+					"USE_GESTURE=1",
+					"USE_OBJCOUNT=1",
+					"USE_OBJTRACKING=1",
+					"USE_FACE_PARSER=1",
+					"USE_CLASSIFYING=1",
+					"USE_STYLIZING=1",
+					"USE_GENERAL=1",
+					"USE_FACE_REENACTMENT=1",
+					"VN_NDEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = ./libs/headers;
+				INFOPLIST_FILE = ./osx/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				MTL_LANGUAGE_REVISION = Metal12;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyy.vnn.demo;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79B83A05E9578225B4920DF9 /* Build configuration list for PBXNativeTarget "vnndemo_osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF75E9BCD149E208775B68A5 /* Release */,
+				67B7086973F7B113202C5EFA /* Debug */,
+				DC72BEAF37BDBDBA601EF12E /* Distribute */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B27E4D58448F394A0862C1 /* Build configuration list for PBXProject "vnndemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34434EFC065F6CF7AF20BB64 /* Debug */,
+				74045E83DB89E1A8F5A0C35D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44D352BA7818DE710D9E6853 /* Project object */;
+}

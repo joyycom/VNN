@@ -2,6 +2,8 @@
 - [人脸计数](#人脸计数)
 - [一、SDK功能](#一sdk功能)
 - [二、技术规格](#二技术规格)
+  - [移动端](#移动端)
+  - [PC端](#pc端)
 - [三、资源依赖](#三资源依赖)
   - [3.1 头文件](#31-头文件)
   - [3.2 模型文件](#32-模型文件)
@@ -28,12 +30,24 @@ API的执行情况（是否成功、错误原因等）可参考 ```VNN_Result```
 ---
 
 # 二、技术规格
+
+## 移动端
+
 | 指标            | 参数                                |
 | --------------- | ----------------------------------- |
 | 支持图片格式    | BGRA、RGBA、RGB、NV12、NV21、YUV420 |
 | 支持架构        | armeabi-v7、arm64-v8a               |
 | Android系统版本 | 5.0+                                |
 | iOS系统版本     | 9.0+                                |
+
+## PC端
+
+| 指标            | 参数                                       |
+| --------------- | ------------------------------------------ |
+| 支持图片格式    | BGRA、RGBA、RGB、YUV420F                   |
+| 支持架构        | x86(Win Only)、x86_64、arm64(MacOS Only) |
+| Windows系统版本 | Win 7+                                     |
+| MacOS系统版本   | 10.10+                                     |
 
 ---
 
@@ -65,6 +79,22 @@ vnn_core_ios.framework
 vnn_kit_ios.framework
 vnn_objcount_ios.framework
 ```
+MacOS
+```
+Accelerate.framework
+CoreVideo.framework
+Cocoa.framework
+vnn_core_osx.framework
+vnn_kit_osx.framework
+vnn_docrect_osx.framework
+```
+Windows
+```
+vnn_core.dll
+vnn_kit.dll
+vnn_objcount.dll
+```
+
 ---
 
 # 四、相关说明
@@ -77,6 +107,8 @@ vnn_objcount_ios.framework
 ## 4.3 Demo示例   
 Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan/vnndemo/CameraActivity.java)   
 iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_FaceCount_QRCodeDetect.mm) 
+Windows: [链接](../demos/Windows/vnn_win_demo/demo/src/vnn_helper.cpp)   
+MaoOS: [链接](../demos/MacOS/vnn_macos_demo/osx/CameraWindowCtrls/WindowCtrl_Camera_FaceCount_QRCodeDetect.mm) 
 
 ---
 # 五、API文档
@@ -85,11 +117,11 @@ iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_Face
 ```cpp
 VNN_Result VNN_Create_ObjCount( VNNHandle * handle, const int argc, const void * argv[] )
 ```
-| 参数   | 含义                                                                    |
-| ------ | ----------------------------------------------------------------------- |
+| 参数   | 含义                                                                                               |
+| ------ | -------------------------------------------------------------------------------------------------- |
 | handle | 函数调用成功后记录合法的索引，用于调用后续功能，类型为VNN_Handle*，调用成功后handle数值大于0，输出 |
-| argc   | 输入模型文件数，类型为const int，输入                                   |
-| argv   | 每个模型文件的具体路径，类型为const char*[ ]，输入                      |
+| argc   | 输入模型文件数，类型为const int，输入                                                              |
+| argv   | 每个模型文件的具体路径，类型为const char*[ ]，输入                                                 |
 
 返回值: VNN_Result，具体值参见 状态码表  
 调用示例:  
@@ -136,8 +168,8 @@ VNN_ObjCountDataArr_Free(&output);
 ```cpp
 VNN_Result VNN_Destroy_ObjCount(VNNHandle* handle)
 ```
-| 参数   | 含义                                                                  |
-| ------ | --------------------------------------------------------------------- |
+| 参数   | 含义                                                                           |
+| ------ | ------------------------------------------------------------------------------ |
 | handle | SDK实例索引，成功释放资源后将被修改为0（无效值），类型为VNN_Handle*，输入&输出 |
 
 返回值: VNN_Result，具体值参见 状态码表  
