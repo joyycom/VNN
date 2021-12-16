@@ -6,7 +6,7 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 **特性**
 - 免费：无授权控制，无广告植入
 - 安全：零权限需求
-- 跨平台一致设计和体验：良好支持Andorid/iOS系统平台, 即将支持Windows/MacOS/Linux系统平台
+- 跨平台一致设计和体验：良好支持Andorid/iOS/Windows/MacOS(Intel & Apple Chip)系统平台, 即将支持Linux系统平台
 - 轻盈：全部功能SDK打包体积 Andorid 2.3M(arm64), iOS 2.0M(arm64)
 - 易用：API风格简洁、统一
 
@@ -50,7 +50,10 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 
 [Android Demo APK](./demos/Android/vnn_demo.apk)  
 [Android Demo工程](./demos/Android)  
+[Windows Demo EXE](./demos/Windows/executable_demo/vnn_win_demo.exe)  
+[Windows Demo工程](./demos/Windows)  
 [iOS Demo工程](./demos/iOS)  
+[MacOS Demo工程](./demos/MacOS)  
 
 ---
 
@@ -58,13 +61,23 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 
 [Android集成指引](./demos/Android/readme.md)  
 [iOS集成指引](./demos/iOS/readme.md)  
+[MacOS(Intel & Apple Chip)集成指引](./demos/MacOS/readme.md)   
+[Windows集成指引](./demos/Windows/readme.md)   
 [SDK文档索引](./doc/doc_index.md)   
 [常见问题](./doc/question_and_answer.md)
 
 ---
 
+## Acknowledgement
+参考了以下项目：
+- [ncnn](https://github.com/Tencent/ncnn)
+- [ppl](https://github.com/openppl-public/ppl.nn)
+- [MNN](https://github.com/alibaba/MNN)
+- [TNN](https://github.com/Tencent/TNN)
+
+---
+
 ## 更新计划
-- 2021.12.15 支持 Windows/MacOS 平台
 - 2021.12.30 支持 Linux 平台
 - 2022.01.15 新增人体关键点检测（Pose Detection）SDK
 - 发布模型转换工具链以及模型调用接口

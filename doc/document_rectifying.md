@@ -2,6 +2,8 @@
 - [文档矫正](#文档矫正)
 - [一、SDK功能](#一sdk功能)
 - [二、技术规格](#二技术规格)
+  - [移动端](#移动端)
+  - [PC端](#pc端)
 - [三、资源依赖](#三资源依赖)
   - [3.1 头文件](#31-头文件)
   - [3.2 模型文件](#32-模型文件)
@@ -27,6 +29,9 @@ API的执行情况（是否成功、错误原因等）可参考 ```VNN_Result```
 ---
 
 # 二、技术规格
+
+## 移动端
+
 | 指标               | 参数                                |
 | ------------------ | ----------------------------------- |
 | 支持图片格式       | BGRA、RGBA、RGB、NV12、NV21、YUV420 |
@@ -34,6 +39,10 @@ API的执行情况（是否成功、错误原因等）可参考 ```VNN_Result```
 | Android系统版本    | 5.0+                                |
 | iOS系统版本        | 9.0+                                |
 | 最大支持检测文档数 | 1                                   |
+
+## PC端
+
+适配中，待更新
 
 ---
 
@@ -65,12 +74,24 @@ vnn_core_ios.framework
 vnn_kit_ios.framework
 vnn_docrect_ios.framework
 ```
+MacOS
+```
+适配中，待更新
+```
+Windows
+```
+适配中，待更新
+```
+
 ---
 
 # 四、相关说明
 ## 4.1 Demo示例   
 Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan/vnndemo/CameraActivity.java)   
 iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_DocRect.mm)   
+Windows:   适配中，待更新
+MaoOS: 适配中，待更新
+
 ## 4.2 图像不存在文档的判断   
 当检测不到文档时，SDK的输出结果为全0的坐标值（即4个角点均在图像左上角）。
 
@@ -81,11 +102,11 @@ iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_DocR
 ```cpp
 VNN_Result VNN_Create_DocRect( VNNHandle * handle, const int argc, const void * argv[] )
 ```
-| 参数   | 含义                                                                   |
-| ------ | ---------------------------------------------------------------------- |
+| 参数   | 含义                                                                                              |
+| ------ | ------------------------------------------------------------------------------------------------- |
 | handle | 函数调用成功后记录合法的索引，用于调用后续功能，类型为VNN_Handle，调用成功后handle数值大于0，输出 |
-| argc   | 输入模型文件数，类型为const int，输入                                  |
-| argv   | 每个模型文件的具体路径，类型为const char*[ ]，输入                     |
+| argc   | 输入模型文件数，类型为const int，输入                                                             |
+| argv   | 每个模型文件的具体路径，类型为const char*[ ]，输入                                                |
 
 返回值: VNN_Result，具体值参见 状态码表  
 调用示例:  
@@ -127,8 +148,8 @@ VNN_Apply_DocRect_CPU(_handle, &input, outputs);
 ```cpp
 VNN_Result VNN_Destroy_DocRect( VNNHandle* handle)
 ```
-| 参数   | 含义                                                             |
-| ------ | ---------------------------------------------------------------- |
+| 参数   | 含义                                                                          |
+| ------ | ----------------------------------------------------------------------------- |
 | handle | SDK实例索引，成功释放资源后将被修改为0（无效值），类型为VNN_Handle，输入&输出 |
 
 返回值: VNN_Result，具体值参见 状态码表  
