@@ -1,3 +1,7 @@
+//-------------------------------------------------------------------------------------------------------
+// Copyright (c) 2021 Guangzhou Joyy Information Technology Co., Ltd. All rights reserved.
+// Licensed under the MIT license. See license.txt file in the project root for full license information.
+//-------------------------------------------------------------------------------------------------------
 package com.duowan.vnndemo;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnQrCode;
     private Button mBtnDocRect;
     private Button mBtnPortraitSeg;
+    private Button mBtnVideoSeg;
     private Button mBtnSkySeg;
     private Button mBtnClothesSeg;
     private Button mBtnAnimalSeg;
@@ -72,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnQrCode = (Button) findViewById(R.id.effect_qr);
         mBtnDocRect = (Button) findViewById(R.id.effect_docrect);
         mBtnPortraitSeg = (Button) findViewById(R.id.effect_portrait);
+        mBtnVideoSeg = (Button) findViewById(R.id.effect_video_portrait);
         mBtnSkySeg = (Button) findViewById(R.id.effect_sky);
         mBtnClothesSeg = (Button) findViewById(R.id.effect_clothes);
         mBtnAnimalSeg = (Button) findViewById(R.id.effect_animal);
@@ -112,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 int transferData = VNNHelper.VNN_EFFECT_MODE.VNN_DISNEY_FACE;
                 intent.putExtra("effectModeID", transferData);
                 intent.putExtra("cameraVisibility", 1);
-                intent.putExtra("imageVisibility", 0);
+                intent.putExtra("imageVisibility", 1);
                 startActivity(intent);
             }
         });
@@ -123,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                 int transferData = VNNHelper.VNN_EFFECT_MODE.VNN_3DGAME_FACE;
                 intent.putExtra("effectModeID", transferData);
                 intent.putExtra("cameraVisibility", 1);
-                intent.putExtra("imageVisibility", 0);
+                intent.putExtra("imageVisibility", 1);
                 startActivity(intent);
             }
         });
@@ -190,6 +196,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, StreamProducers.class);
                 int transferData = VNNHelper.VNN_EFFECT_MODE.VNN_PORTRAIT_SEG;
+                intent.putExtra("effectModeID", transferData);
+                intent.putExtra("cameraVisibility", 1);
+                intent.putExtra("imageVisibility", 1);
+                startActivity(intent);
+            }
+        });
+        mBtnVideoSeg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StreamProducers.class);
+                int transferData = VNNHelper.VNN_EFFECT_MODE.VNN_VIDEO_PORTRAIT_SEG;
                 intent.putExtra("effectModeID", transferData);
                 intent.putExtra("cameraVisibility", 1);
                 intent.putExtra("imageVisibility", 1);
