@@ -1,3 +1,8 @@
+//-------------------------------------------------------------------------------------------------------
+// Copyright (c) 2021 Guangzhou Joyy Information Technology Co., Ltd. All rights reserved.
+// Licensed under the MIT license. See license.txt file in the project root for full license information.
+//-------------------------------------------------------------------------------------------------------
+
 #import "WindowCtrl_Camera_GeneralSegment.h"
 #import "vnn_kit.h"
 #import "OSXDemoHelper.h"

@@ -1,3 +1,7 @@
+//-------------------------------------------------------------------------------------------------------
+// Copyright (c) 2021 Guangzhou Joyy Information Technology Co., Ltd. All rights reserved.
+// Licensed under the MIT license. See license.txt file in the project root for full license information.
+//-------------------------------------------------------------------------------------------------------
 package com.duowan.vnndemo;
 
 import android.app.Activity;
@@ -137,6 +141,7 @@ public class ImageActivity  extends Activity {
                             }
                             else {
                                 Canvas canvas = new Canvas(mBitmap);
+                                vnnHelper.getBackgroundImage(mBitmap);
                                 vnnHelper.apply(mEffectMode, inputImage, canvas);
                                 mImageView.setImageBitmap(mBitmap);
                             }

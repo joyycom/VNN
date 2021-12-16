@@ -1,3 +1,7 @@
+//-------------------------------------------------------------------------------------------------------
+// Copyright (c) 2021 Guangzhou Joyy Information Technology Co., Ltd. All rights reserved.
+// Licensed under the MIT license. See license.txt file in the project root for full license information.
+//-------------------------------------------------------------------------------------------------------
 package com.duowan.vnndemo;
 
 import android.content.Context;
@@ -287,6 +291,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnTouchLis
             applyVNN();
             if (mEffectMode == VNNHelper.VNN_EFFECT_MODE.VNN_FACE_MASK ||
                     mEffectMode == VNNHelper.VNN_EFFECT_MODE.VNN_PORTRAIT_SEG ||
+                    mEffectMode == VNNHelper.VNN_EFFECT_MODE.VNN_VIDEO_PORTRAIT_SEG ||
                     mEffectMode == VNNHelper.VNN_EFFECT_MODE.VNN_SKY_SEG ||
                     mEffectMode == VNNHelper.VNN_EFFECT_MODE.VNN_CLOTHES_SEG ||
                     mEffectMode == VNNHelper.VNN_EFFECT_MODE.VNN_ANIMAL_SEG ||
