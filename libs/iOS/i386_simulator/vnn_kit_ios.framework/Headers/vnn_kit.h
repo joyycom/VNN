@@ -26,10 +26,6 @@ VNN_API VNN_Result VNN_CheckGLVersion();
 
 VNN_API VNN_Result VNN_Get_VNNImage_Bytes(const void * i_img, unsigned int * o_bytes);
 
-VNN_API VNN_Result VNN_Create_VNNImage_From_PixelBuffer(const void * i_cvpixelbuffer,  void * o_vnimage, const bool i_gpu_only);
-
-VNN_API VNN_Result VNN_Free_VNNImage(const void * i_cvpixelbuffer, void * io_vnimage, const bool i_gpu_only);
-
 VNN_API VNN_Result VNN_FaceFrameDataArr_Result_Rotate(VNN_FaceFrameDataArr* data, int rotate);
 
 VNN_API VNN_Result VNN_FaceFrameDataArr_Result_Mirror(VNN_FaceFrameDataArr* data);

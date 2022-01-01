@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "ViewCtrl_Camera_ObjectTracking.h"
+#import "vnnimage_ios_kit.h"
 #include "vnn_kit.h"
 #if USE_OBJTRACKING
 #   include "vnn_objtracking.h"
@@ -174,6 +175,8 @@
     if (_handle_objtracking > 0) {
         VNN_Image input;
         VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
+        input.mode_fmt = VNN_MODE_FMT_VIDEO;
+        input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
         
         if(_stage == WAIT_BBOX_STAGE){
             
@@ -219,7 +222,6 @@
         else if(_stage == TRACK_STAGE){
             
             VNN_ObjCountDataArr tracking_result_bbox;
-            memset(&tracking_result_bbox, 0x00, sizeof(VNN_ObjCountDataArr));
             VNN_Apply_ObjTracking_CPU(_handle_objtracking, &input, &tracking_result_bbox);
             
             [self.glUtils rectsDrawer]->_rects.clear();

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1310"
+   LastUpgradeVersion = "1320"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9DB13528DF6764658ED24DD9"
+               BlueprintIdentifier = "8057BE92A4CD5872AA5296B5"
                BuildableName = "vnndemo_ios.app"
                BlueprintName = "vnndemo_ios"
                ReferencedContainer = "container:vnndemo.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9DB13528DF6764658ED24DD9"
+            BlueprintIdentifier = "8057BE92A4CD5872AA5296B5"
             BuildableName = "vnndemo_ios.app"
             BlueprintName = "vnndemo_ios"
             ReferencedContainer = "container:vnndemo.xcodeproj">
@@ -61,7 +61,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9DB13528DF6764658ED24DD9"
+            BlueprintIdentifier = "8057BE92A4CD5872AA5296B5"
             BuildableName = "vnndemo_ios.app"
             BlueprintName = "vnndemo_ios"
             ReferencedContainer = "container:vnndemo.xcodeproj">

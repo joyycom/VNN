@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "ViewCtrl_Picture_GeneralClassification.h"
+#import "vnnimage_ios_kit.h"
 #import "DemoHelper.h"
 #import "vnn_kit.h"
 
@@ -100,16 +101,14 @@
     if (_handle) {
         VNN_Image input;
         VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
+        input.mode_fmt = VNN_MODE_FMT_PICTURE;
+        input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
         
-        VNN_MultiClsTopNAccArr outResult;
-        memset(&outResult, 0, sizeof(outResult));
-        
+        VNN_MultiClsTopNAccArr outResult;        
         if([_task isEqual:@"PersonAttribute"]){
             NSAssert(_handle_face, @"To get Person Attribute, Face SDK is required and initialized correctly.");
 #   if USE_FACE
             VNN_FaceFrameDataArr face_data, detection_data;
-            memset(&face_data, 0x00, sizeof(VNN_FaceFrameDataArr));
-            memset(&detection_data, 0x00, sizeof(VNN_FaceFrameDataArr));
             VNN_Apply_Face_CPU(_handle_face, &input, &face_data);
             VNN_Get_Face_Attr(_handle_face, "_detection_data", &detection_data);
             

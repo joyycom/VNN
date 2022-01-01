@@ -132,6 +132,23 @@ public class VNN {
         public int numOut;
         public VNN_ClsTopNAccArr[] multiClsArr;
     }
+
+    public static class VNN_BodyFrameData {
+        public float bodyScore;
+        public int bodyLandmarksNum;
+        public float[] bodyPoints;
+        public float[] bodyPointsScore;
+        public float[] bodyRect; //x0,y0,x1,y1
+        public int isWriggleWaist;
+        public int isCrouch;
+        public int isRun;
+        public int bodyResultDesc;
+    }
+
+    public static class VNN_BodyFrameDataArr {
+        public VNN_BodyFrameData[] bodyArr;
+        public int bodyCount;
+    }
     
     //                   //
     //  face keypoints   //
@@ -251,6 +268,22 @@ public class VNN {
     public static native int applyClassifyingCpu(int cID, VNN_Image inputData, VNN_FaceFrameDataArr faceArr, VNN_MultiClsTopNAccArr outData);
     public static native int destroyClassifying(int cID);
     public static native int setStringClassifying(int fID, String key, String val);
+
+    //                //
+    // Pose Landmarks //
+    //                //
+    public static native int createPoseLandmarks(String[] modelPath);
+
+
+    public static native int applyPoseLandmarksCpu(int vnnID,
+                                                   VNN_Image inputData,
+                                                   VNN_BodyFrameDataArr outData);
+
+    public static native int destroyPoseLandmarks(int gestureID);
+
+    public static native int processPoseResultRotate(int vnnID, VNN_BodyFrameDataArr outData, int rotate);
+    public static native int processPoseResultFlipV(int vnnID, VNN_BodyFrameDataArr outData);
+    public static native int processPoseResultMirror(int vnnID, VNN_BodyFrameDataArr outData);
 //    public static native int javaTest();
     static {
         try {

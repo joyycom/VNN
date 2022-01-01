@@ -658,7 +658,10 @@ cross_P[2] = vect_A[0] * vect_B[1] - vect_A[1] * vect_B[0];
     [encoder endEncoding];
 }
 
-- (void)drawSolidLine2D_With_MTLCommandBuffer:(id<MTLCommandBuffer>)cmdBuf Line2Ds:(NSArray<DrawLine2D *> *)lines {
+- (void)drawSolidLine2DToOffscreen_With_MTLCommandBuffer:(id<MTLCommandBuffer>)cmdBuf
+                                                 Line2Ds:(NSArray<DrawLine2D *> *)lines
+                                        offScreenTexture: (id<MTLTexture>) offScreenTexture
+                                             clearScreen:(bool)clearScreen{
     if (lines == nil) {
         return;
     }
@@ -679,9 +682,131 @@ cross_P[2] = vect_A[0] * vect_B[1] - vect_A[1] * vect_B[0];
     const float scale_y = fmax(self.drawableSize.width, self.drawableSize.height) / self.drawableSize.height;
     const float vz[3] = { 0.f, 0.f, 1.f };
     
+    NSArray<DrawLine2D *> * lines_copy = [lines copy];
+    for (auto i = 0; i < lines_copy.count; i++) {
+        CGFloat cr = 0.0f, cg = 0.0f, cb = 0.0f, ca = 1.0f;
+        [lines_copy[i].color getRed:&cr green:&cg blue:&cb alpha:&ca];
+        
+        if(_mirror){
+            lines_copy[i].x0 = 1 - lines_copy[i].x0;
+            lines_copy[i].x1 = 1 - lines_copy[i].x1;
+        }
+        
+        float pa[3] = { lines_copy[i].x0, lines_copy[i].y0, 0.f };
+        float pb[3] = { lines_copy[i].x1, lines_copy[i].y1, 0.f };
+        float vl[3] = { pb[0]-pa[0], pb[1]-pa[1], 0.f };
+        float vn[3] = { 0.f, 0.f, 0.f };
+        CROSS_PRODUCT(vl, vz, vn);
+        float l2 = sqrt(vn[0] * vn[0] + vn[1] * vn[1]);
+        vn[0] /= l2;
+        vn[1] /= l2;
+        float dx = vn[0] * lines_copy[i].thickness * scale_x;
+        float dy = vn[1] * lines_copy[i].thickness * scale_y;
+        
+        float x = lines_copy[i].x0 + dx;
+        float y = lines_copy[i].y0 + dy;
+        vetxs->x = x + x - 1.f;
+        vetxs->y = (2 - y - y) - 1.f;
+        vetxs->z = 0;
+        vetxs->w = 1;
+        vetxs->r = cr;
+        vetxs->g = cg;
+        vetxs->b = cb;
+        vetxs->a = ca;
+        vetxs += 1;
+        
+        x = lines_copy[i].x0 - dx;
+        y = lines_copy[i].y0 - dy;
+        vetxs->x = x + x - 1.f;
+        vetxs->y = (2 - y - y) - 1.f;
+        vetxs->z = 0;
+        vetxs->w = 1;
+        vetxs->r = cr;
+        vetxs->g = cg;
+        vetxs->b = cb;
+        vetxs->a = ca;
+        vetxs += 1;
+        
+        x = lines_copy[i].x1 - dx;
+        y = lines_copy[i].y1 - dy;
+        vetxs->x = x + x - 1.f;
+        vetxs->y = (2 - y - y) - 1.f;
+        vetxs->z = 0;
+        vetxs->w = 1;
+        vetxs->r = cr;
+        vetxs->g = cg;
+        vetxs->b = cb;
+        vetxs->a = ca;
+        vetxs += 1;
+        
+        x = lines_copy[i].x1 + dx;
+        y = lines_copy[i].y1 + dy;
+        vetxs->x = x + x - 1.f;
+        vetxs->y = (2 - y - y) - 1.f;
+        vetxs->z = 0;
+        vetxs->w = 1;
+        vetxs->r = cr;
+        vetxs->g = cg;
+        vetxs->b = cb;
+        vetxs->a = ca;
+        vetxs += 1;
+        
+        uint32_t idx_offset = i * 4;
+        cornerIdxs->p0 = 0 + idx_offset; cornerIdxs->p1 = 1 + idx_offset; cornerIdxs->p2 = 2 + idx_offset;
+        cornerIdxs+=1;
+        cornerIdxs->p0 = 0 + idx_offset; cornerIdxs->p1 = 2 + idx_offset; cornerIdxs->p2 = 3 + idx_offset;
+        cornerIdxs+=1;
+    }
+    
+    MTLRenderPassDescriptor *passDesc = self.currentRenderPassDescriptor;
+    passDesc.colorAttachments[0].texture = offScreenTexture;
+    if (clearScreen) {
+        passDesc.colorAttachments[0].loadAction = MTLLoadActionClear;
+    }
+    else {
+        passDesc.colorAttachments[0].loadAction = MTLLoadActionLoad;
+    }
+    passDesc.colorAttachments[0].clearColor = MTLClearColorMake(0.0, 0.0, 0.0, 0.0);
+    passDesc.colorAttachments[0].storeAction = MTLStoreActionStore;
+    
+    id<MTLRenderCommandEncoder> encoder = [cmdBuf renderCommandEncoderWithDescriptor:passDesc];
+    [encoder setRenderPipelineState:_pipelineRenderSolidTritangles];
+    [encoder setVertexBuffer:_vertexBufferRenderSolidTritanglesForLine offset:0 atIndex:0];
+    [encoder setVertexBuffer:_vertexIndicesBufferRenderSolidTritanglesForLine offset:0 atIndex:1];
+    [encoder drawPrimitives:MTLPrimitiveTypeTriangle vertexStart:0 vertexCount:6 * lines_copy.count];
+    [encoder endEncoding];
+}
+
+- (void)drawSolidLine2D_With_MTLCommandBuffer:(id<MTLCommandBuffer>)cmdBuf Line2Ds:(NSArray<DrawLine2D *> *)lines_ori {
+    if (lines_ori == nil) {
+        return;
+    }
+    if (lines_ori.count == 0) {
+        return;
+    }
+    if (_pipelineRenderSolidTritangles == nil) {
+        return;
+    }
+    
+    IndicesTritangleCorner *cornerIdxs = (IndicesTritangleCorner *)_vertexIndicesBufferRenderSolidTritanglesForLine.contents;
+    VertexData *vetxs = (VertexData *)_vertexBufferRenderSolidTritanglesForLine.contents;
+    
+    memset(cornerIdxs, 0x00, _vertexIndicesBufferRenderSolidTritanglesForLine.length);
+    memset(vetxs, 0x00, _vertexBufferRenderSolidTritanglesForLine.length);
+    
+    const float scale_x = fmax(self.drawableSize.width, self.drawableSize.height) / self.drawableSize.width;
+    const float scale_y = fmax(self.drawableSize.width, self.drawableSize.height) / self.drawableSize.height;
+    const float vz[3] = { 0.f, 0.f, 1.f };
+    
+    NSArray<DrawLine2D *> * lines = [lines_ori copy];
     for (auto i = 0; i < lines.count; i++) {
         CGFloat cr = 0.0f, cg = 0.0f, cb = 0.0f, ca = 1.0f;
         [lines[i].color getRed:&cr green:&cg blue:&cb alpha:&ca];
+        
+        if(_mirror){
+            lines[i].x0 = 1 - lines[i].x0;
+            lines[i].x1 = 1 - lines[i].x1;
+        }
         
         float pa[3] = { lines[i].x0, lines[i].y0, 0.f };
         float pb[3] = { lines[i].x1, lines[i].y1, 0.f };

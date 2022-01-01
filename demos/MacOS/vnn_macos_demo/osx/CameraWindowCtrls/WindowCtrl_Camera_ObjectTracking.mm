@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "WindowCtrl_Camera_ObjectTracking.h"
+#import "vnnimage_mac_kit.h"
 #include <vector>
 #include "vnn_kit.h"
 
@@ -201,6 +202,7 @@
         VNN_Image input;
         VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
         input.mode_fmt = VNN_MODE_FMT_VIDEO;
+        input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
 
         if(_stage == INIT_STAGE){
             NSLog(@"Start to Init");
@@ -232,7 +234,6 @@
         else if(_stage == TRACK_STAGE){
             
             VNN_ObjCountDataArr tracking_result_bbox;
-            memset(&tracking_result_bbox, 0x00, sizeof(VNN_ObjCountDataArr));
             VNN_Apply_ObjTracking_CPU(_handle_objtracking, &input, &tracking_result_bbox);
             
             if(tracking_result_bbox.count == 1){

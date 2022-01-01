@@ -13,6 +13,7 @@
 #include <vnn_docrect.h>
 #include <vnn_general.h>
 #include <vnn_classifying.h>
+#include <vnn_pose.h>
 
 #define TAG "VNN"
 #define LOGV(...) __android_log_print(ANDROID_LOG_VERBOSE, TAG, __VA_ARGS__)
@@ -778,7 +779,7 @@ JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_setRectFaceReenactment(JNIEnv*
 }
 
 /************************************************************************/
-/* NewGestureCpu                                                        */
+/* Gesture                                                              */
 /************************************************************************/
 JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_createGesture(JNIEnv* env, jclass thiz, jobjectArray modelPathArr) {
     int strCount = env->GetArrayLength(modelPathArr);
@@ -1585,6 +1586,230 @@ JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_applyClassifyingCpu(JNIEnv* en
 JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_destroyClassifying(JNIEnv* env, jclass thiz, jint vnnID) {
     VNNHandle vID = (VNNHandle)vnnID;
     return VNN_Destroy_Classifying(&vID);
+}
+
+/************************************************************************/
+/* Pose Landmarks                                                       */
+/************************************************************************/
+JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_createPoseLandmarks(JNIEnv* env, jclass thiz, jobjectArray modelPathArr) {
+    int strCount = env->GetArrayLength(modelPathArr);
+    std::string* strModelPath = new std::string[strCount];
+    for (int i = 0; i < strCount; i++)
+    {
+        jstring modelPath = (jstring)(env->GetObjectArrayElement(modelPathArr, i));
+        const char* rawStr = env->GetStringUTFChars(modelPath, VNN_NULL);
+        strModelPath[i] = rawStr;
+        env->ReleaseStringUTFChars(modelPath, rawStr);
+    }
+
+    VNNHandle vnnID = 0;
+    const char** pStr = new const char* [strCount];
+    for (int i = 0; i < strCount; i++)
+    {
+        pStr[i] = strModelPath[i].c_str();
+    }
+    int result = VNN_Create_Pose(&vnnID, strCount, (const void**)pStr);
+    env->DeleteLocalRef(modelPathArr);
+    delete[] strModelPath;
+    delete[] pStr;
+    if(result != 0)
+        return -1;
+    return vnnID;
+
+}
+
+static void outPoseLandmarksToJava (JNIEnv* env, VNN_BodyFrameDataArr &detectData, jobject outDataObj) {
+    jclass objClass = env->GetObjectClass(outDataObj);
+
+    env->SetIntField(outDataObj, env->GetFieldID(objClass, "bodyCount", "I"), detectData.bodiesNum);
+
+
+    jclass bodyClass = env->FindClass("com/duowan/vnnlib/VNN$VNN_BodyFrameData");
+    jobjectArray bodyArr = env->NewObjectArray(detectData.bodiesNum, bodyClass, NULL);
+    for (int i = 0; i < detectData.bodiesNum; i++)
+    {
+        jobject body = env->AllocObject(bodyClass);
+        env->SetIntField(body, env->GetFieldID(bodyClass, "bodyLandmarksNum", "I"), (int)(detectData.bodiesArr[i].bodyLandmarksNum));
+        env->SetIntField(body, env->GetFieldID(bodyClass, "isWriggleWaist", "I"), (int)(detectData.bodiesArr[i].isWriggleWaist));
+        env->SetIntField(body, env->GetFieldID(bodyClass, "isCrouch", "I"), (int)(detectData.bodiesArr[i].isCrouch));
+        env->SetIntField(body, env->GetFieldID(bodyClass, "isRun", "I"), (int)(detectData.bodiesArr[i].isRun));
+        env->SetIntField(body, env->GetFieldID(bodyClass, "bodyResultDesc", "I"), (int)(detectData.bodiesArr[i].bodyResultDesc));
+
+        //get the floatArr in bodyClass
+        jfieldID bodyPointsId = env->GetFieldID(bodyClass, "bodyPoints", "[F");
+        jfieldID bodyPointsScoreId = env->GetFieldID(bodyClass, "bodyPointsScore", "[F");
+        jfieldID bodyRectId = env->GetFieldID(bodyClass, "bodyRect", "[F");
+
+        //set the bodyPointsArray and bodyPointsScoreArray in body class
+        int pointsCount = detectData.bodiesArr[i].bodyLandmarksNum;
+        jfloatArray bodyPointsJavaArr = env->NewFloatArray(2 * pointsCount);
+        jfloatArray bodyPointsScoreJavaArr = env->NewFloatArray(pointsCount);
+        jfloatArray bodyRectJavaArr = env->NewFloatArray(4);
+        jfloat* bodyPointsJavaArrPtr = env->GetFloatArrayElements(bodyPointsJavaArr, NULL);
+        jfloat* bodyPointsScoreJavaArrPtr = env->GetFloatArrayElements(bodyPointsScoreJavaArr, NULL);
+        jfloat* bodyRectJavaArrPtr = env->GetFloatArrayElements(bodyRectJavaArr, NULL);
+
+        for(int k = 0; k < pointsCount; k++)
+        {
+            bodyPointsJavaArrPtr[2 * k + 0] = detectData.bodiesArr[i].bodyLandmarks[k].x;
+            bodyPointsJavaArrPtr[2 * k + 1 ] = detectData.bodiesArr[i].bodyLandmarks[k].y;
+            bodyPointsScoreJavaArrPtr[k] = detectData.bodiesArr[i].bodyLandmarkScores[k];
+        }
+        bodyRectJavaArrPtr[0] = detectData.bodiesArr[i].bodyRect.x0;
+        bodyRectJavaArrPtr[1] = detectData.bodiesArr[i].bodyRect.y0;
+        bodyRectJavaArrPtr[2] = detectData.bodiesArr[i].bodyRect.x1;
+        bodyRectJavaArrPtr[3] = detectData.bodiesArr[i].bodyRect.y1;
+
+        env->SetObjectField(body, bodyPointsId, bodyPointsJavaArr);
+        env->SetObjectField(body, bodyPointsScoreId, bodyPointsScoreJavaArr);
+        env->SetObjectField(body, bodyRectId, bodyRectJavaArr);
+        env->SetObjectArrayElement(bodyArr, i, body);
+
+        env->ReleaseFloatArrayElements(bodyPointsJavaArr,bodyPointsJavaArrPtr, 0);
+        env->ReleaseFloatArrayElements(bodyPointsScoreJavaArr,bodyPointsScoreJavaArrPtr, 0);
+        env->ReleaseFloatArrayElements(bodyRectJavaArr,bodyRectJavaArrPtr, 0);
+
+        env->DeleteLocalRef(bodyPointsJavaArr);
+        env->DeleteLocalRef(bodyPointsScoreJavaArr);
+        env->DeleteLocalRef(bodyRectJavaArr);
+        env->DeleteLocalRef(body);
+    }
+    env->SetObjectField(outDataObj, env->GetFieldID(objClass, "bodyArr", "[Lcom/duowan/vnnlib/VNN$VNN_BodyFrameData;"), bodyArr);
+    env->DeleteLocalRef(bodyClass);
+    env->DeleteLocalRef(bodyArr);
+}
+
+JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_applyPoseLandmarksCpu(JNIEnv* env, jclass thiz,
+                                                                  jint vnnID,
+                                                                  jobject  inputData,
+                                                                  jobject outData) {
+    if(inputData == NULL) {
+        LOGE("Input data for ObjCount can not be null!!!");
+        return -1;
+    }
+    VNN_Image img;
+    jclass inputClass = env->GetObjectClass(inputData);
+    //img.ori_fmt = (VNN_ORIENT_FMT)env->GetLongField(inputData, env->GetFieldID(inputClass, "ori_fmt","J"));
+    jlong jori_fmt = env->GetLongField(inputData, env->GetFieldID(inputClass, "ori_fmt","J"));
+    img.ori_fmt = (VNN_ORIENT_FMT) jori_fmt;
+    img.pix_fmt = (VNN_PIX_FMT)env->GetIntField(inputData, env->GetFieldID(inputClass, "pix_fmt","I"));
+    img.mode_fmt = (VNN_MODE_FMT)env->GetIntField(inputData, env->GetFieldID(inputClass, "mode_fmt","I"));
+    img.width = env->GetIntField(inputData, env->GetFieldID(inputClass, "width","I"));
+    img.height = env->GetIntField(inputData, env->GetFieldID(inputClass, "height","I"));
+    img.channels = env->GetIntField(inputData, env->GetFieldID(inputClass, "channels","I"));
+    jbyteArray imgData = (jbyteArray) env->GetObjectField(inputData, env->GetFieldID(inputClass, "data", "[B"));
+    jbyte* imgDataPtr = env->GetByteArrayElements(imgData, 0);
+    img.data = (unsigned char*)imgDataPtr;
+
+    VNN_BodyFrameDataArr detectData;
+    memset(&detectData, 0x00, sizeof(VNN_GestureFrameDataArr));
+    int result = VNN_Apply_Pose_CPU(vnnID, &img, &detectData);
+
+    env->ReleaseByteArrayElements(imgData,imgDataPtr,0);
+    env->DeleteLocalRef(inputClass);
+
+    if(detectData.bodiesNum < 0 || result != 0)
+        return -1;
+
+    outPoseLandmarksToJava(env,detectData,outData);
+    return result;
+}
+
+
+JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_destroyPoseLandmarks(JNIEnv* env, jclass thiz, jint vnnID) {
+    VNNHandle vID = (VNNHandle)vnnID;
+    return VNN_Destroy_Pose(&vID);
+}
+
+void static getPoseLandmarksData(JNIEnv* env, jobject outData, VNN_BodyFrameDataArr &detectData) {
+    jclass objClass = env->GetObjectClass(outData);
+    jfieldID bodyC_id = env->GetFieldID(objClass, "bodyCount","I");
+    int bodyCount = env->GetIntField(outData, bodyC_id);
+    detectData.bodiesNum = (VNNUInt32)bodyCount;
+    jclass frameDataClass = env->FindClass("com/duowan/vnnlib/VNN$VNN_BodyFrameData");
+    jfieldID frameData_id = env->GetFieldID(objClass, "bodyArr","[Lcom/duowan/vnnlib/VNN$VNN_BodyFrameData;");
+    jobjectArray frameDataArr = (jobjectArray)env->GetObjectField(outData, frameData_id);
+    for(int i = 0; i < bodyCount; i++) {
+
+        jobject frameData = env->GetObjectArrayElement(frameDataArr, i);
+        detectData.bodiesArr[i].isWriggleWaist = env->GetIntField(frameData, env->GetFieldID(frameDataClass, "isWriggleWaist", "I"));
+        detectData.bodiesArr[i].isCrouch = env->GetIntField(frameData, env->GetFieldID(frameDataClass, "isCrouch", "I"));
+        detectData.bodiesArr[i].isRun = env->GetIntField(frameData, env->GetFieldID(frameDataClass, "isRun", "I"));
+        detectData.bodiesArr[i].bodyResultDesc = (VNN_BodyResultDesc)env->GetIntField(frameData, env->GetFieldID(frameDataClass, "bodyResultDesc", "I"));
+
+        jfieldID bodyPointsId = env->GetFieldID(frameDataClass, "bodyPoints", "[F");
+        jfieldID bodyPointsScoreId = env->GetFieldID(frameDataClass, "bodyPointsScore", "[F");
+        jfieldID bodyRectId = env->GetFieldID(frameDataClass, "bodyRect", "[F");
+
+
+        jfloatArray bodyPointsArr = (jfloatArray) env->GetObjectField(frameData, bodyPointsId);
+        jfloatArray bodyPointsScoreArr = (jfloatArray) env->GetObjectField(frameData, bodyPointsScoreId);
+        jfloatArray bodyRectArr = (jfloatArray) env->GetObjectField(frameData, bodyRectId);
+
+        jfloat* bodyPointsPtr = env->GetFloatArrayElements(bodyPointsArr, 0);
+        jfloat* bodyPointsScorePtr = env->GetFloatArrayElements(bodyPointsScoreArr, 0);
+        jfloat* bodyRectPtr = env->GetFloatArrayElements(bodyRectArr, 0);
+
+        detectData.bodiesArr[i].bodyLandmarksNum = env->GetIntField(frameData, env->GetFieldID(frameDataClass, "bodyLandmarksNum", "I"));
+
+        for(int k = 0; k < detectData.bodiesArr[i].bodyLandmarksNum; k++)
+        {
+            detectData.bodiesArr[i].bodyLandmarks[k].x = bodyPointsPtr[2 * k + 0];
+            detectData.bodiesArr[i].bodyLandmarks[k].y = bodyPointsPtr[2 * k + 1];
+//            LOGE("x, y = %f, %f", bodyPointsPtr[2 * k + 0], bodyPointsPtr[2 * k + 1]);
+            detectData.bodiesArr[i].bodyLandmarkScores[k] = bodyPointsScorePtr[k];
+        }
+        detectData.bodiesArr[i].bodyRect.x0 = bodyRectPtr[0];
+        detectData.bodiesArr[i].bodyRect.y0 = bodyRectPtr[1];
+        detectData.bodiesArr[i].bodyRect.x1 = bodyRectPtr[2];
+        detectData.bodiesArr[i].bodyRect.y1 = bodyRectPtr[3];
+
+        detectData.bodiesArr[i].bodyScore = env->GetFloatField(frameData, env->GetFieldID(frameDataClass, "bodyScore", "F"));;
+
+        env->ReleaseFloatArrayElements(bodyPointsArr, bodyPointsPtr, 0);
+        env->ReleaseFloatArrayElements(bodyPointsScoreArr, bodyPointsScorePtr, 0);
+        env->ReleaseFloatArrayElements(bodyRectArr, bodyRectPtr, 0);
+    }
+    env->DeleteLocalRef(frameDataArr);
+    env->DeleteLocalRef(frameDataClass);
+    env->DeleteLocalRef(objClass);
+}
+
+
+JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_processPoseResultRotate(JNIEnv* env, jclass thiz, jint objID, jobject outData, jint rotate) {
+    VNNHandle oID = (VNNHandle)objID;
+    VNN_BodyFrameDataArr detectData;
+    memset(&detectData, 0x00, sizeof(VNN_BodyFrameDataArr));
+    getPoseLandmarksData(env, outData, detectData);
+    if(VNN_BodyFrameDataArr_Result_Rotate(&detectData, rotate) == 0) {
+        outPoseLandmarksToJava(env, detectData, outData);
+        return 0;
+    }
+    return -1;
+}
+
+JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_processPoseResultMirror(JNIEnv* env, jclass thiz, jint objID, jobject outData) {
+    VNNHandle oID = (VNNHandle)objID;
+    VNN_BodyFrameDataArr detectData;
+    memset(&detectData, 0x00, sizeof(VNN_BodyFrameDataArr));
+    getPoseLandmarksData(env, outData, detectData);
+    if(VNN_BodyFrameDataArr_Result_Mirror(&detectData) == 0) {
+        outPoseLandmarksToJava(env, detectData, outData);
+        return 0;
+    }
+    return -1;
+}
+
+JNIEXPORT jint JNICALL Java_com_duowan_vnnlib_VNN_processPoseResultFlipV(JNIEnv* env, jclass thiz, jint objID, jobject outData) {
+    VNNHandle oID = (VNNHandle)objID;
+    VNN_BodyFrameDataArr detectData;
+    memset(&detectData, 0x00, sizeof(VNN_BodyFrameDataArr));
+    getPoseLandmarksData(env, outData, detectData);
+    if(VNN_BodyFrameDataArr_Result_FlipV(&detectData) == 0) {
+        outPoseLandmarksToJava(env, detectData, outData);
+        return 0;
+    }
+    return -1;
 }
 
 }

@@ -18,6 +18,7 @@
 #import "CameraViewctrls/ViewCtrl_Camera_DisneyFaceStylizing.h"
 #import "CameraViewctrls/ViewCtrl_Camera_3DGameFaceStylizing.h"
 #import "CameraViewctrls/ViewCtrl_Camera_GeneralClassification.h"
+#import "CameraViewctrls/ViewCtrl_Camera_PoseLandmarkDetection.h"
 
 #import "PictureViewctrls/ViewCtrl_Picture_Face.h"
 #import "PictureViewctrls/ViewCtrl_Picture_Gesture.h"
@@ -31,6 +32,7 @@
 #import "PictureViewctrls/ViewCtrl_Picture_DocRect.h"
 #import "PictureViewctrls/ViewCtrl_Picture_GeneralClassification.h"
 #import "PictureViewctrls/ViewCtrl_Picture_FaceReenactment.h"
+#import "PictureViewctrls/ViewCtrl_Picture_PoseLandmarkDetection.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) UIImageView *                                          Logo;
@@ -195,6 +197,16 @@
             *res = [[ViewCtrl_Picture_Gesture alloc] init];
         }];
         [_mainViewCtrlNames addObject:@"Gesture Detection"];
+#       endif
+        
+#       if USE_POSE
+        [_mainCameraDemoViewCtrlObjs addObject:^(UIViewController **res) {
+            *res = [[ViewCtrl_Camera_PoseLandmarkDetection alloc] init];
+        }];
+        [_mainPictureDemoViewCtrlObjs addObject:^(UIViewController **res) {
+            *res = [[ViewCtrl_Picture_PoseLandmarkDetection alloc] init];
+        }];
+        [_mainViewCtrlNames addObject:@"Pose Landmark Detection"];
 #       endif
         
 #       if USE_OBJCOUNT
