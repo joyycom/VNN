@@ -6,7 +6,7 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 **特性**
 - 免费：无授权控制，无广告植入
 - 安全：零权限需求
-- 跨平台一致设计和体验：良好支持Andorid/iOS/Windows/MacOS(Intel & Apple Chip)/Linux系统平台, 即将支持Linux系统平台
+- 跨平台一致设计和体验：良好支持Andorid/iOS/Windows/MacOS(Intel & Apple Chip)/Linux系统平台
 - 轻盈：全部功能SDK打包体积 Andorid 2.3M(arm64), iOS 2.0M(arm64)
 - 易用：API风格简洁、统一
 
@@ -63,6 +63,7 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 [iOS集成指引](./demos/iOS/readme.md)  
 [MacOS(Intel & Apple Chip)集成指引](./demos/MacOS/readme.md)   
 [Windows集成指引](./demos/Windows/readme.md)   
+[Linux集成指引](./demos/Linux/readme.md)   
 [SDK文档索引](./doc/doc_index.md)   
 [常见问题](./doc/question_and_answer.md)
 
