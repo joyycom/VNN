@@ -10,7 +10,6 @@
   - [3.3 动态库](#33-动态库)
 - [四、相关说明](#四相关说明)
   - [4.1 Demo示例](#41-demo示例)
-  
 - [五、API文档](#五api文档)
   - [5.1 初始化 VNN_Create_General](#51-初始化-vnn_create_general)
   - [5.2 卡通图像风格化 VNN_Apply_General_CPU](#52-卡通图像风格化-vnn_apply_general_cpu)
@@ -70,7 +69,7 @@ stylize_cartoon[1.0.0]_proceess_config.json
 ```
 
 ## 3.3 动态库
-Android
+Android/Linux
 ```
 libvnn_core.so
 libvnn_kit.so
@@ -109,6 +108,7 @@ Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan
 iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_CartoonStylizing_ComicStylizing.mm)   
 Windows: [链接](../demos/Windows/vnn_win_demo/demo/src/vnn_helper.cpp)   
 MaoOS: [链接](../demos/MacOS/vnn_macos_demo/osx/CameraWindowCtrls/WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm) 
+Linux: [链接](../demos/Linux/vnn_linux_demo/demo/src/vnn_helper.cpp)   
 
 ---
 # 五、API文档
@@ -251,6 +251,7 @@ VNN_Result VNN_Get_General_Attr( VNNHandle handle, const char * name, const void
 (6) 将原图得到的卡通图像和人脸部分的卡通图像进行融合。(注意，直接resize人脸部分图像，覆盖掉原图对应的卡通风格，会有色差，在边界处进行过度，会得到比较自然的图像)  
 
 人脸区域图像质量优化后的效果，可参考上文的例图
+
 ---
 
 # 六、更新记录

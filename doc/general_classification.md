@@ -71,7 +71,7 @@ object_classification[1.0.0].vnnmodel
 object_classification[1.0.0]_label.json
 ```
 ## 3.3 动态库
-Android
+Android/Linux
 ```
 libvnn_core.so
 libvnn_kit.so
@@ -183,6 +183,7 @@ Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan
 iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_GeneralClassification.mm) 
 Windows: [链接](../demos/Windows/vnn_win_demo/demo/src/vnn_helper.cpp)   
 MaoOS: [链接](../demos/MacOS/vnn_macos_demo/osx/CameraWindowCtrls/WindowCtrl_Camera_GeneralClassification.mm)    
+Linux: [链接](../demos/Linux/vnn_linux_demo/demo/src/vnn_helper.cpp)   
 
 ---
 # 五、API文档
