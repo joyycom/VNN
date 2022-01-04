@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "WindowCtrl_Picture_FaceLandmarkDetection.h"
+#import "vnnimage_mac_kit.h"
 #import "vnn_kit.h"
 #import "OSXDemoHelper.h"
 
@@ -50,10 +51,9 @@
     VNN_Image input;
     VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
     input.mode_fmt = VNN_MODE_FMT_PICTURE;
+    input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
     
-    VNN_FaceFrameDataArr output;
-    memset(&output, 0x00, sizeof(VNN_FaceFrameDataArr));
-    
+    VNN_FaceFrameDataArr output;    
     VNN_Apply_Face_CPU(_mHandle, &input, &output);
         
     NSMutableArray<DrawPoint2D *> * points =    [NSMutableArray array];

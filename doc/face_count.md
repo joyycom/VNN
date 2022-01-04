@@ -86,7 +86,7 @@ CoreVideo.framework
 Cocoa.framework
 vnn_core_osx.framework
 vnn_kit_osx.framework
-vnn_docrect_osx.framework
+vnn_objcount_osx.framework
 ```
 Windows
 ```

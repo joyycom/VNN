@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "WindowCtrl_Picture_FaceCount_QRCodeDetect.h"
+#import "vnnimage_mac_kit.h"
 #import "vnn_kit.h"
 #import "OSXDemoHelper.h"
 
@@ -60,9 +61,9 @@
         VNN_Image input;
         VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
         input.mode_fmt = VNN_MODE_FMT_PICTURE;
+        input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
         
         VNN_ObjCountDataArr outputs;
-        memset(&outputs, 0x00, sizeof(VNN_ObjCountDataArr));
         VNN_Apply_ObjCount_CPU(_handle, &input, &outputs);
         
         VNN_Free_VNNImage(pixelBuffer, &input, false);

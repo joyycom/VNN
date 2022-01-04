@@ -1,12 +1,12 @@
 ![Logo](./doc/resource/vnn_logo.png)
 
 # 简介
-VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、轻量级神经网络部署框架。目前已为[Hago](https://www.ihago.net/)、[VOO](https://vooedit.com/)、[VFlyCloud](https://cloud.vflyapp.com/desktop)、[VFly](https://www.vflyapp.com/)、[马克水印相机](https://www.markiapp.com/)等App提供20余种AI能力的支持，覆盖直播、短视频、视频编辑等泛娱乐场景和工程场景
+VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、轻量级神经网络部署框架。目前已为[Hago](https://www.ihago.net/)、[VOO](https://vooedit.com/)、[VFlyCloud](https://cloud.vflyapp.com/desktop)、[VFly](https://api-web.vflyapp.com/)、[马克水印相机](https://www.markiapp.com/)等App提供20余种AI能力的支持，覆盖直播、短视频、视频编辑等泛娱乐场景和工程场景
 
 **特性**
 - 免费：无授权控制，无广告植入
 - 安全：零权限需求
-- 跨平台一致设计和体验：良好支持Andorid/iOS/Windows/MacOS(Intel & Apple Chip)系统平台, 即将支持Linux系统平台
+- 跨平台一致设计和体验：良好支持Andorid/iOS/Windows/MacOS(Intel & Apple Chip)/Linux系统平台, 即将支持Linux系统平台
 - 轻盈：全部功能SDK打包体积 Andorid 2.3M(arm64), iOS 2.0M(arm64)
 - 易用：API风格简洁、统一
 
@@ -70,6 +70,7 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 
 ## Acknowledgement
 参考了以下项目：
+- [RapidJSON](https://github.com/Tencent/rapidjson)
 - [ncnn](https://github.com/Tencent/ncnn)
 - [ppl](https://github.com/openppl-public/ppl.nn)
 - [MNN](https://github.com/alibaba/MNN)
@@ -78,8 +79,6 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 ---
 
 ## 更新计划
-- 2021.12.30 支持 Linux 平台
-- 2022.01.15 新增人体关键点检测（Pose Detection）SDK
 - 发布模型转换工具链以及模型调用接口
 - 发布libs核心源代码
 

@@ -19,6 +19,8 @@
 #import "PictureWindowCtrls/WindowCtrl_Picture_FaceReenactment.h"
 #import "PictureWindowCtrls/WindowCtrl_Picture_Gesture.h"
 #import "PictureWindowCtrls/WindowCtrl_Picture_GeneralClassification.h"
+#import "PictureWindowCtrls/WindowCtrl_Picture_PoseLandmarkDetection.h"
+
 
 #import "CameraWindowCtrls/WindowCtrl_Camera_FaceLandmarkDetection.h"
 #import "CameraWindowCtrls/WindowCtrl_Camera_ObjectTracking.h"
@@ -31,6 +33,7 @@
 #import "CameraWindowCtrls/WindowCtrl_Camera_GeneralClassification.h"
 #import "CameraWindowCtrls/WindowCtrl_Camera_3DGameFaceStylizing.h"
 #import "CameraWindowCtrls/WindowCtrl_Camera_DisneyFaceStylizing.h"
+#import "CameraWindowCtrls/WindowCtrl_Camera_PoseLandmarkDetection.h"
 
 @interface ViewController ()
 @property(nonatomic, strong) NSTextField *         verInfo;
@@ -173,6 +176,14 @@
     }
 #       endif
         
+#       if USE_POSE
+    {
+        NSButton * button = [[NSButton alloc] init];
+        [button setTitle:@"Pose Landmark Detection"];
+        [self.appButtons addObject:button];
+    }
+#       endif
+    
 #       if USE_OBJCOUNT
     {
         NSButton * button = [[NSButton alloc] init];
@@ -313,6 +324,9 @@
     else if([self.appType isEqualToString:@"Gesture Detection"]){
         wc = [[WindowCtrl_Camera_Gesture alloc] initWithRootViewController:vc];
     }
+    else if([self.appType isEqualToString:@"Pose Landmark Detection"]){
+        wc = [[WindowCtrl_Camera_PoseLandmarkDetection alloc] initWithRootViewController:vc];
+    }
     else if([self.appType isEqualToString:@"QR Code Detection"]){
         wc = [[WindowCtrl_Camera_FaceCount_QRCodeDetect alloc] initWithRootViewController:vc WithFunctionType:@"QRCodeDetect"];
     }
@@ -393,6 +407,9 @@
     }
     else if([self.appType isEqualToString:@"Gesture Detection"]){
         wc = [[WindowCtrl_Picture_Gesture alloc] initWithRootViewController:vc];
+    }
+    else if([self.appType isEqualToString:@"Pose Landmark Detection"]){
+        wc = [[WindowCtrl_Picture_PoseLandmarkDetection alloc] initWithRootViewController:vc];
     }
     else if([self.appType isEqualToString:@"QR Code Detection"]){
         wc = [[WindowCtrl_Picture_FaceCount_QRCodeDetect alloc] initWithRootViewController:vc WithFunctionType:@"QRCodeDetect"];

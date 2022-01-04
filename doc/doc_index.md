@@ -9,8 +9,8 @@
 ## SDK调用指南
 - [迪士尼人脸风格化](./disney_face_stylizing.md)
 - [3D游戏人脸风格化](./3d_game_face_stylizing.md)
-- [卡通图像风格化](./cartoonstylizing_comicstylizing.md)
-- [油画图像风格化](./cartoonstylizing_comicstylizing.md)
+- [卡通图像风格化](./cartoonstylizing.md)
+- [油画图像风格化](./comicstylizing.md)
 - [高质量人像分割](./general_segmentation.md)
 - [快速人像分割](./general_segmentation.md)
 - [人脸分割](./face_segmentation.md)
@@ -20,6 +20,7 @@
 - [天空分割](./general_segmentation.md)
 - [动物分割](./general_segmentation.md)
 - [人脸关键点检测](./face_landmark_detection.md)
+- [人体姿态检测](./pose_detection.md)
 - [手势检测](./gesture_detection.md)
 - [人脸计数](./face_count.md)
 - [二维码检测](./qr_code_detection.md)

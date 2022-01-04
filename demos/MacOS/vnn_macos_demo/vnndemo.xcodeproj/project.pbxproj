@@ -7,403 +7,430 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BF9B26D263A1E533C00525B /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm in Sources */ = {isa = PBXBuildFile; fileRef = A780A0ABCA2F02A8F15299F9 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm */; };
-		0D8E4A4AA71DBDCEE243DA4F /* WindowCtrl_Camera_GeneralClassification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65F62BF8DF39E03F134E64C6 /* WindowCtrl_Camera_GeneralClassification.mm */; };
-		1168771A2E6E114A7F6CB931 /* NSDrawElements.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7E8008418EBA198B671A093 /* NSDrawElements.mm */; };
-		135F555B8FF4AFB7EFB79F97 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A81000ABD6D2F3A9C9FDF8 /* MetalKit.framework */; };
-		1360A694D6F164EFF923A782 /* WindowCtrl_Camera_DisneyFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = F40267AADE8698B185917BB3 /* WindowCtrl_Camera_DisneyFaceStylizing.h */; };
-		194E5423C13C98AB17AF9EE4 /* WindowCtrl_PictureMetalRender.h in Sources */ = {isa = PBXBuildFile; fileRef = AC36AC2D5F7C111E09A7D977 /* WindowCtrl_PictureMetalRender.h */; };
-		257445EC2FA026DC34F8551E /* WindowCtrl_Picture_Gesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF62A0A61F9E9A37355DFE9C /* WindowCtrl_Picture_Gesture.mm */; };
-		273DF3FA012A9570E80B9ECF /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43A64104B799B86AA921DDF4 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm */; };
-		33A82D3B42A5195A1535621F /* WindowCtrl_Camera_FaceSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 73B08D514868E1FDDA283932 /* WindowCtrl_Camera_FaceSegment.h */; };
-		340D781365AF2293FC190915 /* WindowCtrl_Camera_Gesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A5330957DFC94E8D6DA7F /* WindowCtrl_Camera_Gesture.mm */; };
-		35264A3DC91CB0B616C8CACB /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828029461963DAC39A6C77A4 /* MetalPerformanceShaders.framework */; };
-		3820C70E729DCE330EEB8080 /* WindowCtrl_Picture_3DGameFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 854C23B04ADA3FB059418F62 /* WindowCtrl_Picture_3DGameFaceStylizing.h */; };
-		38BC342924F929B09C10B7C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 050693E31F9FC6F30C800C09 /* AppDelegate.m */; };
-		3B1B4BF23710BCF66C8BA35C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB3BE642E51427A3F7F2BAE /* main.m */; };
-		418C3F0857277239843846B6 /* WindowCtrl_PictureMetalRender.mm in Sources */ = {isa = PBXBuildFile; fileRef = D935E30CD2E0F44CCEC9D667 /* WindowCtrl_PictureMetalRender.mm */; };
-		425249C43C962388A862FA0B /* WindowCtrl_Camera_Gesture.h in Sources */ = {isa = PBXBuildFile; fileRef = D6DEA2D670CE0D9485F10AEA /* WindowCtrl_Camera_Gesture.h */; };
-		458BD488ED9B44CFE812A733 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374ACED0B9575B8BBFD93486 /* Cocoa.framework */; };
-		45AA4E968169E45662C16D74 /* WindowCtrl_Picture_FaceLandmarkDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE9920A85388BFBAA3B21A20 /* WindowCtrl_Picture_FaceLandmarkDetection.mm */; };
-		47FF76A383243F5AA2DB586A /* files in Resources */ = {isa = PBXBuildFile; fileRef = EB942CB34D90B6BB189C40E4 /* files */; };
-		4B6725DA47EDEA67406FAAAA /* NSView_ElementsDrawer.h in Sources */ = {isa = PBXBuildFile; fileRef = 82015953A7A7316028392587 /* NSView_ElementsDrawer.h */; };
-		4C3EBFC991149C59974566E4 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A513CE6AF0D05F89DC03FE5C /* AVKit.framework */; };
-		4CF68EE30F4D9F6B768F8BAF /* WindowCtrl_Picture_GeneralSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFDCD4F8FC0E97DAF9D83B7C /* WindowCtrl_Picture_GeneralSegment.mm */; };
-		566C0ECE3E0A0421CE55AD6B /* WindowCtrl_Picture_GeneralSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2B27BB6AEA110CEA70059 /* WindowCtrl_Picture_GeneralSegment.h */; };
-		5698E2BC39100C3C7B9FBF47 /* WindowCtrl_Picture_FaceReenactment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48B27BC5A26C034921E8C1D4 /* WindowCtrl_Picture_FaceReenactment.mm */; };
-		5E8F9EC274F29EC67C9C9397 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h in Sources */ = {isa = PBXBuildFile; fileRef = 000D3410D6D9341C17F550F6 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h */; };
-		5FA08BE971D6BF7493D4900D /* WindowCtrl_Camera_3DGameFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 62BD5F6046BB1AA6CDCCDD54 /* WindowCtrl_Camera_3DGameFaceStylizing.h */; };
-		664AA361459A7B94ECCE79A3 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 041D20C93C8A41D8041F07BD /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h */; };
-		697325C75DCB982AF3644DA7 /* WindowCtrl_Picture_FaceLandmarkDetection.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DD5225D9F0A1B59EB356D /* WindowCtrl_Picture_FaceLandmarkDetection.h */; };
-		6B5CE1E8C8C44216B03FB805 /* WindowCtrl_Picture_HeadSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E65B69EB915AAFFA03C4703 /* WindowCtrl_Picture_HeadSegment.h */; };
-		713647B5DE7C59854E656871 /* WindowCtrl_Picture_GeneralClassification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B247AEF4D7561C55E566A48 /* WindowCtrl_Picture_GeneralClassification.mm */; };
-		753A5893D7829B78E55022B0 /* OSXDemoHelper.h in Sources */ = {isa = PBXBuildFile; fileRef = 13F16446F192B9D6200F8D83 /* OSXDemoHelper.h */; };
-		81A66FFC7A0D40F24DB0D122 /* WindowCtrl_Picture_3DGameFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E81549906466763930B38A6 /* WindowCtrl_Picture_3DGameFaceStylizing.mm */; };
-		8392BAF2B460E57A2FA0E71F /* WindowCtrl_Camera_HeadSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58531E9E554ABE8FFF84EB19 /* WindowCtrl_Camera_HeadSegment.mm */; };
-		8DFCEABD59D2F118E89743BE /* WindowCtrl_Picture_DisneyFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = B00A947308EA3F210B34C045 /* WindowCtrl_Picture_DisneyFaceStylizing.mm */; };
-		94DBAFD78FA9D21BF4AAB791 /* WindowCtrl_Camera_GeneralClassification.h in Sources */ = {isa = PBXBuildFile; fileRef = 04B9723008ECF2EC4328AD91 /* WindowCtrl_Camera_GeneralClassification.h */; };
-		989071AA3D599A7538D60116 /* WindowCtrl_Camera_HeadSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 229894AFFDE6BC41A62D84F6 /* WindowCtrl_Camera_HeadSegment.h */; };
-		98EF830639C9BE23B60ED589 /* WindowCtrl_Camera_ObjectTracking.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9F780B00A84366863B83B6B /* WindowCtrl_Camera_ObjectTracking.mm */; };
-		9A8B6C712CBE8589E7401577 /* MTKView_CameraRenderer.metal in Sources */ = {isa = PBXBuildFile; fileRef = B50F65B71DFCC430C92E9B2E /* MTKView_CameraRenderer.metal */; };
-		A34A17B6AC9F3771467C2E27 /* MTKView_CameraRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5897EBFD57BB38BB402979C /* MTKView_CameraRenderer.mm */; };
-		A3CF3F9117B5C800BD800DBE /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 209D7C8BEFB19684185DF470 /* AppDelegate.h */; };
-		A576E09BE3AC59E64A836084 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF2E13B7473DFDF5F88A522 /* QuartzCore.framework */; };
-		A5EED3B4888934304551392C /* WindowCtrl_Picture_HeadSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A2BBD399D2FE6324E6A4ABC /* WindowCtrl_Picture_HeadSegment.mm */; };
-		A782F90DF502540ADD0E2A40 /* NSDrawElements.h in Sources */ = {isa = PBXBuildFile; fileRef = AE00F2916F8852A1798AF4C5 /* NSDrawElements.h */; };
-		ABF6ACC795AFAD82E42F956A /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 93C2248A29707D5CAF53D6EA /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h */; };
-		B3A6185A904232ED61F65812 /* WindowCtrl_Camera_FaceLandmarkDetection.h in Sources */ = {isa = PBXBuildFile; fileRef = AF8B0C2D79C6AA5D9F687F25 /* WindowCtrl_Camera_FaceLandmarkDetection.h */; };
-		B44EFDF7635EC29C288C96CC /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h in Sources */ = {isa = PBXBuildFile; fileRef = 77910CDA50602C6200F7DCBA /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h */; };
-		B568E0F8ABF1135B74C18B03 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE36DF141A2F561A6544299D /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm */; };
-		B8CCDE5F2769C1D20083F0B7 /* vnn_gesture_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE542769C1D20083F0B7 /* vnn_gesture_osx.framework */; };
-		B8CCDE602769C1D20083F0B7 /* vnn_faceparser_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE552769C1D20083F0B7 /* vnn_faceparser_osx.framework */; };
-		B8CCDE612769C1D20083F0B7 /* vnn_core_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE562769C1D20083F0B7 /* vnn_core_osx.framework */; };
-		B8CCDE622769C1D20083F0B7 /* vnn_stylizing_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE572769C1D20083F0B7 /* vnn_stylizing_osx.framework */; };
-		B8CCDE632769C1D20083F0B7 /* vnn_kit_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE582769C1D20083F0B7 /* vnn_kit_osx.framework */; };
-		B8CCDE642769C1D20083F0B7 /* vnn_objcount_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE592769C1D20083F0B7 /* vnn_objcount_osx.framework */; };
-		B8CCDE652769C1D20083F0B7 /* vnn_face_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5A2769C1D20083F0B7 /* vnn_face_osx.framework */; };
-		B8CCDE662769C1D20083F0B7 /* vnn_classifying_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5B2769C1D20083F0B7 /* vnn_classifying_osx.framework */; };
-		B8CCDE672769C1D20083F0B7 /* vnn_face_reenactment_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5C2769C1D20083F0B7 /* vnn_face_reenactment_osx.framework */; };
-		B8CCDE682769C1D20083F0B7 /* vnn_objtracking_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5D2769C1D20083F0B7 /* vnn_objtracking_osx.framework */; };
-		B8CCDE692769C1D20083F0B7 /* vnn_general_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CCDE5E2769C1D20083F0B7 /* vnn_general_osx.framework */; };
-		B8CCDE762769C2BE0083F0B7 /* vnn_classifying_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5B2769C1D20083F0B7 /* vnn_classifying_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE772769C2BE0083F0B7 /* vnn_core_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE562769C1D20083F0B7 /* vnn_core_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE782769C2BE0083F0B7 /* vnn_face_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5A2769C1D20083F0B7 /* vnn_face_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE792769C2BE0083F0B7 /* vnn_face_reenactment_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5C2769C1D20083F0B7 /* vnn_face_reenactment_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE7A2769C2BE0083F0B7 /* vnn_faceparser_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE552769C1D20083F0B7 /* vnn_faceparser_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE7B2769C2BE0083F0B7 /* vnn_general_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5E2769C1D20083F0B7 /* vnn_general_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE7C2769C2BE0083F0B7 /* vnn_gesture_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE542769C1D20083F0B7 /* vnn_gesture_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE7D2769C2BE0083F0B7 /* vnn_kit_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE582769C1D20083F0B7 /* vnn_kit_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE7E2769C2BE0083F0B7 /* vnn_objcount_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE592769C1D20083F0B7 /* vnn_objcount_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE7F2769C2BE0083F0B7 /* vnn_objtracking_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE5D2769C1D20083F0B7 /* vnn_objtracking_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8CCDE802769C2BE0083F0B7 /* vnn_stylizing_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8CCDE572769C1D20083F0B7 /* vnn_stylizing_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BC4E3F3C980B50A988117AE4 /* OSXDemoHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A3695CE93437F0C8F2CDCB94 /* OSXDemoHelper.mm */; };
-		BC939604FF7EC08A7B488945 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E60FC604E21A604FE3FDDD6 /* Metal.framework */; };
-		C2601B48E25A530D3472894A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1982710FFC01E3635D175C40 /* Accelerate.framework */; };
-		C46EA3E2D430091F8D8EF429 /* WindowCtrl_Picture_FaceSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = C3B072F0E77B50263CCAC48C /* WindowCtrl_Picture_FaceSegment.h */; };
-		C4DC633789BE024BFF62ACD9 /* WindowCtrl_Picture_GeneralClassification.h in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F2FFC8566EBC8C3DE7BAF /* WindowCtrl_Picture_GeneralClassification.h */; };
-		CA65AFD107E978D1FE8FBC07 /* WindowCtrl_Camera_FaceLandmarkDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239AA9E4D2ACB002D37C5B10 /* WindowCtrl_Camera_FaceLandmarkDetection.mm */; };
-		CBCD76E3E83B8DC78214F229 /* NSView_ElementsDrawer.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF83EAB06B2C7FF218788CBB /* NSView_ElementsDrawer.mm */; };
-		CE5EE5D6E958FC3B9BF071D7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56E3FF139DB9817B46E8A3DD /* ViewController.mm */; };
-		DB0B71293E5DBE3C10FBC3F6 /* WindowCtrl_Picture_FaceReenactment.h in Sources */ = {isa = PBXBuildFile; fileRef = 140C1333E670F5486DE0A6EC /* WindowCtrl_Picture_FaceReenactment.h */; };
-		DCAC71D1978D71F32E4BE7CD /* WindowCtrl_Picture_Gesture.h in Sources */ = {isa = PBXBuildFile; fileRef = 225AEF65ADA39CA225456DEE /* WindowCtrl_Picture_Gesture.h */; };
-		DFE59A7CA6A953675EE78867 /* WindowCtrl_Camera_GeneralSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 665C033CBFE26276D650AC1E /* WindowCtrl_Camera_GeneralSegment.mm */; };
-		E00205676F411688BA6B9679 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 835B3BC37D700EBEAAED250B /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm */; };
-		E451C7CBE942868BC34A40F0 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 88CC60465C1024F00893F5C7 /* Main.storyboard */; };
-		E4A8091AA3483F44B1934D4D /* WindowCtrl_Camera_DisneyFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = F91BCEA9AD0A16436561CFDE /* WindowCtrl_Camera_DisneyFaceStylizing.mm */; };
-		E6407032B7E5C2650F6044C8 /* WindowCtrl_Camera_ObjectTracking.h in Sources */ = {isa = PBXBuildFile; fileRef = 4407C172D28BF8F8E8E448D7 /* WindowCtrl_Camera_ObjectTracking.h */; };
-		E7F1DBC753512885DFED1D01 /* WindowCtrl_Camera_FaceSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = F28B8C8BB41898408654354F /* WindowCtrl_Camera_FaceSegment.mm */; };
-		E8A644528E3319F0A8D8D5A3 /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDD1FA9C82B85E862AE377 /* ViewController.h */; };
-		EC256643B141E6A7FA08D6CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A121817DABA8034D0015F0 /* AVFoundation.framework */; };
-		ECA122F372895E97DB2B51DE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5108DD67BE08EEED580C11B6 /* CoreMedia.framework */; };
-		EE942C0CE75CB7112F8C9844 /* WindowCtrl_CameraMetalRender.h in Sources */ = {isa = PBXBuildFile; fileRef = 06BE821C4A748B9239797705 /* WindowCtrl_CameraMetalRender.h */; };
-		F4B286FA8B673B3923993967 /* WindowCtrl_Picture_DisneyFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 831C1A6429FF9B7E2D54E7D2 /* WindowCtrl_Picture_DisneyFaceStylizing.h */; };
-		F630EB874D45403745489311 /* WindowCtrl_Camera_GeneralSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 97F118C373C02AC36555E48B /* WindowCtrl_Camera_GeneralSegment.h */; };
-		F72C93D4533167359B7356E4 /* WindowCtrl_CameraMetalRender.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87A9AD13FFEF930E48533548 /* WindowCtrl_CameraMetalRender.mm */; };
-		F7D71FCBD30A14D2410B64A0 /* MTKView_CameraRenderer.h in Sources */ = {isa = PBXBuildFile; fileRef = 30FF050C5C17E279B8C17D0F /* MTKView_CameraRenderer.h */; };
-		FA47C5CEC8E8866EB8B20160 /* WindowCtrl_Picture_FaceSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0391DFA4C27B725B6CF9E66C /* WindowCtrl_Picture_FaceSegment.mm */; };
-		FBFFDE10AD5DDDE4BD4E8F04 /* WindowCtrl_Camera_3DGameFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 02F5FF18C28C697DCA9DC291 /* WindowCtrl_Camera_3DGameFaceStylizing.mm */; };
+		0221AE530AE74B57F8A0ECF7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 938A63B45E7E7417C363154C /* ViewController.mm */; };
+		028288EED07E7318D6E981F6 /* WindowCtrl_Camera_GeneralSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23BD09913083CE933C77BC41 /* WindowCtrl_Camera_GeneralSegment.mm */; };
+		06F3E92A7B96984714845F40 /* WindowCtrl_Picture_FaceLandmarkDetection.h in Sources */ = {isa = PBXBuildFile; fileRef = 6123BC71F8796B8B7219F77A /* WindowCtrl_Picture_FaceLandmarkDetection.h */; };
+		0C333972A87514E39873910F /* WindowCtrl_Camera_FaceSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 37B56E8E775C1D6043A4975B /* WindowCtrl_Camera_FaceSegment.h */; };
+		0CB000545BD3958C5D237AF6 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CB032451FC4E3E856892DD2 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm */; };
+		0E36131F73707DE130BAA166 /* WindowCtrl_Picture_Gesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = D10D18AACEFC3EAA69773346 /* WindowCtrl_Picture_Gesture.mm */; };
+		0E84E918E99C396FAE770D9E /* WindowCtrl_Camera_GeneralSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 28DA278C33A0009BA531EFDF /* WindowCtrl_Camera_GeneralSegment.h */; };
+		10F2FF97B4BC2095C12C0432 /* files in Resources */ = {isa = PBXBuildFile; fileRef = 1C821CF94A9988D631402B36 /* files */; };
+		1177B051C92BC8F3DB97AD75 /* WindowCtrl_Camera_FaceLandmarkDetection.h in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD4B667D595FCC99E5BC77 /* WindowCtrl_Camera_FaceLandmarkDetection.h */; };
+		132B91DF4FC8AD0E0E7BF9E4 /* WindowCtrl_PictureMetalRender.mm in Sources */ = {isa = PBXBuildFile; fileRef = C406DFB12C8871D172B210E9 /* WindowCtrl_PictureMetalRender.mm */; };
+		1478086E71D55CB7A5AF0404 /* NSDrawElements.h in Sources */ = {isa = PBXBuildFile; fileRef = CB9B99795083DE776FE9353B /* NSDrawElements.h */; };
+		1B614BA2056EA375DE2139B8 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D191FF32E4FA0800E0F5F0F /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm */; };
+		20AC132C4F7060624C55A15C /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8340CC0C79EEA1B9A6E11966 /* MetalKit.framework */; };
+		2573E44ABC6790EE8C974E49 /* NSView_ElementsDrawer.h in Sources */ = {isa = PBXBuildFile; fileRef = 480EB995A9F6396F12F0DFD3 /* NSView_ElementsDrawer.h */; };
+		26873F3E3CACFCFC937F7322 /* WindowCtrl_Camera_3DGameFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = A60A2958B9844315565AE02C /* WindowCtrl_Camera_3DGameFaceStylizing.h */; };
+		28778277A6E89F6AB81D1CE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F756C4F83988D59EA3F4823 /* Cocoa.framework */; };
+		2E0EA2A03C22C1EBCBB66D56 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E56CBE8DDEFB6BF4B37CC /* AppDelegate.h */; };
+		2E838E14A6823947EEA2B415 /* OSXDemoHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83C8AA337D526F95AA8A1467 /* OSXDemoHelper.mm */; };
+		34E6F13EDE6953CBC7456EBE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F5D0B1A37D8C37331C35B9 /* AVFoundation.framework */; };
+		3D399893D388D5C0D63605FD /* WindowCtrl_Picture_GeneralSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BA082852D52F56E03245CC6 /* WindowCtrl_Picture_GeneralSegment.mm */; };
+		3FE9CDD7F18DA4309114A9D0 /* WindowCtrl_Camera_ObjectTracking.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5618A6D6657C4C8F7E340 /* WindowCtrl_Camera_ObjectTracking.mm */; };
+		423C7B287ED3F26A2BC72216 /* WindowCtrl_Camera_GeneralClassification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 67ADB4F0FFB8C8CF167808E7 /* WindowCtrl_Camera_GeneralClassification.mm */; };
+		44526A18635C768E59F2C052 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE9F6D26F905320A0817C3 /* AppDelegate.m */; };
+		4773FC88C5BBB05389D28A7C /* WindowCtrl_Camera_3DGameFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62DDDF571BEF04558010B17E /* WindowCtrl_Camera_3DGameFaceStylizing.mm */; };
+		4AB255001441AE4F2792237B /* WindowCtrl_Picture_HeadSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 663F0FEBD6568C23F276928E /* WindowCtrl_Picture_HeadSegment.h */; };
+		4BFB0C40ACE3AB7BA2712BF7 /* WindowCtrl_Picture_DisneyFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 82E2DB6EC08B75F918D9C371 /* WindowCtrl_Picture_DisneyFaceStylizing.h */; };
+		50D3A29818AC675ECC97A102 /* WindowCtrl_Camera_Gesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5C390AB80BB3386359F8A /* WindowCtrl_Camera_Gesture.mm */; };
+		513DFA51F2720B7DA4C9BB24 /* WindowCtrl_Picture_FaceReenactment.h in Sources */ = {isa = PBXBuildFile; fileRef = 1251A01E8D234FF7BD61D1B0 /* WindowCtrl_Picture_FaceReenactment.h */; };
+		5152DCAD536F1D64C153F124 /* WindowCtrl_Camera_FaceLandmarkDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2587FA6A0E43924C327EDBE /* WindowCtrl_Camera_FaceLandmarkDetection.mm */; };
+		5747A562F642EDBFBCD9BB3C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F456AC1E575944DCC090807D /* AVKit.framework */; };
+		5BF9C8943EDD7D62AEC63DB6 /* WindowCtrl_CameraMetalRender.h in Sources */ = {isa = PBXBuildFile; fileRef = DEB7234EC49CECFC1647E66F /* WindowCtrl_CameraMetalRender.h */; };
+		5E289FAD964C59482F1CA264 /* NSDrawElements.mm in Sources */ = {isa = PBXBuildFile; fileRef = D860374DCC1CE0EF1421668F /* NSDrawElements.mm */; };
+		5EA94E3E251282A5B08E9EC7 /* MTKView_CameraRenderer.metal in Sources */ = {isa = PBXBuildFile; fileRef = A48EAEEF2F5EE988B9BB9542 /* MTKView_CameraRenderer.metal */; };
+		5EC703A3EF075751DD623604 /* WindowCtrl_PictureMetalRender.h in Sources */ = {isa = PBXBuildFile; fileRef = D75DCFB7A1A432C55EFF8960 /* WindowCtrl_PictureMetalRender.h */; };
+		604FC33426BA549558EA1A06 /* WindowCtrl_Picture_FaceLandmarkDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6658782D49C73A3B1DCB258A /* WindowCtrl_Picture_FaceLandmarkDetection.mm */; };
+		65A7CFB3411B29542780B6BF /* WindowCtrl_Picture_GeneralClassification.mm in Sources */ = {isa = PBXBuildFile; fileRef = 12F2A591EBF29ECD89E4E289 /* WindowCtrl_Picture_GeneralClassification.mm */; };
+		677492678677A28771F873B4 /* MTKView_CameraRenderer.h in Sources */ = {isa = PBXBuildFile; fileRef = BEA4EEF3EE66AF6F3918FD40 /* MTKView_CameraRenderer.h */; };
+		67BE5783B973366681CB8C69 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h in Sources */ = {isa = PBXBuildFile; fileRef = FE1C1EAD8E9AB8938E8FB42F /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h */; };
+		6ABD2E690B8E9C4F70EAB795 /* WindowCtrl_Picture_3DGameFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9FAD58C315ED5C924C2CCC93 /* WindowCtrl_Picture_3DGameFaceStylizing.mm */; };
+		6C2D0148B69433961899502B /* WindowCtrl_CameraMetalRender.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59231DA042C0608CE058B6A2 /* WindowCtrl_CameraMetalRender.mm */; };
+		70142DC95B5A51A9B97FA512 /* WindowCtrl_Picture_PoseLandmarkDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 059D346E6EF8B8D41A31E676 /* WindowCtrl_Picture_PoseLandmarkDetection.mm */; };
+		799933986A57BF651C284B89 /* WindowCtrl_Camera_HeadSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD95A3FD6B2FF04AA122923E /* WindowCtrl_Camera_HeadSegment.mm */; };
+		799CF7A4AEA36A181262E7F8 /* WindowCtrl_Picture_DisneyFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C950AE9B0E181750FCAEB /* WindowCtrl_Picture_DisneyFaceStylizing.mm */; };
+		7CA71B177A41D0165D2381D3 /* WindowCtrl_Picture_GeneralClassification.h in Sources */ = {isa = PBXBuildFile; fileRef = 68EB84FDC3230B96648D1C4A /* WindowCtrl_Picture_GeneralClassification.h */; };
+		8057F4A9F8528947A99337AD /* WindowCtrl_Camera_ObjectTracking.h in Sources */ = {isa = PBXBuildFile; fileRef = EA70188F47C6A0B138935B3D /* WindowCtrl_Camera_ObjectTracking.h */; };
+		81EDDD973D33F4821A449F5A /* vnnimage_mac_kit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5289A02A2670E9BA3172562E /* vnnimage_mac_kit.mm */; };
+		83FE4E9CF9631BBE2B1EFB56 /* WindowCtrl_Picture_Gesture.h in Sources */ = {isa = PBXBuildFile; fileRef = D28A5C94D9BC2274999B78C7 /* WindowCtrl_Picture_Gesture.h */; };
+		85B0B2C553E849028537E708 /* NSView_ElementsDrawer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7626590DB628775C96588A10 /* NSView_ElementsDrawer.mm */; };
+		899F00CDA8368C1FD2D4B5B2 /* WindowCtrl_Camera_DisneyFaceStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE427CA01B29DC22EDB9533E /* WindowCtrl_Camera_DisneyFaceStylizing.mm */; };
+		89C2471AD9C18D0ECB4528D6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02E9208C7077642FB30C35E /* CoreMedia.framework */; };
+		89F13001A153C1D42321B045 /* WindowCtrl_Picture_HeadSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64EF0637938005EF87D546BA /* WindowCtrl_Picture_HeadSegment.mm */; };
+		8CA23B7909F55E786EB0CCCA /* WindowCtrl_Camera_PoseLandmarkDetection.h in Sources */ = {isa = PBXBuildFile; fileRef = 97013804B60C2D1C6CE2D808 /* WindowCtrl_Camera_PoseLandmarkDetection.h */; };
+		8F4F676E1D722F1DF7BE996F /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 338E00C299B7AAB56A8782C4 /* ViewController.h */; };
+		9811BB898CF59A82FFC7FD85 /* WindowCtrl_Camera_DisneyFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 7F237F553B5FB92936FFA3AC /* WindowCtrl_Camera_DisneyFaceStylizing.h */; };
+		984BBD64CA5A951374C1E57D /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 471CC39FDFF7607B93FA4C2E /* MetalPerformanceShaders.framework */; };
+		A0D76D9029D4479D7533DBE9 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = B702D8CBB4E373C6BA9277B3 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h */; };
+		A18099D987BD5A2EF59F10B6 /* WindowCtrl_Camera_PoseLandmarkDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AD41706FCFE816E7EFF809D /* WindowCtrl_Camera_PoseLandmarkDetection.mm */; };
+		A65BC503DB2EB448A90198B8 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h in Sources */ = {isa = PBXBuildFile; fileRef = 2C64D6C5FEE231B1413894B3 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h */; };
+		A7F6A0D6F808441F7492B338 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E29906BF9DDF0AA28A92461 /* main.m */; };
+		AAEA5329F3B3048A0C332688 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEEECC0A419E31C545C31C9D /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm */; };
+		AC911702EC16DABD09926FA7 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm in Sources */ = {isa = PBXBuildFile; fileRef = C776E8CE5311B5CBE62EC7C3 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm */; };
+		AEDA74CCEAA5717119BF9386 /* WindowCtrl_Picture_FaceSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 948B6B6B0E0B4D5BF120F56B /* WindowCtrl_Picture_FaceSegment.h */; };
+		B1391EC7C7F29B4FB6FD0E02 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = 348E45201C640EEE434DD7D6 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h */; };
+		B83A2329277F058400109DB4 /* vnn_general_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A231D277F058400109DB4 /* vnn_general_osx.framework */; };
+		B83A232A277F058400109DB4 /* vnn_stylizing_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A231E277F058400109DB4 /* vnn_stylizing_osx.framework */; };
+		B83A232B277F058400109DB4 /* vnn_kit_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A231F277F058400109DB4 /* vnn_kit_osx.framework */; };
+		B83A232C277F058400109DB4 /* vnn_faceparser_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A2320277F058400109DB4 /* vnn_faceparser_osx.framework */; };
+		B83A232D277F058400109DB4 /* vnn_core_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A2321277F058400109DB4 /* vnn_core_osx.framework */; };
+		B83A232E277F058400109DB4 /* vnn_face_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A2322277F058400109DB4 /* vnn_face_osx.framework */; };
+		B83A232F277F058400109DB4 /* vnn_gesture_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A2323277F058400109DB4 /* vnn_gesture_osx.framework */; };
+		B83A2330277F058400109DB4 /* vnn_face_reenactment_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A2324277F058400109DB4 /* vnn_face_reenactment_osx.framework */; };
+		B83A2331277F058400109DB4 /* vnn_classifying_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A2325277F058400109DB4 /* vnn_classifying_osx.framework */; };
+		B83A2332277F058400109DB4 /* vnn_objtracking_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A2326277F058400109DB4 /* vnn_objtracking_osx.framework */; };
+		B83A2333277F058400109DB4 /* vnn_objcount_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A2327277F058400109DB4 /* vnn_objcount_osx.framework */; };
+		B83A2334277F058400109DB4 /* vnn_pose_osx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A2328277F058400109DB4 /* vnn_pose_osx.framework */; };
+		B83A2335277F058B00109DB4 /* vnn_classifying_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A2325277F058400109DB4 /* vnn_classifying_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A2336277F058B00109DB4 /* vnn_core_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A2321277F058400109DB4 /* vnn_core_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A2337277F058B00109DB4 /* vnn_face_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A2322277F058400109DB4 /* vnn_face_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A2338277F058B00109DB4 /* vnn_face_reenactment_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A2324277F058400109DB4 /* vnn_face_reenactment_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A2339277F058B00109DB4 /* vnn_faceparser_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A2320277F058400109DB4 /* vnn_faceparser_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A233A277F058B00109DB4 /* vnn_general_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A231D277F058400109DB4 /* vnn_general_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A233B277F058B00109DB4 /* vnn_gesture_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A2323277F058400109DB4 /* vnn_gesture_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A233C277F058B00109DB4 /* vnn_kit_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A231F277F058400109DB4 /* vnn_kit_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A233D277F058B00109DB4 /* vnn_objcount_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A2327277F058400109DB4 /* vnn_objcount_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A233E277F058B00109DB4 /* vnn_objtracking_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A2326277F058400109DB4 /* vnn_objtracking_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A233F277F058B00109DB4 /* vnn_pose_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A2328277F058400109DB4 /* vnn_pose_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B83A2340277F058B00109DB4 /* vnn_stylizing_osx.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B83A231E277F058400109DB4 /* vnn_stylizing_osx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B9408B46A12B6C27BE192736 /* WindowCtrl_Camera_GeneralClassification.h in Sources */ = {isa = PBXBuildFile; fileRef = 79317FC8ACDC53206A94FA31 /* WindowCtrl_Camera_GeneralClassification.h */; };
+		B9A3457AA0E8356C9D24A7B3 /* OSXDemoHelper.h in Sources */ = {isa = PBXBuildFile; fileRef = 99D63D6DBD0BA5292E549E88 /* OSXDemoHelper.h */; };
+		C05A7B1CA7BCEC584917B042 /* WindowCtrl_Camera_FaceSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDBD6DC9EB8AA03A9CCC73B1 /* WindowCtrl_Camera_FaceSegment.mm */; };
+		C65CA11287734A11083A5A44 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6020532A7D20F152CF6122 /* Accelerate.framework */; };
+		CEC5292F1FC5FCF186EEDFC8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8582A28A7C32B455643A65 /* QuartzCore.framework */; };
+		D239402C4752971C6486D6E1 /* WindowCtrl_Picture_FaceSegment.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED1C478FFC749A5AB2F534DF /* WindowCtrl_Picture_FaceSegment.mm */; };
+		D85D401933826F4D681E358C /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A71927808C100B54DB577D4 /* Metal.framework */; };
+		DE024AF8AD48E557E2A2CFCF /* WindowCtrl_Picture_PoseLandmarkDetection.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A07B19B71AEB0E6CA40F618 /* WindowCtrl_Picture_PoseLandmarkDetection.h */; };
+		E20038A90517223B01551DCB /* MTKView_CameraRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E524C284D3D65E5425B41FCE /* MTKView_CameraRenderer.mm */; };
+		E2C3009958A705055ADB44DA /* vnnimage_mac_kit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CDCE1E3BDDBD3249CB69D9A /* vnnimage_mac_kit.cpp */; };
+		E490090E183BD963C8250F1B /* WindowCtrl_Camera_Gesture.h in Sources */ = {isa = PBXBuildFile; fileRef = 851C7D80FB994476E773C4B9 /* WindowCtrl_Camera_Gesture.h */; };
+		E8B78EF1A8347B2B45626F77 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = DDEBB856B7272AF9E2945A5C /* Main.storyboard */; };
+		ED130EE89169E133E96FB0DA /* WindowCtrl_Picture_GeneralSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = B3E98EF5FB93C7BA6A13D38F /* WindowCtrl_Picture_GeneralSegment.h */; };
+		EF235DC0A4CF4C811C7D868F /* WindowCtrl_Camera_HeadSegment.h in Sources */ = {isa = PBXBuildFile; fileRef = 92FFAB6148E7598837B2808F /* WindowCtrl_Camera_HeadSegment.h */; };
+		F61E788400F4C6529FDC5227 /* vnnimage_mac_kit.h in Sources */ = {isa = PBXBuildFile; fileRef = F244B984518893AC40D7A0A8 /* vnnimage_mac_kit.h */; };
+		FA8EA118D6969F738FFBFA2F /* WindowCtrl_Picture_FaceReenactment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4376005E66F3A945A9044AB8 /* WindowCtrl_Picture_FaceReenactment.mm */; };
+		FF365A847A405CE9A13DF454 /* WindowCtrl_Picture_3DGameFaceStylizing.h in Sources */ = {isa = PBXBuildFile; fileRef = C3E34BC0F671DD4B91D477D0 /* WindowCtrl_Picture_3DGameFaceStylizing.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B8CCDE752769C2860083F0B7 /* CopyFiles */ = {
+		B83A22B8277EF78700109DB4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B8CCDE762769C2BE0083F0B7 /* vnn_classifying_osx.framework in CopyFiles */,
-				B8CCDE772769C2BE0083F0B7 /* vnn_core_osx.framework in CopyFiles */,
-				B8CCDE782769C2BE0083F0B7 /* vnn_face_osx.framework in CopyFiles */,
-				B8CCDE792769C2BE0083F0B7 /* vnn_face_reenactment_osx.framework in CopyFiles */,
-				B8CCDE7A2769C2BE0083F0B7 /* vnn_faceparser_osx.framework in CopyFiles */,
-				B8CCDE7B2769C2BE0083F0B7 /* vnn_general_osx.framework in CopyFiles */,
-				B8CCDE7C2769C2BE0083F0B7 /* vnn_gesture_osx.framework in CopyFiles */,
-				B8CCDE7D2769C2BE0083F0B7 /* vnn_kit_osx.framework in CopyFiles */,
-				B8CCDE7E2769C2BE0083F0B7 /* vnn_objcount_osx.framework in CopyFiles */,
-				B8CCDE7F2769C2BE0083F0B7 /* vnn_objtracking_osx.framework in CopyFiles */,
-				B8CCDE802769C2BE0083F0B7 /* vnn_stylizing_osx.framework in CopyFiles */,
+				B83A2335277F058B00109DB4 /* vnn_classifying_osx.framework in CopyFiles */,
+				B83A2336277F058B00109DB4 /* vnn_core_osx.framework in CopyFiles */,
+				B83A2337277F058B00109DB4 /* vnn_face_osx.framework in CopyFiles */,
+				B83A2338277F058B00109DB4 /* vnn_face_reenactment_osx.framework in CopyFiles */,
+				B83A2339277F058B00109DB4 /* vnn_faceparser_osx.framework in CopyFiles */,
+				B83A233A277F058B00109DB4 /* vnn_general_osx.framework in CopyFiles */,
+				B83A233B277F058B00109DB4 /* vnn_gesture_osx.framework in CopyFiles */,
+				B83A233C277F058B00109DB4 /* vnn_kit_osx.framework in CopyFiles */,
+				B83A233D277F058B00109DB4 /* vnn_objcount_osx.framework in CopyFiles */,
+				B83A233E277F058B00109DB4 /* vnn_objtracking_osx.framework in CopyFiles */,
+				B83A233F277F058B00109DB4 /* vnn_pose_osx.framework in CopyFiles */,
+				B83A2340277F058B00109DB4 /* vnn_stylizing_osx.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		000D3410D6D9341C17F550F6 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceCount_QRCodeDetect.h; sourceTree = "<group>"; };
-		02F5FF18C28C697DCA9DC291 /* WindowCtrl_Camera_3DGameFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_3DGameFaceStylizing.mm; sourceTree = "<group>"; };
-		0391DFA4C27B725B6CF9E66C /* WindowCtrl_Picture_FaceSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceSegment.mm; sourceTree = "<group>"; };
-		041D20C93C8A41D8041F07BD /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h; sourceTree = "<group>"; };
-		04B9723008ECF2EC4328AD91 /* WindowCtrl_Camera_GeneralClassification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_GeneralClassification.h; sourceTree = "<group>"; };
-		050693E31F9FC6F30C800C09 /* AppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		06BE821C4A748B9239797705 /* WindowCtrl_CameraMetalRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_CameraMetalRender.h; sourceTree = "<group>"; };
-		11A121817DABA8034D0015F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		13F16446F192B9D6200F8D83 /* OSXDemoHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OSXDemoHelper.h; sourceTree = "<group>"; };
-		140C1333E670F5486DE0A6EC /* WindowCtrl_Picture_FaceReenactment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceReenactment.h; sourceTree = "<group>"; };
-		1982710FFC01E3635D175C40 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		1C1F2FFC8566EBC8C3DE7BAF /* WindowCtrl_Picture_GeneralClassification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_GeneralClassification.h; sourceTree = "<group>"; };
-		1FD2B27BB6AEA110CEA70059 /* WindowCtrl_Picture_GeneralSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_GeneralSegment.h; sourceTree = "<group>"; };
-		209D7C8BEFB19684185DF470 /* AppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		225AEF65ADA39CA225456DEE /* WindowCtrl_Picture_Gesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_Gesture.h; sourceTree = "<group>"; };
-		229894AFFDE6BC41A62D84F6 /* WindowCtrl_Camera_HeadSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_HeadSegment.h; sourceTree = "<group>"; };
-		239AA9E4D2ACB002D37C5B10 /* WindowCtrl_Camera_FaceLandmarkDetection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_FaceLandmarkDetection.mm; sourceTree = "<group>"; };
-		2A2BBD399D2FE6324E6A4ABC /* WindowCtrl_Picture_HeadSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_HeadSegment.mm; sourceTree = "<group>"; };
-		2E60FC604E21A604FE3FDDD6 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		2EBDD1FA9C82B85E862AE377 /* ViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		30FF050C5C17E279B8C17D0F /* MTKView_CameraRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTKView_CameraRenderer.h; sourceTree = "<group>"; };
-		374ACED0B9575B8BBFD93486 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		43A64104B799B86AA921DDF4 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm; sourceTree = "<group>"; };
-		4407C172D28BF8F8E8E448D7 /* WindowCtrl_Camera_ObjectTracking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_ObjectTracking.h; sourceTree = "<group>"; };
-		48B27BC5A26C034921E8C1D4 /* WindowCtrl_Picture_FaceReenactment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceReenactment.mm; sourceTree = "<group>"; };
-		5108DD67BE08EEED580C11B6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		56E3FF139DB9817B46E8A3DD /* ViewController.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
-		58531E9E554ABE8FFF84EB19 /* WindowCtrl_Camera_HeadSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_HeadSegment.mm; sourceTree = "<group>"; };
-		5E65B69EB915AAFFA03C4703 /* WindowCtrl_Picture_HeadSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_HeadSegment.h; sourceTree = "<group>"; };
-		62BD5F6046BB1AA6CDCCDD54 /* WindowCtrl_Camera_3DGameFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_3DGameFaceStylizing.h; sourceTree = "<group>"; };
-		65F62BF8DF39E03F134E64C6 /* WindowCtrl_Camera_GeneralClassification.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_GeneralClassification.mm; sourceTree = "<group>"; };
-		665C033CBFE26276D650AC1E /* WindowCtrl_Camera_GeneralSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_GeneralSegment.mm; sourceTree = "<group>"; };
-		6E81549906466763930B38A6 /* WindowCtrl_Picture_3DGameFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_3DGameFaceStylizing.mm; sourceTree = "<group>"; };
-		73B08D514868E1FDDA283932 /* WindowCtrl_Camera_FaceSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_FaceSegment.h; sourceTree = "<group>"; };
-		77910CDA50602C6200F7DCBA /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_FaceCount_QRCodeDetect.h; sourceTree = "<group>"; };
-		7AF2E13B7473DFDF5F88A522 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7D3A5330957DFC94E8D6DA7F /* WindowCtrl_Camera_Gesture.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_Gesture.mm; sourceTree = "<group>"; };
-		82015953A7A7316028392587 /* NSView_ElementsDrawer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSView_ElementsDrawer.h; sourceTree = "<group>"; };
-		828029461963DAC39A6C77A4 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
-		831C1A6429FF9B7E2D54E7D2 /* WindowCtrl_Picture_DisneyFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_DisneyFaceStylizing.h; sourceTree = "<group>"; };
-		835B3BC37D700EBEAAED250B /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm; sourceTree = "<group>"; };
-		854C23B04ADA3FB059418F62 /* WindowCtrl_Picture_3DGameFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_3DGameFaceStylizing.h; sourceTree = "<group>"; };
-		87A9AD13FFEF930E48533548 /* WindowCtrl_CameraMetalRender.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_CameraMetalRender.mm; sourceTree = "<group>"; };
-		88CC60465C1024F00893F5C7 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8A2DD5225D9F0A1B59EB356D /* WindowCtrl_Picture_FaceLandmarkDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceLandmarkDetection.h; sourceTree = "<group>"; };
-		93C2248A29707D5CAF53D6EA /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h; sourceTree = "<group>"; };
-		97F118C373C02AC36555E48B /* WindowCtrl_Camera_GeneralSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_GeneralSegment.h; sourceTree = "<group>"; };
-		9B247AEF4D7561C55E566A48 /* WindowCtrl_Picture_GeneralClassification.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_GeneralClassification.mm; sourceTree = "<group>"; };
-		A3695CE93437F0C8F2CDCB94 /* OSXDemoHelper.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = OSXDemoHelper.mm; sourceTree = "<group>"; };
-		A513CE6AF0D05F89DC03FE5C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		A5A81000ABD6D2F3A9C9FDF8 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
-		A780A0ABCA2F02A8F15299F9 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_FaceCount_QRCodeDetect.mm; sourceTree = "<group>"; };
-		ABB3BE642E51427A3F7F2BAE /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AC36AC2D5F7C111E09A7D977 /* WindowCtrl_PictureMetalRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_PictureMetalRender.h; sourceTree = "<group>"; };
-		AE00F2916F8852A1798AF4C5 /* NSDrawElements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSDrawElements.h; sourceTree = "<group>"; };
-		AF8B0C2D79C6AA5D9F687F25 /* WindowCtrl_Camera_FaceLandmarkDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_FaceLandmarkDetection.h; sourceTree = "<group>"; };
-		B00A947308EA3F210B34C045 /* WindowCtrl_Picture_DisneyFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_DisneyFaceStylizing.mm; sourceTree = "<group>"; };
-		B50F65B71DFCC430C92E9B2E /* MTKView_CameraRenderer.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = MTKView_CameraRenderer.metal; sourceTree = "<group>"; };
-		B5897EBFD57BB38BB402979C /* MTKView_CameraRenderer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = MTKView_CameraRenderer.mm; sourceTree = "<group>"; };
-		B8CCDE542769C1D20083F0B7 /* vnn_gesture_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_gesture_osx.framework; path = libs/macOS/x86_64_arm64/vnn_gesture_osx.framework; sourceTree = "<group>"; };
-		B8CCDE552769C1D20083F0B7 /* vnn_faceparser_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_faceparser_osx.framework; path = libs/macOS/x86_64_arm64/vnn_faceparser_osx.framework; sourceTree = "<group>"; };
-		B8CCDE562769C1D20083F0B7 /* vnn_core_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_core_osx.framework; path = libs/macOS/x86_64_arm64/vnn_core_osx.framework; sourceTree = "<group>"; };
-		B8CCDE572769C1D20083F0B7 /* vnn_stylizing_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_stylizing_osx.framework; path = libs/macOS/x86_64_arm64/vnn_stylizing_osx.framework; sourceTree = "<group>"; };
-		B8CCDE582769C1D20083F0B7 /* vnn_kit_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_kit_osx.framework; path = libs/macOS/x86_64_arm64/vnn_kit_osx.framework; sourceTree = "<group>"; };
-		B8CCDE592769C1D20083F0B7 /* vnn_objcount_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_objcount_osx.framework; path = libs/macOS/x86_64_arm64/vnn_objcount_osx.framework; sourceTree = "<group>"; };
-		B8CCDE5A2769C1D20083F0B7 /* vnn_face_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_face_osx.framework; path = libs/macOS/x86_64_arm64/vnn_face_osx.framework; sourceTree = "<group>"; };
-		B8CCDE5B2769C1D20083F0B7 /* vnn_classifying_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_classifying_osx.framework; path = libs/macOS/x86_64_arm64/vnn_classifying_osx.framework; sourceTree = "<group>"; };
-		B8CCDE5C2769C1D20083F0B7 /* vnn_face_reenactment_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_face_reenactment_osx.framework; path = libs/macOS/x86_64_arm64/vnn_face_reenactment_osx.framework; sourceTree = "<group>"; };
-		B8CCDE5D2769C1D20083F0B7 /* vnn_objtracking_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_objtracking_osx.framework; path = libs/macOS/x86_64_arm64/vnn_objtracking_osx.framework; sourceTree = "<group>"; };
-		B8CCDE5E2769C1D20083F0B7 /* vnn_general_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_general_osx.framework; path = libs/macOS/x86_64_arm64/vnn_general_osx.framework; sourceTree = "<group>"; };
-		BE36DF141A2F561A6544299D /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceCount_QRCodeDetect.mm; sourceTree = "<group>"; };
-		C3B072F0E77B50263CCAC48C /* WindowCtrl_Picture_FaceSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceSegment.h; sourceTree = "<group>"; };
-		CF62A0A61F9E9A37355DFE9C /* WindowCtrl_Picture_Gesture.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_Gesture.mm; sourceTree = "<group>"; };
-		D3FB62F80BA7D335EBFBDAC4 /* vnndemo_osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vnndemo_osx.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6DEA2D670CE0D9485F10AEA /* WindowCtrl_Camera_Gesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_Gesture.h; sourceTree = "<group>"; };
-		D7E8008418EBA198B671A093 /* NSDrawElements.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = NSDrawElements.mm; sourceTree = "<group>"; };
-		D935E30CD2E0F44CCEC9D667 /* WindowCtrl_PictureMetalRender.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_PictureMetalRender.mm; sourceTree = "<group>"; };
-		DFDCD4F8FC0E97DAF9D83B7C /* WindowCtrl_Picture_GeneralSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_GeneralSegment.mm; sourceTree = "<group>"; };
-		E9F780B00A84366863B83B6B /* WindowCtrl_Camera_ObjectTracking.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_ObjectTracking.mm; sourceTree = "<group>"; };
-		EB942CB34D90B6BB189C40E4 /* files */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = files; sourceTree = "<group>"; };
-		EE9920A85388BFBAA3B21A20 /* WindowCtrl_Picture_FaceLandmarkDetection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceLandmarkDetection.mm; sourceTree = "<group>"; };
-		EF83EAB06B2C7FF218788CBB /* NSView_ElementsDrawer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = NSView_ElementsDrawer.mm; sourceTree = "<group>"; };
-		F28B8C8BB41898408654354F /* WindowCtrl_Camera_FaceSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_FaceSegment.mm; sourceTree = "<group>"; };
-		F40267AADE8698B185917BB3 /* WindowCtrl_Camera_DisneyFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_DisneyFaceStylizing.h; sourceTree = "<group>"; };
-		F91BCEA9AD0A16436561CFDE /* WindowCtrl_Camera_DisneyFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_DisneyFaceStylizing.mm; sourceTree = "<group>"; };
+		059D346E6EF8B8D41A31E676 /* WindowCtrl_Picture_PoseLandmarkDetection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_PoseLandmarkDetection.mm; sourceTree = "<group>"; };
+		0B6020532A7D20F152CF6122 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1251A01E8D234FF7BD61D1B0 /* WindowCtrl_Picture_FaceReenactment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceReenactment.h; sourceTree = "<group>"; };
+		12F2A591EBF29ECD89E4E289 /* WindowCtrl_Picture_GeneralClassification.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_GeneralClassification.mm; sourceTree = "<group>"; };
+		1C821CF94A9988D631402B36 /* files */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = files; sourceTree = "<group>"; };
+		23BD09913083CE933C77BC41 /* WindowCtrl_Camera_GeneralSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_GeneralSegment.mm; sourceTree = "<group>"; };
+		28DA278C33A0009BA531EFDF /* WindowCtrl_Camera_GeneralSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_GeneralSegment.h; sourceTree = "<group>"; };
+		2C64D6C5FEE231B1413894B3 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceCount_QRCodeDetect.h; sourceTree = "<group>"; };
+		30F5D0B1A37D8C37331C35B9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		338E00C299B7AAB56A8782C4 /* ViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		348E45201C640EEE434DD7D6 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h; sourceTree = "<group>"; };
+		37B56E8E775C1D6043A4975B /* WindowCtrl_Camera_FaceSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_FaceSegment.h; sourceTree = "<group>"; };
+		3BA082852D52F56E03245CC6 /* WindowCtrl_Picture_GeneralSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_GeneralSegment.mm; sourceTree = "<group>"; };
+		3D191FF32E4FA0800E0F5F0F /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceCount_QRCodeDetect.mm; sourceTree = "<group>"; };
+		4376005E66F3A945A9044AB8 /* WindowCtrl_Picture_FaceReenactment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceReenactment.mm; sourceTree = "<group>"; };
+		471CC39FDFF7607B93FA4C2E /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		480EB995A9F6396F12F0DFD3 /* NSView_ElementsDrawer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSView_ElementsDrawer.h; sourceTree = "<group>"; };
+		4CB032451FC4E3E856892DD2 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm; sourceTree = "<group>"; };
+		5289A02A2670E9BA3172562E /* vnnimage_mac_kit.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = vnnimage_mac_kit.mm; sourceTree = "<group>"; };
+		59231DA042C0608CE058B6A2 /* WindowCtrl_CameraMetalRender.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_CameraMetalRender.mm; sourceTree = "<group>"; };
+		5BF5618A6D6657C4C8F7E340 /* WindowCtrl_Camera_ObjectTracking.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_ObjectTracking.mm; sourceTree = "<group>"; };
+		6123BC71F8796B8B7219F77A /* WindowCtrl_Picture_FaceLandmarkDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceLandmarkDetection.h; sourceTree = "<group>"; };
+		62DDDF571BEF04558010B17E /* WindowCtrl_Camera_3DGameFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_3DGameFaceStylizing.mm; sourceTree = "<group>"; };
+		64EF0637938005EF87D546BA /* WindowCtrl_Picture_HeadSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_HeadSegment.mm; sourceTree = "<group>"; };
+		663F0FEBD6568C23F276928E /* WindowCtrl_Picture_HeadSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_HeadSegment.h; sourceTree = "<group>"; };
+		6658782D49C73A3B1DCB258A /* WindowCtrl_Picture_FaceLandmarkDetection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceLandmarkDetection.mm; sourceTree = "<group>"; };
+		67ADB4F0FFB8C8CF167808E7 /* WindowCtrl_Camera_GeneralClassification.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_GeneralClassification.mm; sourceTree = "<group>"; };
+		68EB84FDC3230B96648D1C4A /* WindowCtrl_Picture_GeneralClassification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_GeneralClassification.h; sourceTree = "<group>"; };
+		6DCD4B667D595FCC99E5BC77 /* WindowCtrl_Camera_FaceLandmarkDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_FaceLandmarkDetection.h; sourceTree = "<group>"; };
+		733FCD066D0C76453CBE7CA3 /* vnndemo_osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vnndemo_osx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7626590DB628775C96588A10 /* NSView_ElementsDrawer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = NSView_ElementsDrawer.mm; sourceTree = "<group>"; };
+		79317FC8ACDC53206A94FA31 /* WindowCtrl_Camera_GeneralClassification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_GeneralClassification.h; sourceTree = "<group>"; };
+		7A3E56CBE8DDEFB6BF4B37CC /* AppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7A71927808C100B54DB577D4 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		7AD41706FCFE816E7EFF809D /* WindowCtrl_Camera_PoseLandmarkDetection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_PoseLandmarkDetection.mm; sourceTree = "<group>"; };
+		7D8582A28A7C32B455643A65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7F237F553B5FB92936FFA3AC /* WindowCtrl_Camera_DisneyFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_DisneyFaceStylizing.h; sourceTree = "<group>"; };
+		82E2DB6EC08B75F918D9C371 /* WindowCtrl_Picture_DisneyFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_DisneyFaceStylizing.h; sourceTree = "<group>"; };
+		8340CC0C79EEA1B9A6E11966 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		83C8AA337D526F95AA8A1467 /* OSXDemoHelper.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = OSXDemoHelper.mm; sourceTree = "<group>"; };
+		851C7D80FB994476E773C4B9 /* WindowCtrl_Camera_Gesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_Gesture.h; sourceTree = "<group>"; };
+		8A07B19B71AEB0E6CA40F618 /* WindowCtrl_Picture_PoseLandmarkDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_PoseLandmarkDetection.h; sourceTree = "<group>"; };
+		8B9C950AE9B0E181750FCAEB /* WindowCtrl_Picture_DisneyFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_DisneyFaceStylizing.mm; sourceTree = "<group>"; };
+		8F756C4F83988D59EA3F4823 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		92FFAB6148E7598837B2808F /* WindowCtrl_Camera_HeadSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_HeadSegment.h; sourceTree = "<group>"; };
+		938A63B45E7E7417C363154C /* ViewController.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		948B6B6B0E0B4D5BF120F56B /* WindowCtrl_Picture_FaceSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_FaceSegment.h; sourceTree = "<group>"; };
+		97013804B60C2D1C6CE2D808 /* WindowCtrl_Camera_PoseLandmarkDetection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_PoseLandmarkDetection.h; sourceTree = "<group>"; };
+		99D63D6DBD0BA5292E549E88 /* OSXDemoHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OSXDemoHelper.h; sourceTree = "<group>"; };
+		9CDCE1E3BDDBD3249CB69D9A /* vnnimage_mac_kit.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = vnnimage_mac_kit.cpp; sourceTree = "<group>"; };
+		9DD5C390AB80BB3386359F8A /* WindowCtrl_Camera_Gesture.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_Gesture.mm; sourceTree = "<group>"; };
+		9E29906BF9DDF0AA28A92461 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FAD58C315ED5C924C2CCC93 /* WindowCtrl_Picture_3DGameFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_3DGameFaceStylizing.mm; sourceTree = "<group>"; };
+		A02E9208C7077642FB30C35E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A48EAEEF2F5EE988B9BB9542 /* MTKView_CameraRenderer.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = MTKView_CameraRenderer.metal; sourceTree = "<group>"; };
+		A60A2958B9844315565AE02C /* WindowCtrl_Camera_3DGameFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_3DGameFaceStylizing.h; sourceTree = "<group>"; };
+		A7CE9F6D26F905320A0817C3 /* AppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE427CA01B29DC22EDB9533E /* WindowCtrl_Camera_DisneyFaceStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_DisneyFaceStylizing.mm; sourceTree = "<group>"; };
+		B3E98EF5FB93C7BA6A13D38F /* WindowCtrl_Picture_GeneralSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_GeneralSegment.h; sourceTree = "<group>"; };
+		B702D8CBB4E373C6BA9277B3 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h; sourceTree = "<group>"; };
+		B83A231D277F058400109DB4 /* vnn_general_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_general_osx.framework; path = libs/macOS/x86_64_arm64/vnn_general_osx.framework; sourceTree = "<group>"; };
+		B83A231E277F058400109DB4 /* vnn_stylizing_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_stylizing_osx.framework; path = libs/macOS/x86_64_arm64/vnn_stylizing_osx.framework; sourceTree = "<group>"; };
+		B83A231F277F058400109DB4 /* vnn_kit_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_kit_osx.framework; path = libs/macOS/x86_64_arm64/vnn_kit_osx.framework; sourceTree = "<group>"; };
+		B83A2320277F058400109DB4 /* vnn_faceparser_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_faceparser_osx.framework; path = libs/macOS/x86_64_arm64/vnn_faceparser_osx.framework; sourceTree = "<group>"; };
+		B83A2321277F058400109DB4 /* vnn_core_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_core_osx.framework; path = libs/macOS/x86_64_arm64/vnn_core_osx.framework; sourceTree = "<group>"; };
+		B83A2322277F058400109DB4 /* vnn_face_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_face_osx.framework; path = libs/macOS/x86_64_arm64/vnn_face_osx.framework; sourceTree = "<group>"; };
+		B83A2323277F058400109DB4 /* vnn_gesture_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_gesture_osx.framework; path = libs/macOS/x86_64_arm64/vnn_gesture_osx.framework; sourceTree = "<group>"; };
+		B83A2324277F058400109DB4 /* vnn_face_reenactment_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_face_reenactment_osx.framework; path = libs/macOS/x86_64_arm64/vnn_face_reenactment_osx.framework; sourceTree = "<group>"; };
+		B83A2325277F058400109DB4 /* vnn_classifying_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_classifying_osx.framework; path = libs/macOS/x86_64_arm64/vnn_classifying_osx.framework; sourceTree = "<group>"; };
+		B83A2326277F058400109DB4 /* vnn_objtracking_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_objtracking_osx.framework; path = libs/macOS/x86_64_arm64/vnn_objtracking_osx.framework; sourceTree = "<group>"; };
+		B83A2327277F058400109DB4 /* vnn_objcount_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_objcount_osx.framework; path = libs/macOS/x86_64_arm64/vnn_objcount_osx.framework; sourceTree = "<group>"; };
+		B83A2328277F058400109DB4 /* vnn_pose_osx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vnn_pose_osx.framework; path = libs/macOS/x86_64_arm64/vnn_pose_osx.framework; sourceTree = "<group>"; };
+		BD95A3FD6B2FF04AA122923E /* WindowCtrl_Camera_HeadSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_HeadSegment.mm; sourceTree = "<group>"; };
+		BEA4EEF3EE66AF6F3918FD40 /* MTKView_CameraRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTKView_CameraRenderer.h; sourceTree = "<group>"; };
+		C3E34BC0F671DD4B91D477D0 /* WindowCtrl_Picture_3DGameFaceStylizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_3DGameFaceStylizing.h; sourceTree = "<group>"; };
+		C406DFB12C8871D172B210E9 /* WindowCtrl_PictureMetalRender.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_PictureMetalRender.mm; sourceTree = "<group>"; };
+		C776E8CE5311B5CBE62EC7C3 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_FaceCount_QRCodeDetect.mm; sourceTree = "<group>"; };
+		CB9B99795083DE776FE9353B /* NSDrawElements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSDrawElements.h; sourceTree = "<group>"; };
+		CEEECC0A419E31C545C31C9D /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm; sourceTree = "<group>"; };
+		D10D18AACEFC3EAA69773346 /* WindowCtrl_Picture_Gesture.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_Gesture.mm; sourceTree = "<group>"; };
+		D28A5C94D9BC2274999B78C7 /* WindowCtrl_Picture_Gesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Picture_Gesture.h; sourceTree = "<group>"; };
+		D75DCFB7A1A432C55EFF8960 /* WindowCtrl_PictureMetalRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_PictureMetalRender.h; sourceTree = "<group>"; };
+		D860374DCC1CE0EF1421668F /* NSDrawElements.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = NSDrawElements.mm; sourceTree = "<group>"; };
+		DDEBB856B7272AF9E2945A5C /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DEB7234EC49CECFC1647E66F /* WindowCtrl_CameraMetalRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_CameraMetalRender.h; sourceTree = "<group>"; };
+		E524C284D3D65E5425B41FCE /* MTKView_CameraRenderer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = MTKView_CameraRenderer.mm; sourceTree = "<group>"; };
+		EA70188F47C6A0B138935B3D /* WindowCtrl_Camera_ObjectTracking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_ObjectTracking.h; sourceTree = "<group>"; };
+		ED1C478FFC749A5AB2F534DF /* WindowCtrl_Picture_FaceSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Picture_FaceSegment.mm; sourceTree = "<group>"; };
+		EDBD6DC9EB8AA03A9CCC73B1 /* WindowCtrl_Camera_FaceSegment.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_FaceSegment.mm; sourceTree = "<group>"; };
+		F244B984518893AC40D7A0A8 /* vnnimage_mac_kit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = vnnimage_mac_kit.h; sourceTree = "<group>"; };
+		F2587FA6A0E43924C327EDBE /* WindowCtrl_Camera_FaceLandmarkDetection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowCtrl_Camera_FaceLandmarkDetection.mm; sourceTree = "<group>"; };
+		F456AC1E575944DCC090807D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		FE1C1EAD8E9AB8938E8FB42F /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WindowCtrl_Camera_FaceCount_QRCodeDetect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7AABB155C71C97F3E676BFB5 /* Frameworks */ = {
+		B0D328FE8FBF3A4946ED8A14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8CCDE5F2769C1D20083F0B7 /* vnn_gesture_osx.framework in Frameworks */,
-				B8CCDE602769C1D20083F0B7 /* vnn_faceparser_osx.framework in Frameworks */,
-				B8CCDE612769C1D20083F0B7 /* vnn_core_osx.framework in Frameworks */,
-				B8CCDE622769C1D20083F0B7 /* vnn_stylizing_osx.framework in Frameworks */,
-				B8CCDE632769C1D20083F0B7 /* vnn_kit_osx.framework in Frameworks */,
-				B8CCDE642769C1D20083F0B7 /* vnn_objcount_osx.framework in Frameworks */,
-				B8CCDE652769C1D20083F0B7 /* vnn_face_osx.framework in Frameworks */,
-				B8CCDE662769C1D20083F0B7 /* vnn_classifying_osx.framework in Frameworks */,
-				B8CCDE672769C1D20083F0B7 /* vnn_face_reenactment_osx.framework in Frameworks */,
-				B8CCDE682769C1D20083F0B7 /* vnn_objtracking_osx.framework in Frameworks */,
-				B8CCDE692769C1D20083F0B7 /* vnn_general_osx.framework in Frameworks */,
-				458BD488ED9B44CFE812A733 /* Cocoa.framework in Frameworks */,
-				ECA122F372895E97DB2B51DE /* CoreMedia.framework in Frameworks */,
-				EC256643B141E6A7FA08D6CA /* AVFoundation.framework in Frameworks */,
-				4C3EBFC991149C59974566E4 /* AVKit.framework in Frameworks */,
-				A576E09BE3AC59E64A836084 /* QuartzCore.framework in Frameworks */,
-				BC939604FF7EC08A7B488945 /* Metal.framework in Frameworks */,
-				135F555B8FF4AFB7EFB79F97 /* MetalKit.framework in Frameworks */,
-				35264A3DC91CB0B616C8CACB /* MetalPerformanceShaders.framework in Frameworks */,
-				C2601B48E25A530D3472894A /* Accelerate.framework in Frameworks */,
+				B83A2329277F058400109DB4 /* vnn_general_osx.framework in Frameworks */,
+				B83A232A277F058400109DB4 /* vnn_stylizing_osx.framework in Frameworks */,
+				B83A232B277F058400109DB4 /* vnn_kit_osx.framework in Frameworks */,
+				B83A232C277F058400109DB4 /* vnn_faceparser_osx.framework in Frameworks */,
+				B83A232D277F058400109DB4 /* vnn_core_osx.framework in Frameworks */,
+				B83A232E277F058400109DB4 /* vnn_face_osx.framework in Frameworks */,
+				B83A232F277F058400109DB4 /* vnn_gesture_osx.framework in Frameworks */,
+				B83A2330277F058400109DB4 /* vnn_face_reenactment_osx.framework in Frameworks */,
+				B83A2331277F058400109DB4 /* vnn_classifying_osx.framework in Frameworks */,
+				B83A2332277F058400109DB4 /* vnn_objtracking_osx.framework in Frameworks */,
+				B83A2333277F058400109DB4 /* vnn_objcount_osx.framework in Frameworks */,
+				B83A2334277F058400109DB4 /* vnn_pose_osx.framework in Frameworks */,
+				28778277A6E89F6AB81D1CE6 /* Cocoa.framework in Frameworks */,
+				89C2471AD9C18D0ECB4528D6 /* CoreMedia.framework in Frameworks */,
+				34E6F13EDE6953CBC7456EBE /* AVFoundation.framework in Frameworks */,
+				5747A562F642EDBFBCD9BB3C /* AVKit.framework in Frameworks */,
+				CEC5292F1FC5FCF186EEDFC8 /* QuartzCore.framework in Frameworks */,
+				D85D401933826F4D681E358C /* Metal.framework in Frameworks */,
+				20AC132C4F7060624C55A15C /* MetalKit.framework in Frameworks */,
+				984BBD64CA5A951374C1E57D /* MetalPerformanceShaders.framework in Frameworks */,
+				C65CA11287734A11083A5A44 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11D25A2433D815B8012C9CAB /* Products */ = {
+		15AB74AB5FCA0E5FDFCCB248 /* PictureWindowCtrls */ = {
 			isa = PBXGroup;
 			children = (
-				D3FB62F80BA7D335EBFBDAC4 /* vnndemo_osx.app */,
+				B702D8CBB4E373C6BA9277B3 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h */,
+				CEEECC0A419E31C545C31C9D /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm */,
+				B3E98EF5FB93C7BA6A13D38F /* WindowCtrl_Picture_GeneralSegment.h */,
+				3BA082852D52F56E03245CC6 /* WindowCtrl_Picture_GeneralSegment.mm */,
+				663F0FEBD6568C23F276928E /* WindowCtrl_Picture_HeadSegment.h */,
+				64EF0637938005EF87D546BA /* WindowCtrl_Picture_HeadSegment.mm */,
+				948B6B6B0E0B4D5BF120F56B /* WindowCtrl_Picture_FaceSegment.h */,
+				ED1C478FFC749A5AB2F534DF /* WindowCtrl_Picture_FaceSegment.mm */,
+				C3E34BC0F671DD4B91D477D0 /* WindowCtrl_Picture_3DGameFaceStylizing.h */,
+				9FAD58C315ED5C924C2CCC93 /* WindowCtrl_Picture_3DGameFaceStylizing.mm */,
+				82E2DB6EC08B75F918D9C371 /* WindowCtrl_Picture_DisneyFaceStylizing.h */,
+				8B9C950AE9B0E181750FCAEB /* WindowCtrl_Picture_DisneyFaceStylizing.mm */,
+				6123BC71F8796B8B7219F77A /* WindowCtrl_Picture_FaceLandmarkDetection.h */,
+				6658782D49C73A3B1DCB258A /* WindowCtrl_Picture_FaceLandmarkDetection.mm */,
+				2C64D6C5FEE231B1413894B3 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h */,
+				3D191FF32E4FA0800E0F5F0F /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm */,
+				1251A01E8D234FF7BD61D1B0 /* WindowCtrl_Picture_FaceReenactment.h */,
+				4376005E66F3A945A9044AB8 /* WindowCtrl_Picture_FaceReenactment.mm */,
+				68EB84FDC3230B96648D1C4A /* WindowCtrl_Picture_GeneralClassification.h */,
+				12F2A591EBF29ECD89E4E289 /* WindowCtrl_Picture_GeneralClassification.mm */,
+				D28A5C94D9BC2274999B78C7 /* WindowCtrl_Picture_Gesture.h */,
+				D10D18AACEFC3EAA69773346 /* WindowCtrl_Picture_Gesture.mm */,
+				8A07B19B71AEB0E6CA40F618 /* WindowCtrl_Picture_PoseLandmarkDetection.h */,
+				059D346E6EF8B8D41A31E676 /* WindowCtrl_Picture_PoseLandmarkDetection.mm */,
+			);
+			path = PictureWindowCtrls;
+			sourceTree = "<group>";
+		};
+		18A3647616FFB69943648582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				733FCD066D0C76453CBE7CA3 /* vnndemo_osx.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FD16EA77BA1D09CCE672059 /* Utils */ = {
+		5F8E4059EC676C38074E0747 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				30FF050C5C17E279B8C17D0F /* MTKView_CameraRenderer.h */,
-				B50F65B71DFCC430C92E9B2E /* MTKView_CameraRenderer.metal */,
-				B5897EBFD57BB38BB402979C /* MTKView_CameraRenderer.mm */,
-				AE00F2916F8852A1798AF4C5 /* NSDrawElements.h */,
-				D7E8008418EBA198B671A093 /* NSDrawElements.mm */,
-				82015953A7A7316028392587 /* NSView_ElementsDrawer.h */,
-				EF83EAB06B2C7FF218788CBB /* NSView_ElementsDrawer.mm */,
-				13F16446F192B9D6200F8D83 /* OSXDemoHelper.h */,
-				A3695CE93437F0C8F2CDCB94 /* OSXDemoHelper.mm */,
-				06BE821C4A748B9239797705 /* WindowCtrl_CameraMetalRender.h */,
-				87A9AD13FFEF930E48533548 /* WindowCtrl_CameraMetalRender.mm */,
-				AC36AC2D5F7C111E09A7D977 /* WindowCtrl_PictureMetalRender.h */,
-				D935E30CD2E0F44CCEC9D667 /* WindowCtrl_PictureMetalRender.mm */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		2EA75C371678232E84B1DF53 /* osx */ = {
-			isa = PBXGroup;
-			children = (
-				88CC60465C1024F00893F5C7 /* Main.storyboard */,
-				ABB3BE642E51427A3F7F2BAE /* main.m */,
-				209D7C8BEFB19684185DF470 /* AppDelegate.h */,
-				050693E31F9FC6F30C800C09 /* AppDelegate.m */,
-				2EBDD1FA9C82B85E862AE377 /* ViewController.h */,
-				56E3FF139DB9817B46E8A3DD /* ViewController.mm */,
-				1FD16EA77BA1D09CCE672059 /* Utils */,
-				D3A10735195096C5682F09FC /* PictureWindowCtrls */,
-				A5AAE290725463FF883782D6 /* CameraWindowCtrls */,
-			);
-			path = osx;
-			sourceTree = "<group>";
-		};
-		3EB84B79341C742FC410F8F2 /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				374ACED0B9575B8BBFD93486 /* Cocoa.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		97311B449CD237C821B598F1 = {
-			isa = PBXGroup;
-			children = (
-				11D25A2433D815B8012C9CAB /* Products */,
-				BC2B795995D5227DD13F45BA /* Frameworks */,
-				EB942CB34D90B6BB189C40E4 /* files */,
-				2EA75C371678232E84B1DF53 /* osx */,
-			);
-			sourceTree = "<group>";
-		};
-		A5AAE290725463FF883782D6 /* CameraWindowCtrls */ = {
-			isa = PBXGroup;
-			children = (
-				62BD5F6046BB1AA6CDCCDD54 /* WindowCtrl_Camera_3DGameFaceStylizing.h */,
-				02F5FF18C28C697DCA9DC291 /* WindowCtrl_Camera_3DGameFaceStylizing.mm */,
-				93C2248A29707D5CAF53D6EA /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h */,
-				835B3BC37D700EBEAAED250B /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm */,
-				F40267AADE8698B185917BB3 /* WindowCtrl_Camera_DisneyFaceStylizing.h */,
-				F91BCEA9AD0A16436561CFDE /* WindowCtrl_Camera_DisneyFaceStylizing.mm */,
-				77910CDA50602C6200F7DCBA /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h */,
-				A780A0ABCA2F02A8F15299F9 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm */,
-				AF8B0C2D79C6AA5D9F687F25 /* WindowCtrl_Camera_FaceLandmarkDetection.h */,
-				239AA9E4D2ACB002D37C5B10 /* WindowCtrl_Camera_FaceLandmarkDetection.mm */,
-				73B08D514868E1FDDA283932 /* WindowCtrl_Camera_FaceSegment.h */,
-				F28B8C8BB41898408654354F /* WindowCtrl_Camera_FaceSegment.mm */,
-				04B9723008ECF2EC4328AD91 /* WindowCtrl_Camera_GeneralClassification.h */,
-				65F62BF8DF39E03F134E64C6 /* WindowCtrl_Camera_GeneralClassification.mm */,
-				97F118C373C02AC36555E48B /* WindowCtrl_Camera_GeneralSegment.h */,
-				665C033CBFE26276D650AC1E /* WindowCtrl_Camera_GeneralSegment.mm */,
-				D6DEA2D670CE0D9485F10AEA /* WindowCtrl_Camera_Gesture.h */,
-				7D3A5330957DFC94E8D6DA7F /* WindowCtrl_Camera_Gesture.mm */,
-				229894AFFDE6BC41A62D84F6 /* WindowCtrl_Camera_HeadSegment.h */,
-				58531E9E554ABE8FFF84EB19 /* WindowCtrl_Camera_HeadSegment.mm */,
-				4407C172D28BF8F8E8E448D7 /* WindowCtrl_Camera_ObjectTracking.h */,
-				E9F780B00A84366863B83B6B /* WindowCtrl_Camera_ObjectTracking.mm */,
-			);
-			path = CameraWindowCtrls;
-			sourceTree = "<group>";
-		};
-		BC2B795995D5227DD13F45BA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B8CCDE5B2769C1D20083F0B7 /* vnn_classifying_osx.framework */,
-				B8CCDE562769C1D20083F0B7 /* vnn_core_osx.framework */,
-				B8CCDE5A2769C1D20083F0B7 /* vnn_face_osx.framework */,
-				B8CCDE5C2769C1D20083F0B7 /* vnn_face_reenactment_osx.framework */,
-				B8CCDE552769C1D20083F0B7 /* vnn_faceparser_osx.framework */,
-				B8CCDE5E2769C1D20083F0B7 /* vnn_general_osx.framework */,
-				B8CCDE542769C1D20083F0B7 /* vnn_gesture_osx.framework */,
-				B8CCDE582769C1D20083F0B7 /* vnn_kit_osx.framework */,
-				B8CCDE592769C1D20083F0B7 /* vnn_objcount_osx.framework */,
-				B8CCDE5D2769C1D20083F0B7 /* vnn_objtracking_osx.framework */,
-				B8CCDE572769C1D20083F0B7 /* vnn_stylizing_osx.framework */,
-				3EB84B79341C742FC410F8F2 /* OS X */,
-				5108DD67BE08EEED580C11B6 /* CoreMedia.framework */,
-				11A121817DABA8034D0015F0 /* AVFoundation.framework */,
-				A513CE6AF0D05F89DC03FE5C /* AVKit.framework */,
-				7AF2E13B7473DFDF5F88A522 /* QuartzCore.framework */,
-				2E60FC604E21A604FE3FDDD6 /* Metal.framework */,
-				A5A81000ABD6D2F3A9C9FDF8 /* MetalKit.framework */,
-				828029461963DAC39A6C77A4 /* MetalPerformanceShaders.framework */,
-				1982710FFC01E3635D175C40 /* Accelerate.framework */,
+				B83A2325277F058400109DB4 /* vnn_classifying_osx.framework */,
+				B83A2321277F058400109DB4 /* vnn_core_osx.framework */,
+				B83A2322277F058400109DB4 /* vnn_face_osx.framework */,
+				B83A2324277F058400109DB4 /* vnn_face_reenactment_osx.framework */,
+				B83A2320277F058400109DB4 /* vnn_faceparser_osx.framework */,
+				B83A231D277F058400109DB4 /* vnn_general_osx.framework */,
+				B83A2323277F058400109DB4 /* vnn_gesture_osx.framework */,
+				B83A231F277F058400109DB4 /* vnn_kit_osx.framework */,
+				B83A2327277F058400109DB4 /* vnn_objcount_osx.framework */,
+				B83A2326277F058400109DB4 /* vnn_objtracking_osx.framework */,
+				B83A2328277F058400109DB4 /* vnn_pose_osx.framework */,
+				B83A231E277F058400109DB4 /* vnn_stylizing_osx.framework */,
+				F7ABCC345766D81DA45233BB /* OS X */,
+				A02E9208C7077642FB30C35E /* CoreMedia.framework */,
+				30F5D0B1A37D8C37331C35B9 /* AVFoundation.framework */,
+				F456AC1E575944DCC090807D /* AVKit.framework */,
+				7D8582A28A7C32B455643A65 /* QuartzCore.framework */,
+				7A71927808C100B54DB577D4 /* Metal.framework */,
+				8340CC0C79EEA1B9A6E11966 /* MetalKit.framework */,
+				471CC39FDFF7607B93FA4C2E /* MetalPerformanceShaders.framework */,
+				0B6020532A7D20F152CF6122 /* Accelerate.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D3A10735195096C5682F09FC /* PictureWindowCtrls */ = {
+		6A319503BBA3A832F46BFDC0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				041D20C93C8A41D8041F07BD /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h */,
-				43A64104B799B86AA921DDF4 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm */,
-				1FD2B27BB6AEA110CEA70059 /* WindowCtrl_Picture_GeneralSegment.h */,
-				DFDCD4F8FC0E97DAF9D83B7C /* WindowCtrl_Picture_GeneralSegment.mm */,
-				5E65B69EB915AAFFA03C4703 /* WindowCtrl_Picture_HeadSegment.h */,
-				2A2BBD399D2FE6324E6A4ABC /* WindowCtrl_Picture_HeadSegment.mm */,
-				C3B072F0E77B50263CCAC48C /* WindowCtrl_Picture_FaceSegment.h */,
-				0391DFA4C27B725B6CF9E66C /* WindowCtrl_Picture_FaceSegment.mm */,
-				854C23B04ADA3FB059418F62 /* WindowCtrl_Picture_3DGameFaceStylizing.h */,
-				6E81549906466763930B38A6 /* WindowCtrl_Picture_3DGameFaceStylizing.mm */,
-				831C1A6429FF9B7E2D54E7D2 /* WindowCtrl_Picture_DisneyFaceStylizing.h */,
-				B00A947308EA3F210B34C045 /* WindowCtrl_Picture_DisneyFaceStylizing.mm */,
-				8A2DD5225D9F0A1B59EB356D /* WindowCtrl_Picture_FaceLandmarkDetection.h */,
-				EE9920A85388BFBAA3B21A20 /* WindowCtrl_Picture_FaceLandmarkDetection.mm */,
-				000D3410D6D9341C17F550F6 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h */,
-				BE36DF141A2F561A6544299D /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm */,
-				140C1333E670F5486DE0A6EC /* WindowCtrl_Picture_FaceReenactment.h */,
-				48B27BC5A26C034921E8C1D4 /* WindowCtrl_Picture_FaceReenactment.mm */,
-				1C1F2FFC8566EBC8C3DE7BAF /* WindowCtrl_Picture_GeneralClassification.h */,
-				9B247AEF4D7561C55E566A48 /* WindowCtrl_Picture_GeneralClassification.mm */,
-				225AEF65ADA39CA225456DEE /* WindowCtrl_Picture_Gesture.h */,
-				CF62A0A61F9E9A37355DFE9C /* WindowCtrl_Picture_Gesture.mm */,
+				BEA4EEF3EE66AF6F3918FD40 /* MTKView_CameraRenderer.h */,
+				A48EAEEF2F5EE988B9BB9542 /* MTKView_CameraRenderer.metal */,
+				E524C284D3D65E5425B41FCE /* MTKView_CameraRenderer.mm */,
+				CB9B99795083DE776FE9353B /* NSDrawElements.h */,
+				D860374DCC1CE0EF1421668F /* NSDrawElements.mm */,
+				480EB995A9F6396F12F0DFD3 /* NSView_ElementsDrawer.h */,
+				7626590DB628775C96588A10 /* NSView_ElementsDrawer.mm */,
+				99D63D6DBD0BA5292E549E88 /* OSXDemoHelper.h */,
+				83C8AA337D526F95AA8A1467 /* OSXDemoHelper.mm */,
+				DEB7234EC49CECFC1647E66F /* WindowCtrl_CameraMetalRender.h */,
+				59231DA042C0608CE058B6A2 /* WindowCtrl_CameraMetalRender.mm */,
+				D75DCFB7A1A432C55EFF8960 /* WindowCtrl_PictureMetalRender.h */,
+				C406DFB12C8871D172B210E9 /* WindowCtrl_PictureMetalRender.mm */,
+				F244B984518893AC40D7A0A8 /* vnnimage_mac_kit.h */,
+				9CDCE1E3BDDBD3249CB69D9A /* vnnimage_mac_kit.cpp */,
+				5289A02A2670E9BA3172562E /* vnnimage_mac_kit.mm */,
 			);
-			path = PictureWindowCtrls;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6EE8EB6805FA83F1DD7F04CA /* CameraWindowCtrls */ = {
+			isa = PBXGroup;
+			children = (
+				A60A2958B9844315565AE02C /* WindowCtrl_Camera_3DGameFaceStylizing.h */,
+				62DDDF571BEF04558010B17E /* WindowCtrl_Camera_3DGameFaceStylizing.mm */,
+				348E45201C640EEE434DD7D6 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h */,
+				4CB032451FC4E3E856892DD2 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm */,
+				7F237F553B5FB92936FFA3AC /* WindowCtrl_Camera_DisneyFaceStylizing.h */,
+				AE427CA01B29DC22EDB9533E /* WindowCtrl_Camera_DisneyFaceStylizing.mm */,
+				FE1C1EAD8E9AB8938E8FB42F /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h */,
+				C776E8CE5311B5CBE62EC7C3 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm */,
+				6DCD4B667D595FCC99E5BC77 /* WindowCtrl_Camera_FaceLandmarkDetection.h */,
+				F2587FA6A0E43924C327EDBE /* WindowCtrl_Camera_FaceLandmarkDetection.mm */,
+				37B56E8E775C1D6043A4975B /* WindowCtrl_Camera_FaceSegment.h */,
+				EDBD6DC9EB8AA03A9CCC73B1 /* WindowCtrl_Camera_FaceSegment.mm */,
+				79317FC8ACDC53206A94FA31 /* WindowCtrl_Camera_GeneralClassification.h */,
+				67ADB4F0FFB8C8CF167808E7 /* WindowCtrl_Camera_GeneralClassification.mm */,
+				28DA278C33A0009BA531EFDF /* WindowCtrl_Camera_GeneralSegment.h */,
+				23BD09913083CE933C77BC41 /* WindowCtrl_Camera_GeneralSegment.mm */,
+				851C7D80FB994476E773C4B9 /* WindowCtrl_Camera_Gesture.h */,
+				9DD5C390AB80BB3386359F8A /* WindowCtrl_Camera_Gesture.mm */,
+				92FFAB6148E7598837B2808F /* WindowCtrl_Camera_HeadSegment.h */,
+				BD95A3FD6B2FF04AA122923E /* WindowCtrl_Camera_HeadSegment.mm */,
+				EA70188F47C6A0B138935B3D /* WindowCtrl_Camera_ObjectTracking.h */,
+				5BF5618A6D6657C4C8F7E340 /* WindowCtrl_Camera_ObjectTracking.mm */,
+				97013804B60C2D1C6CE2D808 /* WindowCtrl_Camera_PoseLandmarkDetection.h */,
+				7AD41706FCFE816E7EFF809D /* WindowCtrl_Camera_PoseLandmarkDetection.mm */,
+			);
+			path = CameraWindowCtrls;
+			sourceTree = "<group>";
+		};
+		8946D39C3F0B6C9AB9BEA21C /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				DDEBB856B7272AF9E2945A5C /* Main.storyboard */,
+				9E29906BF9DDF0AA28A92461 /* main.m */,
+				7A3E56CBE8DDEFB6BF4B37CC /* AppDelegate.h */,
+				A7CE9F6D26F905320A0817C3 /* AppDelegate.m */,
+				338E00C299B7AAB56A8782C4 /* ViewController.h */,
+				938A63B45E7E7417C363154C /* ViewController.mm */,
+				6A319503BBA3A832F46BFDC0 /* Utils */,
+				15AB74AB5FCA0E5FDFCCB248 /* PictureWindowCtrls */,
+				6EE8EB6805FA83F1DD7F04CA /* CameraWindowCtrls */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		F7ABCC345766D81DA45233BB /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				8F756C4F83988D59EA3F4823 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		FEF47D34338EB155963CB107 = {
+			isa = PBXGroup;
+			children = (
+				18A3647616FFB69943648582 /* Products */,
+				5F8E4059EC676C38074E0747 /* Frameworks */,
+				1C821CF94A9988D631402B36 /* files */,
+				8946D39C3F0B6C9AB9BEA21C /* osx */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4F7DD54EEC476A5BBD7D848 /* vnndemo_osx */ = {
+		6D741B4B2C101F6E22D77028 /* vnndemo_osx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79B83A05E9578225B4920DF9 /* Build configuration list for PBXNativeTarget "vnndemo_osx" */;
+			buildConfigurationList = DF47AD94F05AE44B63A8D264 /* Build configuration list for PBXNativeTarget "vnndemo_osx" */;
 			buildPhases = (
-				2334CC6F39920040696A9C36 /* Sources */,
-				7AABB155C71C97F3E676BFB5 /* Frameworks */,
-				958B2DCD558001F42D3F536F /* Resources */,
-				B8CCDE752769C2860083F0B7 /* CopyFiles */,
+				981B0B873F857D568B150497 /* Sources */,
+				B0D328FE8FBF3A4946ED8A14 /* Frameworks */,
+				3D42E66D807D6663BD8D9692 /* Resources */,
+				B83A22B8277EF78700109DB4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -411,24 +438,24 @@
 			);
 			name = vnndemo_osx;
 			productName = vnndemo_osx;
-			productReference = D3FB62F80BA7D335EBFBDAC4 /* vnndemo_osx.app */;
+			productReference = 733FCD066D0C76453CBE7CA3 /* vnndemo_osx.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		44D352BA7818DE710D9E6853 /* Project object */ = {
+		DC89380BCA8347B7F8270582 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				TargetAttributes = {
-					E4F7DD54EEC476A5BBD7D848 = {
+					6D741B4B2C101F6E22D77028 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = C7B27E4D58448F394A0862C1 /* Build configuration list for PBXProject "vnndemo" */;
+			buildConfigurationList = ABC4F5267E2204E49F2CA476 /* Build configuration list for PBXProject "vnndemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -436,102 +463,298 @@
 				en,
 				Base,
 			);
-			mainGroup = 97311B449CD237C821B598F1;
-			productRefGroup = 11D25A2433D815B8012C9CAB /* Products */;
+			mainGroup = FEF47D34338EB155963CB107;
+			productRefGroup = 18A3647616FFB69943648582 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4F7DD54EEC476A5BBD7D848 /* vnndemo_osx */,
+				6D741B4B2C101F6E22D77028 /* vnndemo_osx */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		958B2DCD558001F42D3F536F /* Resources */ = {
+		3D42E66D807D6663BD8D9692 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47FF76A383243F5AA2DB586A /* files in Resources */,
+				10F2FF97B4BC2095C12C0432 /* files in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2334CC6F39920040696A9C36 /* Sources */ = {
+		981B0B873F857D568B150497 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E451C7CBE942868BC34A40F0 /* Main.storyboard in Sources */,
-				3B1B4BF23710BCF66C8BA35C /* main.m in Sources */,
-				A3CF3F9117B5C800BD800DBE /* AppDelegate.h in Sources */,
-				38BC342924F929B09C10B7C4 /* AppDelegate.m in Sources */,
-				E8A644528E3319F0A8D8D5A3 /* ViewController.h in Sources */,
-				CE5EE5D6E958FC3B9BF071D7 /* ViewController.mm in Sources */,
-				F7D71FCBD30A14D2410B64A0 /* MTKView_CameraRenderer.h in Sources */,
-				9A8B6C712CBE8589E7401577 /* MTKView_CameraRenderer.metal in Sources */,
-				A34A17B6AC9F3771467C2E27 /* MTKView_CameraRenderer.mm in Sources */,
-				A782F90DF502540ADD0E2A40 /* NSDrawElements.h in Sources */,
-				1168771A2E6E114A7F6CB931 /* NSDrawElements.mm in Sources */,
-				4B6725DA47EDEA67406FAAAA /* NSView_ElementsDrawer.h in Sources */,
-				CBCD76E3E83B8DC78214F229 /* NSView_ElementsDrawer.mm in Sources */,
-				753A5893D7829B78E55022B0 /* OSXDemoHelper.h in Sources */,
-				BC4E3F3C980B50A988117AE4 /* OSXDemoHelper.mm in Sources */,
-				EE942C0CE75CB7112F8C9844 /* WindowCtrl_CameraMetalRender.h in Sources */,
-				F72C93D4533167359B7356E4 /* WindowCtrl_CameraMetalRender.mm in Sources */,
-				194E5423C13C98AB17AF9EE4 /* WindowCtrl_PictureMetalRender.h in Sources */,
-				418C3F0857277239843846B6 /* WindowCtrl_PictureMetalRender.mm in Sources */,
-				664AA361459A7B94ECCE79A3 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h in Sources */,
-				273DF3FA012A9570E80B9ECF /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm in Sources */,
-				566C0ECE3E0A0421CE55AD6B /* WindowCtrl_Picture_GeneralSegment.h in Sources */,
-				4CF68EE30F4D9F6B768F8BAF /* WindowCtrl_Picture_GeneralSegment.mm in Sources */,
-				6B5CE1E8C8C44216B03FB805 /* WindowCtrl_Picture_HeadSegment.h in Sources */,
-				A5EED3B4888934304551392C /* WindowCtrl_Picture_HeadSegment.mm in Sources */,
-				C46EA3E2D430091F8D8EF429 /* WindowCtrl_Picture_FaceSegment.h in Sources */,
-				FA47C5CEC8E8866EB8B20160 /* WindowCtrl_Picture_FaceSegment.mm in Sources */,
-				3820C70E729DCE330EEB8080 /* WindowCtrl_Picture_3DGameFaceStylizing.h in Sources */,
-				81A66FFC7A0D40F24DB0D122 /* WindowCtrl_Picture_3DGameFaceStylizing.mm in Sources */,
-				F4B286FA8B673B3923993967 /* WindowCtrl_Picture_DisneyFaceStylizing.h in Sources */,
-				8DFCEABD59D2F118E89743BE /* WindowCtrl_Picture_DisneyFaceStylizing.mm in Sources */,
-				697325C75DCB982AF3644DA7 /* WindowCtrl_Picture_FaceLandmarkDetection.h in Sources */,
-				45AA4E968169E45662C16D74 /* WindowCtrl_Picture_FaceLandmarkDetection.mm in Sources */,
-				5E8F9EC274F29EC67C9C9397 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h in Sources */,
-				B568E0F8ABF1135B74C18B03 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm in Sources */,
-				DB0B71293E5DBE3C10FBC3F6 /* WindowCtrl_Picture_FaceReenactment.h in Sources */,
-				5698E2BC39100C3C7B9FBF47 /* WindowCtrl_Picture_FaceReenactment.mm in Sources */,
-				C4DC633789BE024BFF62ACD9 /* WindowCtrl_Picture_GeneralClassification.h in Sources */,
-				713647B5DE7C59854E656871 /* WindowCtrl_Picture_GeneralClassification.mm in Sources */,
-				DCAC71D1978D71F32E4BE7CD /* WindowCtrl_Picture_Gesture.h in Sources */,
-				257445EC2FA026DC34F8551E /* WindowCtrl_Picture_Gesture.mm in Sources */,
-				5FA08BE971D6BF7493D4900D /* WindowCtrl_Camera_3DGameFaceStylizing.h in Sources */,
-				FBFFDE10AD5DDDE4BD4E8F04 /* WindowCtrl_Camera_3DGameFaceStylizing.mm in Sources */,
-				ABF6ACC795AFAD82E42F956A /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h in Sources */,
-				E00205676F411688BA6B9679 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm in Sources */,
-				1360A694D6F164EFF923A782 /* WindowCtrl_Camera_DisneyFaceStylizing.h in Sources */,
-				E4A8091AA3483F44B1934D4D /* WindowCtrl_Camera_DisneyFaceStylizing.mm in Sources */,
-				B44EFDF7635EC29C288C96CC /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h in Sources */,
-				0BF9B26D263A1E533C00525B /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm in Sources */,
-				B3A6185A904232ED61F65812 /* WindowCtrl_Camera_FaceLandmarkDetection.h in Sources */,
-				CA65AFD107E978D1FE8FBC07 /* WindowCtrl_Camera_FaceLandmarkDetection.mm in Sources */,
-				33A82D3B42A5195A1535621F /* WindowCtrl_Camera_FaceSegment.h in Sources */,
-				E7F1DBC753512885DFED1D01 /* WindowCtrl_Camera_FaceSegment.mm in Sources */,
-				94DBAFD78FA9D21BF4AAB791 /* WindowCtrl_Camera_GeneralClassification.h in Sources */,
-				0D8E4A4AA71DBDCEE243DA4F /* WindowCtrl_Camera_GeneralClassification.mm in Sources */,
-				F630EB874D45403745489311 /* WindowCtrl_Camera_GeneralSegment.h in Sources */,
-				DFE59A7CA6A953675EE78867 /* WindowCtrl_Camera_GeneralSegment.mm in Sources */,
-				425249C43C962388A862FA0B /* WindowCtrl_Camera_Gesture.h in Sources */,
-				340D781365AF2293FC190915 /* WindowCtrl_Camera_Gesture.mm in Sources */,
-				989071AA3D599A7538D60116 /* WindowCtrl_Camera_HeadSegment.h in Sources */,
-				8392BAF2B460E57A2FA0E71F /* WindowCtrl_Camera_HeadSegment.mm in Sources */,
-				E6407032B7E5C2650F6044C8 /* WindowCtrl_Camera_ObjectTracking.h in Sources */,
-				98EF830639C9BE23B60ED589 /* WindowCtrl_Camera_ObjectTracking.mm in Sources */,
+				E8B78EF1A8347B2B45626F77 /* Main.storyboard in Sources */,
+				A7F6A0D6F808441F7492B338 /* main.m in Sources */,
+				2E0EA2A03C22C1EBCBB66D56 /* AppDelegate.h in Sources */,
+				44526A18635C768E59F2C052 /* AppDelegate.m in Sources */,
+				8F4F676E1D722F1DF7BE996F /* ViewController.h in Sources */,
+				0221AE530AE74B57F8A0ECF7 /* ViewController.mm in Sources */,
+				677492678677A28771F873B4 /* MTKView_CameraRenderer.h in Sources */,
+				5EA94E3E251282A5B08E9EC7 /* MTKView_CameraRenderer.metal in Sources */,
+				E20038A90517223B01551DCB /* MTKView_CameraRenderer.mm in Sources */,
+				1478086E71D55CB7A5AF0404 /* NSDrawElements.h in Sources */,
+				5E289FAD964C59482F1CA264 /* NSDrawElements.mm in Sources */,
+				2573E44ABC6790EE8C974E49 /* NSView_ElementsDrawer.h in Sources */,
+				85B0B2C553E849028537E708 /* NSView_ElementsDrawer.mm in Sources */,
+				B9A3457AA0E8356C9D24A7B3 /* OSXDemoHelper.h in Sources */,
+				2E838E14A6823947EEA2B415 /* OSXDemoHelper.mm in Sources */,
+				5BF9C8943EDD7D62AEC63DB6 /* WindowCtrl_CameraMetalRender.h in Sources */,
+				6C2D0148B69433961899502B /* WindowCtrl_CameraMetalRender.mm in Sources */,
+				5EC703A3EF075751DD623604 /* WindowCtrl_PictureMetalRender.h in Sources */,
+				132B91DF4FC8AD0E0E7BF9E4 /* WindowCtrl_PictureMetalRender.mm in Sources */,
+				F61E788400F4C6529FDC5227 /* vnnimage_mac_kit.h in Sources */,
+				E2C3009958A705055ADB44DA /* vnnimage_mac_kit.cpp in Sources */,
+				81EDDD973D33F4821A449F5A /* vnnimage_mac_kit.mm in Sources */,
+				A0D76D9029D4479D7533DBE9 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h in Sources */,
+				AAEA5329F3B3048A0C332688 /* WindowCtrl_Picture_CartoonStylizing_ComicStylizing.mm in Sources */,
+				ED130EE89169E133E96FB0DA /* WindowCtrl_Picture_GeneralSegment.h in Sources */,
+				3D399893D388D5C0D63605FD /* WindowCtrl_Picture_GeneralSegment.mm in Sources */,
+				4AB255001441AE4F2792237B /* WindowCtrl_Picture_HeadSegment.h in Sources */,
+				89F13001A153C1D42321B045 /* WindowCtrl_Picture_HeadSegment.mm in Sources */,
+				AEDA74CCEAA5717119BF9386 /* WindowCtrl_Picture_FaceSegment.h in Sources */,
+				D239402C4752971C6486D6E1 /* WindowCtrl_Picture_FaceSegment.mm in Sources */,
+				FF365A847A405CE9A13DF454 /* WindowCtrl_Picture_3DGameFaceStylizing.h in Sources */,
+				6ABD2E690B8E9C4F70EAB795 /* WindowCtrl_Picture_3DGameFaceStylizing.mm in Sources */,
+				4BFB0C40ACE3AB7BA2712BF7 /* WindowCtrl_Picture_DisneyFaceStylizing.h in Sources */,
+				799CF7A4AEA36A181262E7F8 /* WindowCtrl_Picture_DisneyFaceStylizing.mm in Sources */,
+				06F3E92A7B96984714845F40 /* WindowCtrl_Picture_FaceLandmarkDetection.h in Sources */,
+				604FC33426BA549558EA1A06 /* WindowCtrl_Picture_FaceLandmarkDetection.mm in Sources */,
+				A65BC503DB2EB448A90198B8 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.h in Sources */,
+				1B614BA2056EA375DE2139B8 /* WindowCtrl_Picture_FaceCount_QRCodeDetect.mm in Sources */,
+				513DFA51F2720B7DA4C9BB24 /* WindowCtrl_Picture_FaceReenactment.h in Sources */,
+				FA8EA118D6969F738FFBFA2F /* WindowCtrl_Picture_FaceReenactment.mm in Sources */,
+				7CA71B177A41D0165D2381D3 /* WindowCtrl_Picture_GeneralClassification.h in Sources */,
+				65A7CFB3411B29542780B6BF /* WindowCtrl_Picture_GeneralClassification.mm in Sources */,
+				83FE4E9CF9631BBE2B1EFB56 /* WindowCtrl_Picture_Gesture.h in Sources */,
+				0E36131F73707DE130BAA166 /* WindowCtrl_Picture_Gesture.mm in Sources */,
+				DE024AF8AD48E557E2A2CFCF /* WindowCtrl_Picture_PoseLandmarkDetection.h in Sources */,
+				70142DC95B5A51A9B97FA512 /* WindowCtrl_Picture_PoseLandmarkDetection.mm in Sources */,
+				26873F3E3CACFCFC937F7322 /* WindowCtrl_Camera_3DGameFaceStylizing.h in Sources */,
+				4773FC88C5BBB05389D28A7C /* WindowCtrl_Camera_3DGameFaceStylizing.mm in Sources */,
+				B1391EC7C7F29B4FB6FD0E02 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.h in Sources */,
+				0CB000545BD3958C5D237AF6 /* WindowCtrl_Camera_CartoonStylizing_ComicStylizing.mm in Sources */,
+				9811BB898CF59A82FFC7FD85 /* WindowCtrl_Camera_DisneyFaceStylizing.h in Sources */,
+				899F00CDA8368C1FD2D4B5B2 /* WindowCtrl_Camera_DisneyFaceStylizing.mm in Sources */,
+				67BE5783B973366681CB8C69 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.h in Sources */,
+				AC911702EC16DABD09926FA7 /* WindowCtrl_Camera_FaceCount_QRCodeDetect.mm in Sources */,
+				1177B051C92BC8F3DB97AD75 /* WindowCtrl_Camera_FaceLandmarkDetection.h in Sources */,
+				5152DCAD536F1D64C153F124 /* WindowCtrl_Camera_FaceLandmarkDetection.mm in Sources */,
+				0C333972A87514E39873910F /* WindowCtrl_Camera_FaceSegment.h in Sources */,
+				C05A7B1CA7BCEC584917B042 /* WindowCtrl_Camera_FaceSegment.mm in Sources */,
+				B9408B46A12B6C27BE192736 /* WindowCtrl_Camera_GeneralClassification.h in Sources */,
+				423C7B287ED3F26A2BC72216 /* WindowCtrl_Camera_GeneralClassification.mm in Sources */,
+				0E84E918E99C396FAE770D9E /* WindowCtrl_Camera_GeneralSegment.h in Sources */,
+				028288EED07E7318D6E981F6 /* WindowCtrl_Camera_GeneralSegment.mm in Sources */,
+				E490090E183BD963C8250F1B /* WindowCtrl_Camera_Gesture.h in Sources */,
+				50D3A29818AC675ECC97A102 /* WindowCtrl_Camera_Gesture.mm in Sources */,
+				EF235DC0A4CF4C811C7D868F /* WindowCtrl_Camera_HeadSegment.h in Sources */,
+				799933986A57BF651C284B89 /* WindowCtrl_Camera_HeadSegment.mm in Sources */,
+				8057F4A9F8528947A99337AD /* WindowCtrl_Camera_ObjectTracking.h in Sources */,
+				3FE9CDD7F18DA4309114A9D0 /* WindowCtrl_Camera_ObjectTracking.mm in Sources */,
+				8CA23B7909F55E786EB0CCCA /* WindowCtrl_Camera_PoseLandmarkDetection.h in Sources */,
+				A18099D987BD5A2EF59F10B6 /* WindowCtrl_Camera_PoseLandmarkDetection.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		34434EFC065F6CF7AF20BB64 /* Debug */ = {
+		31174D9E559687045CB0E178 /* Distribute */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_LIBRARY_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/MacOS",
+					"$(PROJECT_DIR)/libs/macOS/x86_64_arm64",
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"USE_FACE=1",
+					"USE_GESTURE=1",
+					"USE_DOCRECT=1",
+					"USE_OBJCOUNT=1",
+					"USE_OBJTRACKING=1",
+					"USE_FACE_PARSER=1",
+					"USE_POSE=1",
+					"USE_CLASSIFYING=1",
+					"USE_STYLIZING=1",
+					"USE_GENERAL=1",
+					"USE_FACE_REENACTMENT=1",
+					"VN_NDEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = ./libs/headers;
+				INFOPLIST_FILE = ./osx/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				MTL_HEADER_SEARCH_PATHS = "";
+				MTL_LANGUAGE_REVISION = Metal12;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyy.vnn.demo;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD)";
+			};
+			name = Distribute;
+		};
+		92CCFABD01C3F872C5FCABDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_LIBRARY_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/MacOS",
+					"$(PROJECT_DIR)/libs/macOS/x86_64_arm64",
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"USE_FACE=1",
+					"USE_GESTURE=1",
+					"USE_DOCRECT=1",
+					"USE_OBJCOUNT=1",
+					"USE_OBJTRACKING=1",
+					"USE_FACE_PARSER=1",
+					"USE_POSE=1",
+					"USE_CLASSIFYING=1",
+					"USE_STYLIZING=1",
+					"USE_GENERAL=1",
+					"USE_FACE_REENACTMENT=1",
+					"VN_NDEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = ./libs/headers;
+				INFOPLIST_FILE = ./osx/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				MTL_HEADER_SEARCH_PATHS = "";
+				MTL_LANGUAGE_REVISION = Metal12;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyy.vnn.demo;
+				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+		CA73F15A9A6EE9FA02857BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_LIBRARY_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/MacOS",
+					"$(PROJECT_DIR)/libs/macOS/x86_64_arm64",
+				);
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"USE_FACE=1",
+					"USE_GESTURE=1",
+					"USE_DOCRECT=1",
+					"USE_OBJCOUNT=1",
+					"USE_OBJTRACKING=1",
+					"USE_FACE_PARSER=1",
+					"USE_POSE=1",
+					"USE_CLASSIFYING=1",
+					"USE_STYLIZING=1",
+					"USE_GENERAL=1",
+					"USE_FACE_REENACTMENT=1",
+					"VN_DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = ./libs/headers;
+				INFOPLIST_FILE = ./osx/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				MTL_HEADER_SEARCH_PATHS = "";
+				MTL_LANGUAGE_REVISION = Metal12;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyy.vnn.demo;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = "i386 $(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		D63B0BE7718211242595EFC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -592,64 +815,7 @@
 			};
 			name = Debug;
 		};
-		67B7086973F7B113202C5EFA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
-				CLANG_CXX_LIBRARY = "compiler-default";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_LIBRARY_VERSION = 1;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs/macOS/x86_64_arm64",
-				);
-				GCC_C_LANGUAGE_STANDARD = c11;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"USE_FACE=1",
-					"USE_GESTURE=1",
-					"USE_OBJCOUNT=1",
-					"USE_OBJTRACKING=1",
-					"USE_FACE_PARSER=1",
-					"USE_CLASSIFYING=1",
-					"USE_STYLIZING=1",
-					"USE_GENERAL=1",
-					"USE_FACE_REENACTMENT=1",
-					"VN_DEBUG=1",
-				);
-				HEADER_SEARCH_PATHS = ./libs/headers;
-				INFOPLIST_FILE = ./osx/Info.plist;
-				LD_GENERATE_MAP_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 1.0.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				MTL_LANGUAGE_REVISION = Metal12;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.joyy.vnn.demo;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				VALID_ARCHS = "i386 $(ARCHS_STANDARD)";
-			};
-			name = Debug;
-		};
-		74045E83DB89E1A8F5A0C35D /* Release */ = {
+		D6E3446ED8E9F08115F24DD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -702,149 +868,29 @@
 			};
 			name = Release;
 		};
-		DC72BEAF37BDBDBA601EF12E /* Distribute */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
-				CLANG_CXX_LIBRARY = "compiler-default";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				CURRENT_LIBRARY_VERSION = 1;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_POSTPROCESSING = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs/macOS/x86_64_arm64",
-				);
-				GCC_C_LANGUAGE_STANDARD = c11;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"USE_FACE=1",
-					"USE_GESTURE=1",
-					"USE_OBJCOUNT=1",
-					"USE_OBJTRACKING=1",
-					"USE_FACE_PARSER=1",
-					"USE_CLASSIFYING=1",
-					"USE_STYLIZING=1",
-					"USE_GENERAL=1",
-					"USE_FACE_REENACTMENT=1",
-					"VN_NDEBUG=1",
-				);
-				HEADER_SEARCH_PATHS = ./libs/headers;
-				INFOPLIST_FILE = ./osx/Info.plist;
-				LD_GENERATE_MAP_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 1.0.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				MTL_LANGUAGE_REVISION = Metal12;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.joyy.vnn.demo;
-				SDKROOT = macosx;
-				STRIP_INSTALLED_PRODUCT = YES;
-				STRIP_STYLE = "non-global";
-				SWIFT_VERSION = 5.0;
-				VALID_ARCHS = "i386 $(ARCHS_STANDARD)";
-			};
-			name = Distribute;
-		};
-		FF75E9BCD149E208775B68A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
-				CLANG_CXX_LIBRARY = "compiler-default";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				CURRENT_LIBRARY_VERSION = 1;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_POSTPROCESSING = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs/macOS/x86_64_arm64",
-				);
-				GCC_C_LANGUAGE_STANDARD = c11;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"USE_FACE=1",
-					"USE_GESTURE=1",
-					"USE_OBJCOUNT=1",
-					"USE_OBJTRACKING=1",
-					"USE_FACE_PARSER=1",
-					"USE_CLASSIFYING=1",
-					"USE_STYLIZING=1",
-					"USE_GENERAL=1",
-					"USE_FACE_REENACTMENT=1",
-					"VN_NDEBUG=1",
-				);
-				HEADER_SEARCH_PATHS = ./libs/headers;
-				INFOPLIST_FILE = ./osx/Info.plist;
-				LD_GENERATE_MAP_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 1.0.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				MTL_LANGUAGE_REVISION = Metal12;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.joyy.vnn.demo;
-				SDKROOT = macosx;
-				STRIP_INSTALLED_PRODUCT = YES;
-				STRIP_STYLE = "non-global";
-				SWIFT_VERSION = 5.0;
-				VALID_ARCHS = "i386 $(ARCHS_STANDARD)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79B83A05E9578225B4920DF9 /* Build configuration list for PBXNativeTarget "vnndemo_osx" */ = {
+		ABC4F5267E2204E49F2CA476 /* Build configuration list for PBXProject "vnndemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF75E9BCD149E208775B68A5 /* Release */,
-				67B7086973F7B113202C5EFA /* Debug */,
-				DC72BEAF37BDBDBA601EF12E /* Distribute */,
+				D63B0BE7718211242595EFC5 /* Debug */,
+				D6E3446ED8E9F08115F24DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7B27E4D58448F394A0862C1 /* Build configuration list for PBXProject "vnndemo" */ = {
+		DF47AD94F05AE44B63A8D264 /* Build configuration list for PBXNativeTarget "vnndemo_osx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				34434EFC065F6CF7AF20BB64 /* Debug */,
-				74045E83DB89E1A8F5A0C35D /* Release */,
+				92CCFABD01C3F872C5FCABDF /* Release */,
+				CA73F15A9A6EE9FA02857BC7 /* Debug */,
+				31174D9E559687045CB0E178 /* Distribute */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 44D352BA7818DE710D9E6853 /* Project object */;
+	rootObject = DC89380BCA8347B7F8270582 /* Project object */;
 }

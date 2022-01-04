@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "WindowCtrl_Picture_CartoonStylizing_ComicStylizing.h"
+#import "vnnimage_mac_kit.h"
 #import "vnn_kit.h"
 #import "OSXDemoHelper.h"
 
@@ -80,6 +81,7 @@
         VNN_Image input;
         VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
         input.mode_fmt = VNN_MODE_FMT_PICTURE;
+        input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
         
         VNN_ImageArr output;
         output.imgsNum = 1;

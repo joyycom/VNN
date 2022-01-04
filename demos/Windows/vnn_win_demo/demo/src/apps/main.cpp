@@ -46,7 +46,8 @@ std::string effect_name[] = {
     "VNN_CARTOON",
     "VNN_OBJECT_CLASSIFICATION",
     "VNN_SCENE_WEATHER",
-    "VNN_PERSON_ATTRIBUTE"
+    "VNN_PERSON_ATTRIBUTE",
+	"VNN_POSE_LANDMARKS"
 };
 
 

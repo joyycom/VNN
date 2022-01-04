@@ -294,6 +294,18 @@
                 android:gravity="center"
                 android:textSize="18dp"
                 android:layout_weight = "1"/>
+            <Button
+                android:id="@+id/effect_pose"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:background="@drawable/effect_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:text="Pose Landmarks"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_weight = "1"/>
 
         </LinearLayout>
     </ScrollView>

@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnObjCls;
     private Button mBtnSceneWether;
     private Button mBtnPersonAttribute;
+    private Button mBtnPose;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnObjCls = (Button) findViewById(R.id.effect_objcls);
         mBtnSceneWether = (Button) findViewById(R.id.effect_scene);
         mBtnPersonAttribute = (Button) findViewById(R.id.effect_person_attrib);
+        mBtnPose = (Button) findViewById(R.id.effect_pose);
         initEffects();
     }
     private void initEffects(){
@@ -313,6 +315,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, StreamProducers.class);
                 int transferData = VNNHelper.VNN_EFFECT_MODE.VNN_PERSON_ATTRIBUTE;
+                intent.putExtra("effectModeID", transferData);
+                startActivity(intent);
+            }
+        });
+        mBtnPose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StreamProducers.class);
+                int transferData = VNNHelper.VNN_EFFECT_MODE.VNN_POSE_LANDMARKS;
                 intent.putExtra("effectModeID", transferData);
                 startActivity(intent);
             }

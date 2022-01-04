@@ -28,6 +28,7 @@ typedef enum _VNN_EFFECT_MODE {
 	VNN_OBJECT_CLASSIFICATION,
 	VNN_SCENE_WEATHER,
 	VNN_PERSON_ATTRIBUTE,
+	VNN_POSE_LANDMARKS,
 	VNN_EFFECT_COUNT  //used to count the number of enum types
 }VNN_EFFECT_MODE;
 
@@ -53,6 +54,7 @@ private:
 	VNN_ObjCountDataArr mObjCountDataArr;
 	VNN_ObjCountDataArr mTrackingDataArr;
 	VNN_MultiClsTopNAccArr mMultiClsDataArr;
+	VNN_BodyFrameDataArr mPoseDataArr;
 	int mOutImgWidth, mOutImgHeight, mOutPixelNum, mOutChannel;
 	int mDisneyImgWidth, mDisneyImgHeight, mDisneyImgChannel;
 	int m3dGameImgWidth, m3dGameImgHeight, m3dGameImgChannel, m3dGameMaskChannel;

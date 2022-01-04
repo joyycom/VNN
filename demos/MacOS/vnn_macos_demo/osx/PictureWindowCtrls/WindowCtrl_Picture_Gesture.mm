@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "WindowCtrl_Picture_Gesture.h"
+#import "vnnimage_mac_kit.h"
 #import "vnn_kit.h"
 #import "OSXDemoHelper.h"
 #include <vector>
@@ -73,10 +74,11 @@
     VNN_Image input;
     VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
     input.mode_fmt = VNN_MODE_FMT_PICTURE;
+    input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
     const int img_height = input.height;
     const int img_width = input.width;
     
-    VNN_GestureFrameDataArr output; memset(&output, 0x00, sizeof(VNN_GestureFrameDataArr));
+    VNN_GestureFrameDataArr output;
     VNN_Apply_Gesture_CPU(_handle, &input, &output);
     
     VNN_Free_VNNImage(pixelBuffer, &input, false);

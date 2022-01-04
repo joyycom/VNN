@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "ViewCtrl_Camera_DocRect.h"
+#import "vnnimage_ios_kit.h"
 #import "vnn_kit.h"
 
 #if USE_DOCRECT
@@ -44,9 +45,10 @@
         
         VNN_Image input;
         VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
+        input.mode_fmt = VNN_MODE_FMT_VIDEO;
+        input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
         
         VNN_Point2D output[4];
-        memset(output, 0x00, sizeof(VNN_Point2D) * 4);
         VNN_Apply_DocRect_CPU(_handle, &input, output);
         
         VNN_Free_VNNImage(pixelBuffer, &input, false);

@@ -8,7 +8,7 @@
   - [输入图像的 CPU 数据指针 data](#输入图像的-cpu-数据指针-data)
   - [输入图像的 GPU 数据指针 texture](#输入图像的-gpu-数据指针-texture)
   - [Android 示例：利用传入JNI接口的Bitmap对象，设置VNN_Image对象](#android-示例利用传入jni接口的bitmap对象设置vnn_image对象)
-  - [iOS 示例：利用CVPixelBufferRef对象，设置VNN_Image对象](#ios-示例利用cvpixelbufferref对象设置vnn_image对象)
+  - [iOS/MacOS 示例：利用CVPixelBufferRef对象，设置VNN_Image对象](#iosmacos-示例利用cvpixelbufferref对象设置vnn_image对象)
 
 ## 概述
 VNN_Image 结构体是由用户生成，用于描述VNN的输入图像数据。```用户必须正确设置输入的图像数据，以防出现奇怪的Bug```   
@@ -188,9 +188,10 @@ VNN_MODE_FMT 枚举类型如下
 
 --- 
 
-## iOS 示例：利用CVPixelBufferRef对象，设置VNN_Image对象   
+## iOS/MacOS 示例：利用CVPixelBufferRef对象，设置VNN_Image对象   
 
-为化简iOS端 VNN_Image 对象的设置和释放工作，VNN提供了2个工具函数 ```VNN_Create_VNNImage_From_PixelBuffer``` 和 ```VNN_Free_VNNImage``` 。但VNN_Image对象的 ```ori_fmt``` 和 ```mode_fmt```属性仍需用户按实际情况设置
+参考代码如下   
+**注意**：VNN_Image对象的 ```ori_fmt``` 和 ```mode_fmt```属性仍需用户按实际情况设置    
 
 **设置**
 ```cpp

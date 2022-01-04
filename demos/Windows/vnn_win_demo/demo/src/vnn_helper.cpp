@@ -13,6 +13,7 @@
 #include "vnn_objcount.h"
 #include "vnn_general.h"
 #include "vnn_classifying.h"
+#include "vnn_pose.h"
 using namespace std;
 static cv::Mat trackingImg;
 static CvPoint prePoint = { -1,-1 };
@@ -29,6 +30,7 @@ void drawObjCountResult(cv::Mat used_img, VNN_ObjCountDataArr objCountDataArr);
 void drawMaskArrSimple(VNN_ImageArr mask_arr);
 void drawRGBImage(VNN_Image rgb_img);
 void drawClassificationResult(cv::Mat used_img, VNN_MultiClsTopNAccArr cls_result);
+void drawPoseResult(cv::Mat used_img, VNN_BodyFrameDataArr pose_result);
 int VNNHelper::createVNN(VNN_EFFECT_MODE effectMode) {
 	int ret;
 	string folder_path = "./vnn_models/";
@@ -532,6 +534,18 @@ int VNNHelper::createVNN(VNN_EFFECT_MODE effectMode) {
 		VNN_Set_Classifying_Attr(mVnnID, "_classLabelPath", label_path.c_str());
 		break;
 	}
+	case VNN_POSE_LANDMARKS: {
+		string model_path = folder_path + "vnn_pose_data/pose_landmarks[1.0.0].vnnmodel";
+		const char* arg_model[] = {
+			model_path.c_str()
+		};
+		const int argc = 1;
+		VNN_Result creat_ret = VNN_Create_Pose(&mVnnID, argc, (const void**)arg_model);
+		if (VNN_Result_Success != creat_ret || 0 == mVnnID) {
+			return -1;
+		}
+		break;
+	}
 	}
 	return 0;
 }
@@ -657,6 +671,10 @@ int VNNHelper::destroyVNN(VNN_EFFECT_MODE effectMode) {
 			return -1;
 		}
 		ret = VNN_Destroy_Classifying(&mVnnPersonAttribID);
+		break;
+	}
+	case VNN_POSE_LANDMARKS: {
+		ret = VNN_Destroy_Pose(&mVnnID);
 		break;
 	}			   
 	}
@@ -907,6 +925,14 @@ int VNNHelper::applyVNN(VNN_EFFECT_MODE effectMode, cv::Mat used_img, int mode) 
 			VNN_Get_Face_Attr(mVnnID, "_detection_data", &mFaceDetectionRect);
 			ret = VNN_Apply_Classifying_CPU(mVnnID, &in_image, &mFaceDetectionRect, &mMultiClsDataArr);
 			drawClassificationResult(used_img, mMultiClsDataArr);
+		}
+		break;
+	}
+	case VNN_POSE_LANDMARKS: {
+		if (mVnnID != 0) {
+			mPoseDataArr.bodiesNum = 0;
+			ret = VNN_Apply_Pose_CPU(mVnnID, &in_image, &mPoseDataArr);
+			drawPoseResult(used_img, mPoseDataArr);
 		}
 		break;
 	}
@@ -1222,4 +1248,106 @@ void drawClassificationResult(cv::Mat used_img, VNN_MultiClsTopNAccArr cls_resul
 	}
 	cv::imshow("Show", used_img);
 	
+}
+
+const std::vector<std::vector<int>> skeleton = {
+			{  0,  1 },
+			{  1,  2 },
+			{  2,  3 },
+			{  3,  4 },
+			{  4, 18 },
+			{  1,  5 },
+			{  5,  6 },
+			{  6,  7 },
+			{  7, 19 },
+			{  2,  8 },
+			{  8,  9 },
+			{  9, 10 },
+			{ 10, 20 },
+			{  5, 11 },
+			{ 11, 12 },
+			{ 12, 13 },
+			{ 13, 21 },
+			{  0, 14 },
+			{ 14, 16 },
+			{  0, 15 },
+			{ 15, 17 },
+};
+
+void drawPoseResult(cv::Mat used_img, VNN_BodyFrameDataArr pose_result) {
+	const cv::Scalar color_point(0, 255, 0);
+	cv::Point pose_point;
+	if (pose_result.bodiesNum > 0) {
+		for (int i = 0; i < pose_result.bodiesNum; i++) {
+			auto left = pose_result.bodiesArr[i].bodyRect.x0 * used_img.cols;
+			auto right = pose_result.bodiesArr[i].bodyRect.x1 * used_img.cols;
+			auto bottom = pose_result.bodiesArr[i].bodyRect.y0 * used_img.rows;
+			auto top = pose_result.bodiesArr[i].bodyRect.y1 * used_img.rows;
+
+			cv::rectangle(used_img, cvPoint(left, top), cvPoint(right, bottom), CV_RGB(255, 0, 0), 3, 8, 0);
+
+			for (int j = 0; j < pose_result.bodiesArr[i].bodyLandmarksNum; j++) {
+				pose_point.x = pose_result.bodiesArr[i].bodyLandmarks[j].x * used_img.cols;
+				pose_point.y = pose_result.bodiesArr[i].bodyLandmarks[j].y * used_img.rows;
+				cv::circle(used_img, pose_point, 5, color_point, -1);
+				std::string index = std::to_string(j);
+				cv::putText(used_img, index, pose_point, cv::FONT_HERSHEY_COMPLEX_SMALL, 1.0, cv::Scalar(0, 255, 0), 1);
+
+			}
+		}
+
+		const cv::Scalar color_line(255, 0, 0);
+		cv::Point line_point1;
+		cv::Point line_point2;
+		int idx[2];
+		for (int i = 0; i < pose_result.bodiesNum; i++) {
+			for (int j = 0; j < skeleton.size(); j++) {
+				idx[0] = skeleton[j][0];
+				idx[1] = skeleton[j][1];
+				line_point1.x = pose_result.bodiesArr[i].bodyLandmarks[idx[0]].x * used_img.cols;
+				line_point1.y = pose_result.bodiesArr[i].bodyLandmarks[idx[0]].y * used_img.rows;
+				line_point2.x = pose_result.bodiesArr[i].bodyLandmarks[idx[1]].x * used_img.cols;
+				line_point2.y = pose_result.bodiesArr[i].bodyLandmarks[idx[1]].y * used_img.rows;
+				if (line_point1.x > 0 && line_point1.y > 0 && line_point2.x > 0 && line_point2.y > 0) {
+					cv::line(used_img, line_point1, line_point2, color_line, 2);
+				}
+			}
+
+			std::string isWriggleWaist = std::to_string(pose_result.bodiesArr[i].isWriggleWaist);
+			cv::putText(used_img, "wriggle waist: " + isWriggleWaist, cvPoint(15, 30), cv::FONT_HERSHEY_COMPLEX_SMALL, 1.0, cv::Scalar(0, 255, 0), 1);
+
+			VNN_BodyResultDesc result_desc = pose_result.bodiesArr[i].bodyResultDesc;
+			switch (result_desc)
+			{
+			case VNN_BodyResultDesc::VNN_BodyResultDesc_NoPerson:
+			{
+				cv::putText(used_img, "Result Desc: NoPerson ", cvPoint(15, 60), cv::FONT_HERSHEY_COMPLEX_SMALL, 1.0, cv::Scalar(0, 255, 0), 1);
+			}
+			break;
+			case VNN_BodyResultDesc::VNN_BodyResultDesc_MorethanOnePerson:
+			{
+				cv::putText(used_img, "Result Desc: MorethanOnePerson ", cvPoint(15, 60), cv::FONT_HERSHEY_COMPLEX_SMALL, 1.0, cv::Scalar(0, 255, 0), 1);
+			}
+			break;
+			case VNN_BodyResultDesc::VNN_BodyResultDesc_NoKneeSeen:
+			{
+				cv::putText(used_img, "Result Desc: NoKneeSeen ", cvPoint(15, 60), cv::FONT_HERSHEY_COMPLEX_SMALL, 1.0, cv::Scalar(0, 255, 0), 1);
+			}
+			break;
+			case VNN_BodyResultDesc::VNN_BodyResultDesc_NoFootSeen:
+			{
+				cv::putText(used_img, "Result Desc: NoFootSeen ", cvPoint(15, 60), cv::FONT_HERSHEY_COMPLEX_SMALL, 1.0, cv::Scalar(0, 255, 0), 1);
+			}
+			break;
+			case VNN_BodyResultDesc::VNN_BodyResultDesc_Normal:
+			{
+				cv::putText(used_img, "Result Desc: Normal ", cvPoint(15, 60), cv::FONT_HERSHEY_COMPLEX_SMALL, 1.0, cv::Scalar(0, 255, 0), 1);
+			}
+			break;
+			default:
+				break;
+			}
+		}
+	}
+	cv::imshow("Show", used_img);
 }

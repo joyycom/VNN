@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "ViewCtrl_Picture_Gesture.h"
+#import "vnnimage_ios_kit.h"
 #import "vnn_kit.h"
 
 #if USE_GESTURE
@@ -74,8 +75,10 @@
 #   if USE_GESTURE
     VNN_Image input;
     VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
+    input.mode_fmt = VNN_MODE_FMT_PICTURE;
+    input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
     
-    VNN_GestureFrameDataArr output; memset(&output, 0x00, sizeof(VNN_GestureFrameDataArr));
+    VNN_GestureFrameDataArr output;
     VNN_Apply_Gesture_CPU(_handle, &input, &output);
         
     VNN_Free_VNNImage(pixelBuffer, &input, false);

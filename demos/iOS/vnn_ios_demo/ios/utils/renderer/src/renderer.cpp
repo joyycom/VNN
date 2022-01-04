@@ -3,15 +3,6 @@
 // Licensed under the MIT license. See license.txt file in the project root for full license information.
 //-------------------------------------------------------------------------------------------------------
 
-#ifdef _WIN32
-//define something for Windows (32-bit and 64-bit, this part is common)
-#	include <windows.h>
-#	ifdef _WIN64
-//		define something for Windows (64-bit only)
-#	else
-//		define something for Windows (32-bit only)
-#	endif
-
 #elif __APPLE__
 #	include "TargetConditionals.h"
 #	include <mach/mach_time.h>

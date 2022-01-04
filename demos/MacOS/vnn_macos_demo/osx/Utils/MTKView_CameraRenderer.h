@@ -79,6 +79,7 @@ struct BoxFilterParam {
 - (id<MTLTexture>)generateOffScreenTextureFromImageURL:(NSURL *)url;
 - (void)drawHollowRect2DToOffscreen_With_MTLCommandBuffer:(id<MTLCommandBuffer>)cmdBuf Rect2Ds:(NSArray<DrawRect2D *> *)rects offScreenTexture: (id<MTLTexture>) offScreenTexture clearScreen:(bool)clearScreen;
 - (void)drawSolidPoint2DToOffscreen_With_MTLCommandBuffer:(id<MTLCommandBuffer>)cmdBuf Point2Ds:(NSArray<DrawPoint2D *> *)points offScreenTexture: (id<MTLTexture>) offScreenTexture clearScreen:(bool)clearScreen;
+- (void)drawSolidLine2DToOffscreen_With_MTLCommandBuffer:(id<MTLCommandBuffer>)cmdBuf Line2Ds:(NSArray<DrawLine2D *> *)lines offScreenTexture: (id<MTLTexture>) offScreenTexture clearScreen:(bool)clearScreen;
 - (CVPixelBufferRef) createPixelBufferFromBGRAMTLTexture:(id<MTLTexture>)texture UseDataBuffer: (unsigned char *)databuffer;
 @end
 

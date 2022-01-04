@@ -52,6 +52,7 @@ find_library(vnn_objtracking-lib vnn_objtracking PATHS ${VNN_LIB_PATH}/ NO_CMAKE
 #find_library(vnn_docrect-lib vnn_docrect PATHS ${VNN_LIB_PATH}/ NO_CMAKE_FIND_ROOT_PATH)
 find_library(vnn_general-lib vnn_general PATHS ${VNN_LIB_PATH}/ NO_CMAKE_FIND_ROOT_PATH)
 find_library(vnn_classifying-lib vnn_classifying PATHS ${VNN_LIB_PATH}/ NO_CMAKE_FIND_ROOT_PATH)
+find_library(vnn_pose-lib vnn_pose PATHS ${VNN_LIB_PATH}/ NO_CMAKE_FIND_ROOT_PATH)
 target_link_libraries(vnn_win_demo PUBLIC
 		${vnn_core-lib}
         ${vnn_kit-lib}
@@ -65,6 +66,7 @@ target_link_libraries(vnn_win_demo PUBLIC
         #${vnn_docrect-lib}
         ${vnn_general-lib}
         ${vnn_classifying-lib}
+		${vnn_pose-lib}
 		)
 if (WIN32)
 target_compile_options( vnn_win_demo PRIVATE
@@ -93,6 +95,7 @@ add_custom_command(TARGET vnn_win_demo
 					COMMAND ${CMAKE_COMMAND} -E copy_if_different "${VNN_BIN_PATH}/vnn_objtracking.dll"   ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIG>
 					COMMAND ${CMAKE_COMMAND} -E copy_if_different "${VNN_BIN_PATH}/vnn_general.dll"   ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIG>
 					COMMAND ${CMAKE_COMMAND} -E copy_if_different "${VNN_BIN_PATH}/vnn_classifying.dll"   ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIG>
+					COMMAND ${CMAKE_COMMAND} -E copy_if_different "${VNN_BIN_PATH}/vnn_pose.dll"   ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIG>
                     )
 
 

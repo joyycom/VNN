@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "WindowCtrl_Picture_GeneralSegment.h"
+#import "vnnimage_mac_kit.h"
 #import "vnn_kit.h"
 #import "OSXDemoHelper.h"
 
@@ -128,6 +129,7 @@
         VNN_Image input;
         VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
         input.mode_fmt = VNN_MODE_FMT_PICTURE;
+        input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
         const int img_h = input.height;
         const int img_w = input.width;
         

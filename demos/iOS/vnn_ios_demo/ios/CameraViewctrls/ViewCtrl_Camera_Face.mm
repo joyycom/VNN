@@ -4,6 +4,7 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "ViewCtrl_Camera_Face.h"
+#import "vnnimage_ios_kit.h"
 #import "vnn_kit.h"
 #if USE_FACE
 #   import "vnn_face.h"
@@ -74,9 +75,10 @@
         
         VNN_Image input;
         VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
+        input.mode_fmt = VNN_MODE_FMT_VIDEO;
+        input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
         
         VNN_FaceFrameDataArr output;
-        memset(&output, 0x00, sizeof(VNN_FaceFrameDataArr));
         VNN_Apply_Face_CPU(_handle, &input, &output);
         
         VNN_Free_VNNImage(pixelBuffer, &input, false);

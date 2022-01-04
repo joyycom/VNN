@@ -4,6 +4,8 @@
 //-------------------------------------------------------------------------------------------------------
 
 #import "WindowCtrl_Picture_FaceReenactment.h"
+#import "vnnimage_mac_kit.h"
+#import "vnn_common.h"
 #import "vnn_kit.h"
 #import "vnn_common.h"
 #import "OSXDemoHelper.h"
@@ -161,10 +163,9 @@
         VNN_Image input;
         VNN_Create_VNNImage_From_PixelBuffer(pixelBuffer, &input, false);
         input.mode_fmt = VNN_MODE_FMT_PICTURE;
+        input.ori_fmt = VNN_ORIENT_FMT_DEFAULT;
         
         VNN_FaceFrameDataArr face_data, detection_data;
-        memset(&face_data, 0x00, sizeof(VNN_FaceFrameDataArr));
-        memset(&detection_data, 0x00, sizeof(VNN_FaceFrameDataArr));
         VNN_Apply_Face_CPU(_face_handle, &input, &face_data);
         
         if(face_data.facesNum == 0){
