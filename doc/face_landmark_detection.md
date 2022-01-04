@@ -68,7 +68,7 @@ face_mobile[1.0.0].vnnmodel //移动端使用
 face_pc[1.0.0].vnnmodel     //PC端使用
 ```
 ## 3.3 动态库
-Android
+Android/Linux
 ```
 libvnn_core.so
 libvnn_kit.so
@@ -142,6 +142,7 @@ Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan
 iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_Face.mm)  
 Windows: [链接](../demos/Windows/vnn_win_demo/demo/src/vnn_helper.cpp)   
 MaoOS: [链接](../demos/MacOS/vnn_macos_demo/osx/CameraWindowCtrls/WindowCtrl_Camera_FaceLandmarkDetection.mm)    
+Linux: [链接](../demos/Linux/vnn_linux_demo/demo/src/vnn_helper.cpp)   
 
 ---
 # 五、API文档

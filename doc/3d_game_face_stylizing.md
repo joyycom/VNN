@@ -69,7 +69,7 @@ vnn_define.h
 face_3dgame[1.0.0].vnnmodel
 ```
 ## 3.3 动态库
-Android
+Android/Linux
 ```
 libvnn_core.so
 libvnn_kit.so
@@ -115,6 +115,7 @@ Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan
 iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_3DGameFaceStylizing.mm)  
 Windows: [链接](../demos/Windows/vnn_win_demo/demo/src/vnn_helper.cpp)   
 MaoOS: [链接](../demos/MacOS/vnn_macos_demo/osx/CameraWindowCtrls/WindowCtrl_Camera_3DGameFaceStylizing.mm)   
+Linux: [链接](../demos/Linux/vnn_linux_demo/demo/src/vnn_helper.cpp)   
 
 ## 4.3 重叠人脸的渲染问题
 由于本SDK生成的Mask包含人脸和部分背景，在人脸靠近情况下，Mask将会重叠且难以确认渲染先后顺序。如有必要，可使用人脸分割SDK生成仅含人脸的准确Mask，以避免此问题

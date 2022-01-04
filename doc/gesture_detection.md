@@ -66,7 +66,7 @@ vnn_define.h
 gesture[1.0.0].vnnmodel
 ```
 ## 3.3 动态库
-Android
+Android/Linux
 ```
 libvnn_core.so
 libvnn_kit.so
@@ -105,6 +105,7 @@ Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan
 iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_Gesture.mm)   
 Windows: [链接](../demos/Windows/vnn_win_demo/demo/src/vnn_helper.cpp)   
 MaoOS: [链接](../demos/MacOS/vnn_macos_demo/osx/CameraWindowCtrls/WindowCtrl_Camera_Gesture.mm)    
+Linux: [链接](../demos/Linux/vnn_linux_demo/demo/src/vnn_helper.cpp)   
 
 ## 4.2 视频流检测和图像检测的设置区别   
 出于保证视频流检测的实时性考虑，本SDK采用了“跟踪+检测”的设计。为避免**单张**图像检测受影响，在设置输入图像VNN_Image时，应作如下设置

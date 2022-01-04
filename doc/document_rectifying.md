@@ -74,11 +74,7 @@ vnn_core_ios.framework
 vnn_kit_ios.framework
 vnn_docrect_ios.framework
 ```
-MacOS
-```
-适配中，待更新
-```
-Windows
+MacOS/Windows/Linux
 ```
 适配中，待更新
 ```
@@ -89,8 +85,7 @@ Windows
 ## 4.1 Demo示例   
 Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan/vnndemo/CameraActivity.java)   
 iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_DocRect.mm)   
-Windows:   适配中，待更新
-MaoOS: 适配中，待更新
+Windows/MacOS/Linux: 适配中，待更新
 
 ## 4.2 图像不存在文档的判断   
 当检测不到文档时，SDK的输出结果为全0的坐标值（即4个角点均在图像左上角）。
