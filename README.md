@@ -19,9 +19,9 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 ---
 
 ## 人脸关键点
- |![face_Img](./doc/resource/face_img.jpg)| ![face_keypoints](./doc/resource/face_keypoints.jpg)|![face_Img](./doc/resource/face_beautify.png)|![face278](./doc/resource/face278.gif) |
- | :----------------------------: | :--------------------------------: | :---------------------------: | :-----------------: |
- | 原图 | [人脸关键点](./doc/face_landmark_detection.md)  | 美颜 | 动态效果 |
+ | ![face_Img](./doc/resource/face_img.jpg) | ![face_keypoints](./doc/resource/face_keypoints.jpg) | ![face_Img](./doc/resource/face_beautify.png) | ![face278](./doc/resource/face278.gif) |
+ | :--------------------------------------: | :--------------------------------------------------: | :-------------------------------------------: | :------------------------------------: |
+ |                   原图                   |    [人脸关键点](./doc/face_landmark_detection.md)    |                     美颜                      |                动态效果                |
 
 ### 指标对比
 ![face104compare](./doc/resource/face104compare.png)  ![face278compare](./doc/resource/face278compare.png)
@@ -41,31 +41,28 @@ VNN是由[欢聚集团(Joyy Inc.)](http://www.huanju.cn/)推出的高性能、�
 
   | ![clothes_segment_example](./doc/resource/clothes_segment_example.gif) | ![animal_segment_example](./doc/resource/hair_segment_eaxmple.gif) | ![face_reenactment_example](./doc/resource/face_reenactment_example.gif) |
   | :--------------------------------------------------------------------: | :----------------------------------------------------------------: | :----------------------------------------------------------------------: |
-  |               [衣物分割（换色）](./doc/general_segmentation.md)                |             [头发分割（换色）](./doc/general_segmentation.md)              |                  [人脸表情驱动](./doc/face_reenactment.md)                   |
+  |           [衣物分割（换色）](./doc/general_segmentation.md)            |         [头发分割（换色）](./doc/general_segmentation.md)          |                [人脸表情驱动](./doc/face_reenactment.md)                 |
 
 
 ---
 
 ## Demo体验
 
-[Android Demo APK](./demos/Android/vnn_demo.apk)  
-[Android Demo工程](./demos/Android)  
-[Windows Demo EXE](./demos/Windows/executable_demo/vnn_win_demo.exe)  
-[Windows Demo工程](./demos/Windows)  
-[iOS Demo工程](./demos/iOS)  
-[MacOS Demo工程](./demos/MacOS)  
+ | 平台  |                            Andorid                            |         iOS         |                                      Windows                                      |         MacOS         |         Linux         |
+ | :---: | :-----------------------------------------------------------: | :-----------------: | :-------------------------------------------------------------------------------: | :-------------------: | :-------------------: |
+ |       | [apk](./demos/Android/vnn_demo.apk) / [工程](./demos/Android) | [工程](./demos/iOS) | [exe](./demos/Windows/executable_demo/vnn_win_demo.exe) / [工程](./demos/Windows) | [工程](./demos/MacOS) | [工程](./demos/Linux) |
 
 ---
 
 ## 集成指引与SDK文档
 
-[Android集成指引](./demos/Android/readme.md)  
-[iOS集成指引](./demos/iOS/readme.md)  
-[MacOS(Intel & Apple Chip)集成指引](./demos/MacOS/readme.md)   
-[Windows集成指引](./demos/Windows/readme.md)   
-[Linux集成指引](./demos/Linux/readme.md)   
-[SDK文档索引](./doc/doc_index.md)   
-[常见问题](./doc/question_and_answer.md)
+- [Android集成指引](./demos/Android/readme.md)  
+- [iOS集成指引](./demos/iOS/readme.md)  
+- [MacOS(Intel & Apple Chip)集成指引](./demos/MacOS/readme.md)   
+- [Windows集成指引](./demos/Windows/readme.md)   
+- [Linux集成指引](./demos/Linux/readme.md)   
+- [SDK文档索引](./doc/doc_index.md)   
+- [常见问题](./doc/question_and_answer.md)
 
 ---
 
