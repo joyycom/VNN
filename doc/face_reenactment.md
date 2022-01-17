@@ -113,7 +113,7 @@ vnn_face_reenactment.dll
 Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan/vnndemo/ImageActivity.java)   
 iOS: [链接](../demos/iOS/vnn_ios_demo/ios/PictureViewctrls/ViewCtrl_Picture_FaceReenactment.mm)   
 Windows: [链接](../demos/Windows/vnn_win_demo/demo/src/vnn_helper.cpp)   
-MaoOS: [链接](../demos/MacOS/vnn_macos_demo/osx/PictureWindowCtrls/WindowCtrl_Picture_FaceReenactment.mm)    
+MaoOS: [链接](../demos/MacOS/vnn_macos_demo/osx/PictureWindowCtrls/WindowCtrl_Picture_FaceReenactment.mm)   
 Linux: [链接](../demos/Linux/vnn_linux_demo/demo/src/vnn_helper.cpp)   
 
 ---
