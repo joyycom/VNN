@@ -139,7 +139,7 @@ input.mode_fmt = VNN_MODE_FMT_VIDEO; // 用于视频流检测
 
 ## 4.4 Demo示例   
 Android: [链接](../demos/Android/vnn_android_demo/app/src/main/java/com/duowan/vnndemo/CameraActivity.java)   
-iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_Face.mm)  
+iOS: [链接](../demos/iOS/vnn_ios_demo/ios/CameraViewctrls/ViewCtrl_Camera_Face.mm)   
 Windows: [链接](../demos/Windows/vnn_win_demo/demo/src/vnn_helper.cpp)   
 MaoOS: [链接](../demos/MacOS/vnn_macos_demo/osx/CameraWindowCtrls/WindowCtrl_Camera_FaceLandmarkDetection.mm)    
 Linux: [链接](../demos/Linux/vnn_linux_demo/demo/src/vnn_helper.cpp)   
@@ -248,11 +248,12 @@ VNN_Result VNN_Get_Face_Attr( VNNHandle handle, const char * name, const void * 
 
  **合法属性名和属性值**  
 
- | 属性名          | 属性含义                        | 属性值                                    | 属性值类型            |
- | --------------- | ------------------------------- | ----------------------------------------- | --------------------- |
- | _use_104pt      | 获取当前是否使用104点检测的信息 | 0（未使用104点）、1（使用104点）          | int*                  |
- | _use_278pt      | 获取当前是否使用278点检测的信息 | 0（未使用278点）、1（使用278点）          | int*                  |
- | _detection_data | 获取相对人脸适当扩大的检测框    | 有效的VNN_FaceFrameDataArr对象的地址/指针 | VNN_FaceFrameDataArr* |
+ | 属性名           | 属性含义                                                                     | 属性值                                    | 属性值类型            |
+ | ---------------- | ---------------------------------------------------------------------------- | ----------------------------------------- | --------------------- |
+ | _use_104pt       | 获取当前是否使用104点检测的信息                                              | 0（未使用104点）、1（使用104点）          | int*                  |
+ | _use_278pt       | 获取当前是否使用278点检测的信息                                              | 0（未使用278点）、1（使用278点）          | int*                  |
+ | _allowFaceAction | 是否检测脸部动作（视频模式可检测闭眼、眨眼、张嘴，图片模式可检测闭眼、张嘴） | 0（关闭，默认值）、1（启用）              | int*                  |
+ | _detection_data  | 获取相对人脸适当扩大的检测框                                                 | 有效的VNN_FaceFrameDataArr对象的地址/指针 | VNN_FaceFrameDataArr* |
 
 
 返回值: VNN_Result，具体值参见 状态码表  
