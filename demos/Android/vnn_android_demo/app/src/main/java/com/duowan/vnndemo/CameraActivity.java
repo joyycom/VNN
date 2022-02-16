@@ -535,13 +535,33 @@ public class CameraActivity extends AppCompatActivity implements View.OnTouchLis
             }
 
             int dataLen = ySize + uSize + 1 + vSize + 1;
+			if(ySize == uSize * 4) {
+                dataLen = ySize * 2;
+            }
             if(mCameraData == null || mCameraData.length != dataLen) {
                 mCameraData =new byte[dataLen];
             }
             synchronized (mCameraData) {
-                bufferY.get(mCameraData, 0, ySize);
-                bufferU.get(mCameraData, ySize, uSize);
-                bufferV.get(mCameraData, ySize + uSize + 1, vSize);
+                if(ySize == uSize * 4) {
+                    // for this case, Image format is YUVI420, which is not supported in VNN on android platform.
+                    // So, here YUVI420 is converted into VNN_PIX_FMT_YUV420P_888_SKIP1
+                    bufferY.get(mCameraData, 0, ySize);
+                    byte[] midU = new byte[uSize];
+                    byte[] midV = new byte[vSize];
+                    bufferU.get(midU, 0, uSize);
+                    bufferV.get(midV, 0, vSize);
+                    for(int i = 0; i < uSize; i++) {
+                        int offsetU = ySize + i * 2;
+                        int offsetV = ySize + ySize / 2 + i * 2;
+                        mCameraData[offsetU] = midU[i];
+                        mCameraData[offsetV] = midV[i];
+                    }
+                }
+                else {
+                    bufferY.get(mCameraData, 0, ySize);
+                    bufferU.get(mCameraData, ySize, uSize);
+                    bufferV.get(mCameraData, ySize + uSize + 1, vSize);
+                }
             }
             int rotationDegrees = image.getImageInfo().getRotationDegrees();
             if(rotationDegrees != mCameraOrientation) {
